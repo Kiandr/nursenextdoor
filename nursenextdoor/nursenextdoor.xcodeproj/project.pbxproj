@@ -16,6 +16,9 @@
 		2EC2B7E61EF3402F0021CE60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2B7E41EF3402F0021CE60 /* LaunchScreen.storyboard */; };
 		2EC2B7F11EF3402F0021CE60 /* nursenextdoorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7F01EF3402F0021CE60 /* nursenextdoorTests.m */; };
 		2EC2B7FC1EF3402F0021CE60 /* nursenextdoorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7FB1EF3402F0021CE60 /* nursenextdoorUITests.m */; };
+		9138E15E99FFBFC6D9AC467C /* libPods-nursenextdoor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 446EC59F7C06B34E0DF1C868 /* libPods-nursenextdoor.a */; };
+		ACBC2E481EF2DF1BE8C827D6 /* libPods-nursenextdoorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 037CFB994FD4B0961460765B /* libPods-nursenextdoorTests.a */; };
+		ECADCE0DBAEF2A31BA28D3E5 /* libPods-nursenextdoorUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 521A51182D3698D3E0759524 /* libPods-nursenextdoorUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		037CFB994FD4B0961460765B /* libPods-nursenextdoorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nursenextdoorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2790AA569DCD37B17E60F77D /* Pods-nursenextdoorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoorUITests/Pods-nursenextdoorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A43912824F33E57B4926E72 /* Pods-nursenextdoorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoorUITests/Pods-nursenextdoorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2EC2B7D01EF3402F0021CE60 /* nursenextdoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nursenextdoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC2B7D41EF3402F0021CE60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2EC2B7D61EF3402F0021CE60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +59,12 @@
 		2EC2B7F71EF3402F0021CE60 /* nursenextdoorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nursenextdoorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC2B7FB1EF3402F0021CE60 /* nursenextdoorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nursenextdoorUITests.m; sourceTree = "<group>"; };
 		2EC2B7FD1EF3402F0021CE60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		446EC59F7C06B34E0DF1C868 /* libPods-nursenextdoor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nursenextdoor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		521A51182D3698D3E0759524 /* libPods-nursenextdoorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nursenextdoorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75E8B849002B11E5373D8C87 /* Pods-nursenextdoor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoor/Pods-nursenextdoor.debug.xcconfig"; sourceTree = "<group>"; };
+		8A7C3E0444D3CFC1C7332CD1 /* Pods-nursenextdoorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoorTests/Pods-nursenextdoorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B965D6C561CF5F82A1D3DAA4 /* Pods-nursenextdoorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoorTests/Pods-nursenextdoorTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC96DFBE817A2776F6D97E9B /* Pods-nursenextdoor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoor.release.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoor/Pods-nursenextdoor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9138E15E99FFBFC6D9AC467C /* libPods-nursenextdoor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACBC2E481EF2DF1BE8C827D6 /* libPods-nursenextdoorTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECADCE0DBAEF2A31BA28D3E5 /* libPods-nursenextdoorUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F7EC221F3772C2120ED0C74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				446EC59F7C06B34E0DF1C868 /* libPods-nursenextdoor.a */,
+				037CFB994FD4B0961460765B /* libPods-nursenextdoorTests.a */,
+				521A51182D3698D3E0759524 /* libPods-nursenextdoorUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27249834CAA90E30C2AA1AAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75E8B849002B11E5373D8C87 /* Pods-nursenextdoor.debug.xcconfig */,
+				DC96DFBE817A2776F6D97E9B /* Pods-nursenextdoor.release.xcconfig */,
+				8A7C3E0444D3CFC1C7332CD1 /* Pods-nursenextdoorTests.debug.xcconfig */,
+				B965D6C561CF5F82A1D3DAA4 /* Pods-nursenextdoorTests.release.xcconfig */,
+				2790AA569DCD37B17E60F77D /* Pods-nursenextdoorUITests.debug.xcconfig */,
+				2A43912824F33E57B4926E72 /* Pods-nursenextdoorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2EC2B7C71EF3402F0021CE60 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +125,8 @@
 				2EC2B7EF1EF3402F0021CE60 /* nursenextdoorTests */,
 				2EC2B7FA1EF3402F0021CE60 /* nursenextdoorUITests */,
 				2EC2B7D11EF3402F0021CE60 /* Products */,
+				27249834CAA90E30C2AA1AAA /* Pods */,
+				1F7EC221F3772C2120ED0C74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EC2B8001EF3402F0021CE60 /* Build configuration list for PBXNativeTarget "nursenextdoor" */;
 			buildPhases = (
+				1A50AB63BB82CB24C6314F30 /* [CP] Check Pods Manifest.lock */,
 				2EC2B7CC1EF3402F0021CE60 /* Sources */,
 				2EC2B7CD1EF3402F0021CE60 /* Frameworks */,
 				2EC2B7CE1EF3402F0021CE60 /* Resources */,
+				CE0F8993504A981B74BC8C7C /* [CP] Embed Pods Frameworks */,
+				FCCA7A81037C2DE8F7FA1258 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EC2B8031EF3402F0021CE60 /* Build configuration list for PBXNativeTarget "nursenextdoorTests" */;
 			buildPhases = (
+				E53B148F6981E103A8D4CA75 /* [CP] Check Pods Manifest.lock */,
 				2EC2B7E81EF3402F0021CE60 /* Sources */,
 				2EC2B7E91EF3402F0021CE60 /* Frameworks */,
 				2EC2B7EA1EF3402F0021CE60 /* Resources */,
+				5AACC218D2A6B68425AD7839 /* [CP] Embed Pods Frameworks */,
+				9D54E62BFCD2C7A204633191 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EC2B8061EF3402F0021CE60 /* Build configuration list for PBXNativeTarget "nursenextdoorUITests" */;
 			buildPhases = (
+				31D71D2EC3BD3BD60E7BBFDC /* [CP] Check Pods Manifest.lock */,
 				2EC2B7F31EF3402F0021CE60 /* Sources */,
 				2EC2B7F41EF3402F0021CE60 /* Frameworks */,
 				2EC2B7F51EF3402F0021CE60 /* Resources */,
+				BCAE3AC50213D57137EEE5CB /* [CP] Embed Pods Frameworks */,
+				D86E835600207B3CA28EFB08 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,6 +322,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A50AB63BB82CB24C6314F30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		31D71D2EC3BD3BD60E7BBFDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5AACC218D2A6B68425AD7839 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nursenextdoorTests/Pods-nursenextdoorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D54E62BFCD2C7A204633191 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nursenextdoorTests/Pods-nursenextdoorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCAE3AC50213D57137EEE5CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nursenextdoorUITests/Pods-nursenextdoorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE0F8993504A981B74BC8C7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nursenextdoor/Pods-nursenextdoor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D86E835600207B3CA28EFB08 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nursenextdoorUITests/Pods-nursenextdoorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E53B148F6981E103A8D4CA75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FCCA7A81037C2DE8F7FA1258 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nursenextdoor/Pods-nursenextdoor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2EC2B7CC1EF3402F0021CE60 /* Sources */ = {
@@ -431,6 +618,7 @@
 		};
 		2EC2B8011EF3402F0021CE60 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75E8B849002B11E5373D8C87 /* Pods-nursenextdoor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7Z59E8EDBY;
@@ -443,6 +631,7 @@
 		};
 		2EC2B8021EF3402F0021CE60 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC96DFBE817A2776F6D97E9B /* Pods-nursenextdoor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7Z59E8EDBY;
@@ -455,6 +644,7 @@
 		};
 		2EC2B8041EF3402F0021CE60 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A7C3E0444D3CFC1C7332CD1 /* Pods-nursenextdoorTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 7Z59E8EDBY;
@@ -468,6 +658,7 @@
 		};
 		2EC2B8051EF3402F0021CE60 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B965D6C561CF5F82A1D3DAA4 /* Pods-nursenextdoorTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 7Z59E8EDBY;
@@ -481,6 +672,7 @@
 		};
 		2EC2B8071EF3402F0021CE60 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2790AA569DCD37B17E60F77D /* Pods-nursenextdoorUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 7Z59E8EDBY;
 				INFOPLIST_FILE = nursenextdoorUITests/Info.plist;
@@ -493,6 +685,7 @@
 		};
 		2EC2B8081EF3402F0021CE60 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A43912824F33E57B4926E72 /* Pods-nursenextdoorUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 7Z59E8EDBY;
 				INFOPLIST_FILE = nursenextdoorUITests/Info.plist;
