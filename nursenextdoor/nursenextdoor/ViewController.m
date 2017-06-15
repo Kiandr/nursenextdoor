@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "Firebase.h"
 @interface ViewController ()
 
 @end
@@ -26,4 +26,20 @@
 }
 
 
+// Notifies the view controller that its view is about to be added to a view hierarchy.
+- (void)viewWillAppear:(BOOL)animated{
+    self.handle = [[FIRAuth auth]
+                   addAuthStateDidChangeListener:^(FIRAuth *_Nonnull auth, FIRUser *_Nullable user) {
+                       // ...
+                   }];
+}
+
+
+// Notifies the view controller that its view is about to be added to a view hierarchy.
+- (void)viewDidDisappear:(BOOL)animated{
+}
+
+// Notifies the view controller that its view was added to a view hierarchy.
+- (void)viewDidAppear:(BOOL)animated{
+}
 @end

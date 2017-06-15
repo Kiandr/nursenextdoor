@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E9380BE1EF342BB0093D296 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */; };
+		2E9380C11EF342F50093D296 /* Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9380C01EF342F50093D296 /* Auth.m */; };
 		2EC2B7D51EF3402F0021CE60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7D41EF3402F0021CE60 /* main.m */; };
 		2EC2B7D81EF3402F0021CE60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7D71EF3402F0021CE60 /* AppDelegate.m */; };
 		2EC2B7DB1EF3402F0021CE60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7DA1EF3402F0021CE60 /* ViewController.m */; };
@@ -42,6 +44,9 @@
 		037CFB994FD4B0961460765B /* libPods-nursenextdoorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nursenextdoorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2790AA569DCD37B17E60F77D /* Pods-nursenextdoorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoorUITests/Pods-nursenextdoorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2A43912824F33E57B4926E72 /* Pods-nursenextdoorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoorUITests/Pods-nursenextdoorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E9380BF1EF342E70093D296 /* Auth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Auth.h; sourceTree = "<group>"; };
+		2E9380C01EF342F50093D296 /* Auth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Auth.m; sourceTree = "<group>"; };
 		2EC2B7D01EF3402F0021CE60 /* nursenextdoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nursenextdoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC2B7D41EF3402F0021CE60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2EC2B7D61EF3402F0021CE60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +123,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2E9380BC1EF342BB0093D296 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */,
+				2E9380BF1EF342E70093D296 /* Auth.h */,
+				2E9380C01EF342F50093D296 /* Auth.m */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
 		2EC2B7C71EF3402F0021CE60 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +158,7 @@
 		2EC2B7D21EF3402F0021CE60 /* nursenextdoor */ = {
 			isa = PBXGroup;
 			children = (
+				2E9380BC1EF342BB0093D296 /* Google */,
 				2EC2B7D61EF3402F0021CE60 /* AppDelegate.h */,
 				2EC2B7D71EF3402F0021CE60 /* AppDelegate.m */,
 				2EC2B7D91EF3402F0021CE60 /* ViewController.h */,
@@ -302,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EC2B7E61EF3402F0021CE60 /* LaunchScreen.storyboard in Resources */,
+				2E9380BE1EF342BB0093D296 /* GoogleService-Info.plist in Resources */,
 				2EC2B7E31EF3402F0021CE60 /* Assets.xcassets in Resources */,
 				2EC2B7DE1EF3402F0021CE60 /* Main.storyboard in Resources */,
 			);
@@ -466,6 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E9380C11EF342F50093D296 /* Auth.m in Sources */,
 				2EC2B7DB1EF3402F0021CE60 /* ViewController.m in Sources */,
 				2EC2B7D81EF3402F0021CE60 /* AppDelegate.m in Sources */,
 				2EC2B7E11EF3402F0021CE60 /* nursenextdoor.xcdatamodeld in Sources */,
@@ -715,6 +733,7 @@
 				2EC2B8021EF3402F0021CE60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EC2B8031EF3402F0021CE60 /* Build configuration list for PBXNativeTarget "nursenextdoorTests" */ = {
 			isa = XCConfigurationList;
@@ -723,6 +742,7 @@
 				2EC2B8051EF3402F0021CE60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EC2B8061EF3402F0021CE60 /* Build configuration list for PBXNativeTarget "nursenextdoorUITests" */ = {
 			isa = XCConfigurationList;
@@ -731,6 +751,7 @@
 				2EC2B8081EF3402F0021CE60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
