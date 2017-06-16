@@ -18,6 +18,7 @@
 		2EC2B7E61EF3402F0021CE60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2B7E41EF3402F0021CE60 /* LaunchScreen.storyboard */; };
 		2EC2B7F11EF3402F0021CE60 /* nursenextdoorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7F01EF3402F0021CE60 /* nursenextdoorTests.m */; };
 		2EC2B7FC1EF3402F0021CE60 /* nursenextdoorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7FB1EF3402F0021CE60 /* nursenextdoorUITests.m */; };
+		2EC816CE1EF357E500B3E644 /* GoogleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC816CD1EF357E500B3E644 /* GoogleController.m */; };
 		9138E15E99FFBFC6D9AC467C /* libPods-nursenextdoor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 446EC59F7C06B34E0DF1C868 /* libPods-nursenextdoor.a */; };
 		ACBC2E481EF2DF1BE8C827D6 /* libPods-nursenextdoorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 037CFB994FD4B0961460765B /* libPods-nursenextdoorTests.a */; };
 		ECADCE0DBAEF2A31BA28D3E5 /* libPods-nursenextdoorUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 521A51182D3698D3E0759524 /* libPods-nursenextdoorUITests.a */; };
@@ -64,6 +65,8 @@
 		2EC2B7F71EF3402F0021CE60 /* nursenextdoorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nursenextdoorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC2B7FB1EF3402F0021CE60 /* nursenextdoorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nursenextdoorUITests.m; sourceTree = "<group>"; };
 		2EC2B7FD1EF3402F0021CE60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EC816CD1EF357E500B3E644 /* GoogleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoogleController.m; path = GoogleController/GoogleController.m; sourceTree = "<group>"; };
+		2EC816CF1EF357F700B3E644 /* GoogleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GoogleController.h; path = GoogleController/GoogleController.h; sourceTree = "<group>"; };
 		446EC59F7C06B34E0DF1C868 /* libPods-nursenextdoor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nursenextdoor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		521A51182D3698D3E0759524 /* libPods-nursenextdoorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nursenextdoorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E8B849002B11E5373D8C87 /* Pods-nursenextdoor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoor/Pods-nursenextdoor.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +129,7 @@
 		2E9380BC1EF342BB0093D296 /* Google */ = {
 			isa = PBXGroup;
 			children = (
+				2EC816CC1EF357C900B3E644 /* GoogleController */,
 				2E9380BF1EF342E70093D296 /* Auth.h */,
 				2E9380C01EF342F50093D296 /* Auth.m */,
 			);
@@ -197,6 +201,15 @@
 				2EC2B7FD1EF3402F0021CE60 /* Info.plist */,
 			);
 			path = nursenextdoorUITests;
+			sourceTree = "<group>";
+		};
+		2EC816CC1EF357C900B3E644 /* GoogleController */ = {
+			isa = PBXGroup;
+			children = (
+				2EC816CF1EF357F700B3E644 /* GoogleController.h */,
+				2EC816CD1EF357E500B3E644 /* GoogleController.m */,
+			);
+			name = GoogleController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,6 +498,7 @@
 			files = (
 				2E9380C11EF342F50093D296 /* Auth.m in Sources */,
 				2EC2B7DB1EF3402F0021CE60 /* ViewController.m in Sources */,
+				2EC816CE1EF357E500B3E644 /* GoogleController.m in Sources */,
 				2EC2B7D81EF3402F0021CE60 /* AppDelegate.m in Sources */,
 				2EC2B7E11EF3402F0021CE60 /* nursenextdoor.xcdatamodeld in Sources */,
 				2EC2B7D51EF3402F0021CE60 /* main.m in Sources */,
