@@ -17,7 +17,7 @@
 @import GoogleSignIn;
 
 @interface GoogleController : UIViewController<GIDSignInUIDelegate>
-
+@property(weak, nonatomic) UIView *loginUIView;
 
 @end
 

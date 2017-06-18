@@ -25,9 +25,9 @@
     // // Use Firebase library to configure APIs
     [FIRApp configure];
 
-    // Google Single Sing In
-    [GIDSignIn sharedInstance].clientID = [FIRApp defaultApp].options.clientID;
-    [GIDSignIn sharedInstance].delegate = self;
+//    // Google Single Sing In
+//    [GIDSignIn sharedInstance].clientID = [FIRApp defaultApp].options.clientID;
+//    [GIDSignIn sharedInstance].delegate = self;
     return YES;
 }
 
@@ -106,52 +106,54 @@
     }
 }
 
-#pragma - Google Single Sing On 
-- (BOOL)application:(nonnull UIApplication *)application
-            openURL:(nonnull NSURL *)url
-            options:(nonnull NSDictionary<NSString *, id> *)options {
-    return [[GIDSignIn sharedInstance] handleURL:url
-                               sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
-                                      annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
-}
-
-- (void)signIn:(GIDSignIn *)signIn
-didSignInForUser:(GIDGoogleUser *)user
-     withError:(NSError *)error {
-    // ...
-    if (error == nil) {
-        GIDAuthentication *authentication = user.authentication;
-        FIRAuthCredential *credential =
-        [FIRGoogleAuthProvider credentialWithIDToken:authentication.idToken
-                                         accessToken:authentication.accessToken];
-        NSLog(@"authentication.idToken = %@",authentication.idToken);
-        NSLog(@"authentication.accessToken %@",authentication.accessToken);
-        NSLog(@"authentication %@",authentication);
-        NSLog(@"credential %@",credential);
-        // ... sing into FireBase could be a function
-        [[FIRAuth auth] signInWithCredential:credential
-                                  completion:^(FIRUser *user, NSError *error) {
-                                      if (error) {
-                                          // ...
-                                          return;
-                                      }
-                                      // User successfully signed in. Get user data from the FIRUser object
-                                      // ...
-                                      NSLog(@"User successfully signed in. Get user data from the FIRUser object %@",user);
-                                  }];
-
-
-    } else {
-        // ...
-    }
-}
-
-- (void)signIn:(GIDSignIn *)signIn
-didDisconnectWithUser:(GIDGoogleUser *)user
-     withError:(NSError *)error {
-    // Perform any operations when the user disconnects from app here.
-    // ...
-}
+//#pragma - Google Single Sing On 
+//- (BOOL)application:(nonnull UIApplication *)application
+//            openURL:(nonnull NSURL *)url
+//            options:(nonnull NSDictionary<NSString *, id> *)options {
+//    return [[GIDSignIn sharedInstance] handleURL:url
+//                               sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
+//                                      annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
+//}
+//// To manage the user info reffer to this:
+//// https://firebase.google.com/docs/auth/ios/manage-users
+//- (void)signIn:(GIDSignIn *)signIn
+//didSignInForUser:(GIDGoogleUser *)user
+//     withError:(NSError *)error {
+//    // ...
+//    if (error == nil) {
+//        GIDAuthentication *authentication = user.authentication;
+//        FIRAuthCredential *credential =
+//        [FIRGoogleAuthProvider credentialWithIDToken:authentication.idToken
+//                                         accessToken:authentication.accessToken];
+//        NSLog(@"authentication.idToken = %@",authentication.idToken);
+//        NSLog(@"authentication.accessToken %@",authentication.accessToken);
+//        NSLog(@"authentication %@",authentication);
+//        NSLog(@"credential %@",credential);
+//        // ... sing into FireBase could be a function
+//        [[FIRAuth auth] signInWithCredential:credential
+//                                  completion:^(FIRUser *user, NSError *error) {
+//                                      if (error) {
+//                                          // ...
+//                                          return;
+//                                      }
+//                                      // User successfully signed in. Get user data from the FIRUser object
+//                                      // ...
+//                                      NSLog(@"User successfully signed in. Get user data from the FIRUser object %@",user);
+//                                  }];
+//
+//
+//    } else {
+//        // ...
+//        NSLog(@"User  signed in failed -> [FIRAuth auth].currentUser.email: %@",[FIRAuth auth].currentUser.email);
+//    }
+//}
+//
+//- (void)signIn:(GIDSignIn *)signIn
+//didDisconnectWithUser:(GIDGoogleUser *)user
+//     withError:(NSError *)error {
+//    // Perform any operations when the user disconnects from app here.
+//    // ...
+//}
 
 
 @end
