@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E5246E21EF4983B0072998A /* GoogleViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5246E11EF4983B0072998A /* GoogleViewManager.m */; };
+		2E5246EE1EF4A3110072998A /* UIViewFrameWorkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5246E61EF4A3100072998A /* UIViewFrameWorkModel.m */; };
+		2E5246EF1EF4A3110072998A /* UITableViewControllerCustimized.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5246EB1EF4A3100072998A /* UITableViewControllerCustimized.m */; };
+		2E5246F01EF4A3110072998A /* UIViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5246ED1EF4A3100072998A /* UIViewManager.m */; };
 		2E9380BE1EF342BB0093D296 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */; };
 		2E9380C11EF342F50093D296 /* Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9380C01EF342F50093D296 /* Auth.m */; };
 		2EC2B7D51EF3402F0021CE60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7D41EF3402F0021CE60 /* main.m */; };
@@ -45,6 +49,15 @@
 		037CFB994FD4B0961460765B /* libPods-nursenextdoorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nursenextdoorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2790AA569DCD37B17E60F77D /* Pods-nursenextdoorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoorUITests/Pods-nursenextdoorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2A43912824F33E57B4926E72 /* Pods-nursenextdoorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoorUITests/Pods-nursenextdoorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2E5246E01EF4982F0072998A /* GoogleViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleViewManager.h; sourceTree = "<group>"; };
+		2E5246E11EF4983B0072998A /* GoogleViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleViewManager.m; sourceTree = "<group>"; };
+		2E5246E51EF4A3100072998A /* UIViewFrameWorkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewFrameWorkModel.h; sourceTree = "<group>"; };
+		2E5246E61EF4A3100072998A /* UIViewFrameWorkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewFrameWorkModel.m; sourceTree = "<group>"; };
+		2E5246E81EF4A3100072998A /* UIViewManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewManagerProtocol.h; sourceTree = "<group>"; };
+		2E5246EA1EF4A3100072998A /* UITableViewControllerCustimized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewControllerCustimized.h; sourceTree = "<group>"; };
+		2E5246EB1EF4A3100072998A /* UITableViewControllerCustimized.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewControllerCustimized.m; sourceTree = "<group>"; };
+		2E5246EC1EF4A3100072998A /* UIViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewManager.h; sourceTree = "<group>"; };
+		2E5246ED1EF4A3100072998A /* UIViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewManager.m; sourceTree = "<group>"; };
 		2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Google/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2E9380BF1EF342E70093D296 /* Auth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Auth.h; sourceTree = "<group>"; };
 		2E9380C01EF342F50093D296 /* Auth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Auth.m; sourceTree = "<group>"; };
@@ -126,9 +139,48 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2E5246E31EF4A3100072998A /* UIViewFramework */ = {
+			isa = PBXGroup;
+			children = (
+				2E5246E41EF4A3100072998A /* Models */,
+				2E5246E71EF4A3100072998A /* Protocols */,
+				2E5246E91EF4A3100072998A /* Services */,
+			);
+			path = UIViewFramework;
+			sourceTree = "<group>";
+		};
+		2E5246E41EF4A3100072998A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E5246E51EF4A3100072998A /* UIViewFrameWorkModel.h */,
+				2E5246E61EF4A3100072998A /* UIViewFrameWorkModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2E5246E71EF4A3100072998A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2E5246E81EF4A3100072998A /* UIViewManagerProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2E5246E91EF4A3100072998A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2E5246EA1EF4A3100072998A /* UITableViewControllerCustimized.h */,
+				2E5246EB1EF4A3100072998A /* UITableViewControllerCustimized.m */,
+				2E5246EC1EF4A3100072998A /* UIViewManager.h */,
+				2E5246ED1EF4A3100072998A /* UIViewManager.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		2E9380BC1EF342BB0093D296 /* Google */ = {
 			isa = PBXGroup;
 			children = (
+				2E5246E31EF4A3100072998A /* UIViewFramework */,
 				2EC816CC1EF357C900B3E644 /* GoogleController */,
 				2E9380BF1EF342E70093D296 /* Auth.h */,
 				2E9380C01EF342F50093D296 /* Auth.m */,
@@ -208,6 +260,8 @@
 			children = (
 				2EC816CF1EF357F700B3E644 /* GoogleController.h */,
 				2EC816CD1EF357E500B3E644 /* GoogleController.m */,
+				2E5246E01EF4982F0072998A /* GoogleViewManager.h */,
+				2E5246E11EF4983B0072998A /* GoogleViewManager.m */,
 			);
 			name = GoogleController;
 			sourceTree = "<group>";
@@ -497,10 +551,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E9380C11EF342F50093D296 /* Auth.m in Sources */,
+				2E5246EE1EF4A3110072998A /* UIViewFrameWorkModel.m in Sources */,
 				2EC2B7DB1EF3402F0021CE60 /* ViewController.m in Sources */,
 				2EC816CE1EF357E500B3E644 /* GoogleController.m in Sources */,
 				2EC2B7D81EF3402F0021CE60 /* AppDelegate.m in Sources */,
 				2EC2B7E11EF3402F0021CE60 /* nursenextdoor.xcdatamodeld in Sources */,
+				2E5246E21EF4983B0072998A /* GoogleViewManager.m in Sources */,
+				2E5246EF1EF4A3110072998A /* UITableViewControllerCustimized.m in Sources */,
+				2E5246F01EF4A3110072998A /* UIViewManager.m in Sources */,
 				2EC2B7D51EF3402F0021CE60 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

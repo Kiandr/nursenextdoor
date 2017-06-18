@@ -9,6 +9,16 @@
 #ifndef Auth_h
 #define Auth_h
 
+#import <UIKit/UIKit.h>
+#import "Auth.h"
+#import "Firebase.h"
+
+
+@interface Auth : NSObject
+
+- (id)initWithFIRAuthStateDidChangeListenerHandle:(FIRAuthStateDidChangeListenerHandle*) handleIncome;
+
+@end
 
 
 #endif /* Auth_h */
