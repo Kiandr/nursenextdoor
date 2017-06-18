@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "UIViewManagerProtocol.h"
 #import "UIViewFrameWorkModel.h"
+@import Firebase;
+@import GoogleSignIn;
 
 @class UIViewManager;
 
@@ -29,4 +31,7 @@
 - (void)    callBackFunctionFromButton:(NSString*) someInput;
 - (void)    buildAndLoadUITableView;
 - (UIView*) buildFirstPageViewAddGoogleSingInButton;
+
+
+
 @end

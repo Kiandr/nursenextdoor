@@ -14,6 +14,7 @@
 @interface GoogleController ()
 @property(strong, nonatomic) FIRAuthStateDidChangeListenerHandle handle;
 @property(strong, nonatomic) GoogleViewManager* googleViewManager;
+@property(weak, nonatomic) IBOutlet GIDSignInButton *signInButton;
 @end
 
 @implementation GoogleController
@@ -26,6 +27,12 @@
     // manage and build view
     _googleViewManager = [[GoogleViewManager alloc] init];
     [self.view addSubview:_googleViewManager.initializetWithGIDSignInButton];
+
+    // Google Single Sing In
+    [GIDSignIn sharedInstance].uiDelegate = self;
+    [[GIDSignIn sharedInstance] signIn];
+
+    [[GIDSignIn sharedInstance] signOut];
 
 }
 
@@ -62,5 +69,36 @@
 
 // Notifies the view controller that its view was added to a view hierarchy.
 - (void)viewDidAppear:(BOOL)animated{
+}
+
+#pragma Authentication with Google Sing Sing in
+
+// Authenticate with Firebase
+- (void)signIn:(GIDSignIn *)signIn
+didSignInForUser:(GIDGoogleUser *)user
+     withError:(NSError *)error {
+    // ...
+    if (error == nil) {
+        GIDAuthentication *authentication = user.authentication;
+        FIRAuthCredential *credential =
+        [FIRGoogleAuthProvider credentialWithIDToken:authentication.idToken
+                                         accessToken:authentication.accessToken];
+        // ...
+
+        [[FIRAuth auth] signInWithCredential:credential
+                                  completion:^(FIRUser *user, NSError *error) {
+                                      if (error) {
+                                          // ...
+                                          return;
+                                      }
+                                      // User successfully signed in. Get user data from the FIRUser object
+                                      // ...
+                                      NSLog(@"%@-> KDR",user);
+                                  }];
+    } else {
+        // ...
+    }
+
+    
 }
 @end

@@ -10,11 +10,16 @@
 #define Auth_h
 
 #import <UIKit/UIKit.h>
+
 #import "Auth.h"
 #import "Firebase.h"
 
 
-@interface Auth : NSObject
+@import GoogleSignIn;
+
+
+
+@interface Auth : NSObject<GIDSignInUIDelegate>
 
 - (id)initWithFIRAuthStateDidChangeListenerHandle:(FIRAuthStateDidChangeListenerHandle*) handleIncome;
 
