@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "Firebase.h"
 
+@import Firebase;
+@import GoogleSignIn;
+
 @interface AppDelegate ()
 
 @end
@@ -19,7 +22,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     // Google FireBase SetUp
+    // // Use Firebase library to configure APIs
     [FIRApp configure];
+
+    // Google Single Sing In
+    [GIDSignIn sharedInstance].clientID = [FIRApp defaultApp].options.clientID;
+    [GIDSignIn sharedInstance].delegate = self;
     return YES;
 }
 

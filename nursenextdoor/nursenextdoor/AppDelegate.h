@@ -9,7 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+// add Google delegate method for Sing Sing On framework
+// https://firebase.google.com/docs/auth/ios/google-signin view this page for further deatil.
+
+@import Firebase;
+@import GoogleSignIn;
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate,GIDSignInDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
