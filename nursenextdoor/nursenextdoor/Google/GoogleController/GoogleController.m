@@ -157,7 +157,7 @@ didSignInForUser:(GIDGoogleUser *)user
     } else {
         // ...
         NSLog(@"User  signed in failed -> [FIRAuth auth].currentUser.email: %@",[FIRAuth auth].currentUser.email);
-        //[_loginUIView removeFromSuperview];
+        [_loginUIView removeFromSuperview];
     }
 }
 
