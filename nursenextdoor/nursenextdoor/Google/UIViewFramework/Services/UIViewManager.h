@@ -31,6 +31,7 @@
 - (void)    callBackFunctionFromButton:(NSString*) someInput;
 - (void)    buildAndLoadUITableView;
 - (UIView*) buildFirstPageViewAddGoogleSingInButton;
+- (UIView*) buildUserProfile;
 
 
 
