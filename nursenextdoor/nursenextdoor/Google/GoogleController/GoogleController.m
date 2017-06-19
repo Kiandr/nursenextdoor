@@ -32,7 +32,8 @@
     [GIDSignIn sharedInstance].uiDelegate = self;
     [[GIDSignIn sharedInstance] signIn];
 
-    [[GIDSignIn sharedInstance] signOut];
+    // call this logout
+    // [[GIDSignIn sharedInstance] signOut];
 
 }
 
@@ -73,32 +74,4 @@
 
 #pragma Authentication with Google Sing Sing in
 
-// Authenticate with Firebase
-- (void)signIn:(GIDSignIn *)signIn
-didSignInForUser:(GIDGoogleUser *)user
-     withError:(NSError *)error {
-    // ...
-    if (error == nil) {
-        GIDAuthentication *authentication = user.authentication;
-        FIRAuthCredential *credential =
-        [FIRGoogleAuthProvider credentialWithIDToken:authentication.idToken
-                                         accessToken:authentication.accessToken];
-        // ...
-
-        [[FIRAuth auth] signInWithCredential:credential
-                                  completion:^(FIRUser *user, NSError *error) {
-                                      if (error) {
-                                          // ...
-                                          return;
-                                      }
-                                      // User successfully signed in. Get user data from the FIRUser object
-                                      // ...
-                                      NSLog(@"%@-> KDR",user);
-                                  }];
-    } else {
-        // ...
-    }
-
-    
-}
 @end
