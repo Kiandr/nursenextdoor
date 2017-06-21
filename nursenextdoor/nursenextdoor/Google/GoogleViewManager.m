@@ -34,4 +34,13 @@
 
 }
 
+
+- (UIView*) mainViewUserProfile{
+    
+    _uiViewManager =[[UIViewManager alloc] init];
+
+    return _uiViewManager.buildUserProfile;
+
+}
+
 @end

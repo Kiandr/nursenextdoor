@@ -26,7 +26,10 @@
 
     // manage and build view
     _googleViewManager = [[GoogleViewManager alloc] init];
+    // This is Google View
     [self.view addSubview:_googleViewManager.initializetWithGIDSignInButton];
+    // This is the UserPofile View
+    //[self.view addSubview:_googleViewManager.mainViewUserProfile];
 
     // Google Single Sing In
     [GIDSignIn sharedInstance].uiDelegate = self;

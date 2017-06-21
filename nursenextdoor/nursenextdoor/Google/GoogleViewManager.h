@@ -14,7 +14,9 @@
 
 @interface GoogleViewManager : NSObject
 
-- (GIDSignInButton*) initializetWithGIDSignInButton;
+- (GIDSignInButton*)    initializetWithGIDSignInButton;
+- (UIView*)             mainViewUserProfile;
+
 
 @end
 

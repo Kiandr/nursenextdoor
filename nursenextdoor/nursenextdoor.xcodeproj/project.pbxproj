@@ -13,6 +13,7 @@
 		2E5246F01EF4A3110072998A /* UIViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5246ED1EF4A3100072998A /* UIViewManager.m */; };
 		2E71675F1EF75A1900262EFD /* userProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E71675E1EF75A1900262EFD /* userProfileViewController.m */; };
 		2E7167631EF75A5B00262EFD /* userProfileViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7167621EF75A5B00262EFD /* userProfileViewManager.m */; };
+		2E7167681EF7698400262EFD /* UserProfileViewModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E7167661EF7698400262EFD /* UserProfileViewModel.xcdatamodeld */; };
 		2E74DD941EF7310B00CBA7E6 /* GoogleSingleSignOnInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E74DD931EF7310B00CBA7E6 /* GoogleSingleSignOnInterface.m */; };
 		2E9380BE1EF342BB0093D296 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */; };
 		2E9380C11EF342F50093D296 /* Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9380C01EF342F50093D296 /* Auth.m */; };
@@ -65,6 +66,8 @@
 		2E7167601EF75A2D00262EFD /* userProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = userProfileViewController.h; path = uiViewFrameWork/Services/ViewControllers/userProfileViewController.h; sourceTree = "<group>"; };
 		2E7167611EF75A4800262EFD /* userProfileViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = userProfileViewManager.h; path = uiViewFrameWork/Services/ViewManagers/userProfileViewManager.h; sourceTree = "<group>"; };
 		2E7167621EF75A5B00262EFD /* userProfileViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = userProfileViewManager.m; path = uiViewFrameWork/Services/ViewManagers/userProfileViewManager.m; sourceTree = "<group>"; };
+		2E7167651EF767E800262EFD /* userProfileDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = userProfileDataModel.h; path = Google/UIViewFramework/Models/userProfileDataModel.h; sourceTree = "<group>"; };
+		2E7167671EF7698400262EFD /* UserProfileViewModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserProfileViewModel.xcdatamodel; sourceTree = "<group>"; };
 		2E74DD931EF7310B00CBA7E6 /* GoogleSingleSignOnInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoogleSingleSignOnInterface.m; path = nursenextdoor/Interfaces/GoogleSingleSignOnInterface.m; sourceTree = SOURCE_ROOT; };
 		2E74DD951EF731D500CBA7E6 /* GoogleSingleSignOnInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GoogleSingleSignOnInterface.h; path = nursenextdoor/Interfaces/GoogleSingleSignOnInterface.h; sourceTree = SOURCE_ROOT; };
 		2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Google/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -207,6 +210,8 @@
 		2E7167571EF7595200262EFD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2E7167651EF767E800262EFD /* userProfileDataModel.h */,
+				2E7167661EF7698400262EFD /* UserProfileViewModel.xcdatamodeld */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -642,6 +647,7 @@
 				2E5246EF1EF4A3110072998A /* UITableViewControllerCustimized.m in Sources */,
 				2E5246F01EF4A3110072998A /* UIViewManager.m in Sources */,
 				2EC2B7D51EF3402F0021CE60 /* main.m in Sources */,
+				2E7167681EF7698400262EFD /* UserProfileViewModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -910,6 +916,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		2E7167661EF7698400262EFD /* UserProfileViewModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2E7167671EF7698400262EFD /* UserProfileViewModel.xcdatamodel */,
+			);
+			currentVersion = 2E7167671EF7698400262EFD /* UserProfileViewModel.xcdatamodel */;
+			name = UserProfileViewModel.xcdatamodeld;
+			path = uiViewFrameWork/ViewModels/UserProfileViewModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		2EC2B7DF1EF3402F0021CE60 /* nursenextdoor.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
