@@ -11,7 +11,7 @@
 #import "GoogleViewManager.h"
 #import "Firebase.h"
 
-#import "UIViewManager.h"
+#import "mainUIViewController.h"
 
 @import GoogleSignIn;
 
@@ -20,16 +20,30 @@
 @interface GoogleViewManager ()
 
 
-@property(strong, nonatomic) UIViewManager *  uiViewManager;
+@property(strong, nonatomic) mainUIViewController *  mainUIViewControllerMember;
 @end
 
 @implementation GoogleViewManager
 
+// constructure:
+//{mainUIViewControllerMember}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+
+    }
+    return self;
+}
+
+
+
 - (UIView*) initializetWithGIDSignInButton{
 
-    _uiViewManager =[[UIViewManager alloc] init];
 
-    return _uiViewManager.buildFirstPageViewAddGoogleSingInButton;
+
+    return _mainUIViewControllerMember.buildFirstPageViewAddGoogleSingInButton;
 
 
 }
@@ -37,9 +51,9 @@
 
 - (UIView*) mainViewUserProfile{
     
-    _uiViewManager =[[UIViewManager alloc] init];
 
-    return _uiViewManager.buildUserProfile;
+
+    return _mainUIViewControllerMember.buildUserProfile;
 
 }
 

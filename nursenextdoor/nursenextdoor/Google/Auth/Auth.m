@@ -19,14 +19,21 @@
 
 @implementation Auth : NSObject
 
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+
+    }
+    return self;
+}
+
+
+
+
 - (id)initWithFIRAuthStateDidChangeListenerHandle:(FIRAuthStateDidChangeListenerHandle*) handleIncome
 {
-    // Initialize the superclass first.
-    //
-    // Make sure initialization was successful by making sure
-    // an instance was returned. If initialization fails, e.g.
-    // because we run out of memory, the returned value would
-    // be nil.
     self = [super init];
     if (self)
     {

@@ -12,9 +12,9 @@
 @import Firebase;
 @import GoogleSignIn;
 
-@class UIViewManager;
+@class mainUIViewController;
 
-@interface UIViewManager : UIView <UITableViewDelegate, UITableViewDataSource>
+@interface mainUIViewController : UIView <UITableViewDelegate, UITableViewDataSource>
 
 // Properties
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
-#import "GoogleSingleSignOnInterface.h"
+
 // add Google delegate method for Sing Sing On framework
 // https://firebase.google.com/docs/auth/ios/google-signin view this page for further deatil.
 

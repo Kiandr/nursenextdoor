@@ -8,14 +8,24 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "UITableViewControllerCustimized.h"
-#import "UIViewManager.h"
+//#import "UITableViewControllerCustimized.h"
+#import "mainUIViewController.h"
 #import "UIViewFrameWorkModel.h"
 @import Firebase;
 @import FirebaseCore;
 @import GoogleSignIn;
 
-@implementation UIViewManager
+@implementation mainUIViewController
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+
+    }
+    return self;
+}
+
+
 -(UIView*)  mainViewInit:           (UIViewFrameWorkModel*)     localUIViewFrameWorkModel setBrandColour:(UIColor*) locBrandColour{
     UIView *tempView = [[UIView alloc] init];
     tempView.backgroundColor = locBrandColour;

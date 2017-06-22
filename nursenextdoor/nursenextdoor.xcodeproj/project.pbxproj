@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E5246E21EF4983B0072998A /* GoogleViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5246E11EF4983B0072998A /* GoogleViewManager.m */; };
-		2E5246EE1EF4A3110072998A /* UIViewFrameWorkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5246E61EF4A3100072998A /* UIViewFrameWorkModel.m */; };
-		2E5246EF1EF4A3110072998A /* UITableViewControllerCustimized.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5246EB1EF4A3100072998A /* UITableViewControllerCustimized.m */; };
-		2E5246F01EF4A3110072998A /* UIViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5246ED1EF4A3100072998A /* UIViewManager.m */; };
-		2E74DD941EF7310B00CBA7E6 /* GoogleSingleSignOnInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E74DD931EF7310B00CBA7E6 /* GoogleSingleSignOnInterface.m */; };
+		2E330C0C1EFC87970056FC3F /* Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C041EFC87970056FC3F /* Auth.m */; };
+		2E330C0D1EFC87970056FC3F /* GoogleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C071EFC87970056FC3F /* GoogleController.m */; };
+		2E330C0E1EFC87970056FC3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E330C081EFC87970056FC3F /* GoogleService-Info.plist */; };
+		2E330C0F1EFC87970056FC3F /* GoogleViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C0B1EFC87970056FC3F /* GoogleViewManager.m */; };
+		2E330C261EFC88320056FC3F /* UIViewFrameWorkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C201EFC88320056FC3F /* UIViewFrameWorkModel.m */; };
+		2E330C291EFC88A90056FC3F /* slideViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C281EFC88A90056FC3F /* slideViewModel.m */; };
+		2E330C2C1EFC8A390056FC3F /* mainUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C2B1EFC8A390056FC3F /* mainUIViewController.m */; };
 		2E9380BE1EF342BB0093D296 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */; };
-		2E9380C11EF342F50093D296 /* Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9380C01EF342F50093D296 /* Auth.m */; };
 		2EC2B7D51EF3402F0021CE60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7D41EF3402F0021CE60 /* main.m */; };
 		2EC2B7D81EF3402F0021CE60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7D71EF3402F0021CE60 /* AppDelegate.m */; };
 		2EC2B7DB1EF3402F0021CE60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7DA1EF3402F0021CE60 /* ViewController.m */; };
@@ -23,7 +24,6 @@
 		2EC2B7E61EF3402F0021CE60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2B7E41EF3402F0021CE60 /* LaunchScreen.storyboard */; };
 		2EC2B7F11EF3402F0021CE60 /* nursenextdoorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7F01EF3402F0021CE60 /* nursenextdoorTests.m */; };
 		2EC2B7FC1EF3402F0021CE60 /* nursenextdoorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7FB1EF3402F0021CE60 /* nursenextdoorUITests.m */; };
-		2EC816CE1EF357E500B3E644 /* GoogleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC816CD1EF357E500B3E644 /* GoogleController.m */; };
 		9138E15E99FFBFC6D9AC467C /* libPods-nursenextdoor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 446EC59F7C06B34E0DF1C868 /* libPods-nursenextdoor.a */; };
 		ACBC2E481EF2DF1BE8C827D6 /* libPods-nursenextdoorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 037CFB994FD4B0961460765B /* libPods-nursenextdoorTests.a */; };
 		ECADCE0DBAEF2A31BA28D3E5 /* libPods-nursenextdoorUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 521A51182D3698D3E0759524 /* libPods-nursenextdoorUITests.a */; };
@@ -50,20 +50,21 @@
 		037CFB994FD4B0961460765B /* libPods-nursenextdoorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nursenextdoorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2790AA569DCD37B17E60F77D /* Pods-nursenextdoorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoorUITests/Pods-nursenextdoorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2A43912824F33E57B4926E72 /* Pods-nursenextdoorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoorUITests/Pods-nursenextdoorUITests.release.xcconfig"; sourceTree = "<group>"; };
-		2E5246E01EF4982F0072998A /* GoogleViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleViewManager.h; sourceTree = "<group>"; };
-		2E5246E11EF4983B0072998A /* GoogleViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleViewManager.m; sourceTree = "<group>"; };
-		2E5246E51EF4A3100072998A /* UIViewFrameWorkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewFrameWorkModel.h; sourceTree = "<group>"; };
-		2E5246E61EF4A3100072998A /* UIViewFrameWorkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewFrameWorkModel.m; sourceTree = "<group>"; };
-		2E5246E81EF4A3100072998A /* UIViewManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewManagerProtocol.h; sourceTree = "<group>"; };
-		2E5246EA1EF4A3100072998A /* UITableViewControllerCustimized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewControllerCustimized.h; sourceTree = "<group>"; };
-		2E5246EB1EF4A3100072998A /* UITableViewControllerCustimized.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewControllerCustimized.m; sourceTree = "<group>"; };
-		2E5246EC1EF4A3100072998A /* UIViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewManager.h; sourceTree = "<group>"; };
-		2E5246ED1EF4A3100072998A /* UIViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewManager.m; sourceTree = "<group>"; };
-		2E74DD931EF7310B00CBA7E6 /* GoogleSingleSignOnInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoogleSingleSignOnInterface.m; path = nursenextdoor/Interfaces/GoogleSingleSignOnInterface.m; sourceTree = SOURCE_ROOT; };
-		2E74DD951EF731D500CBA7E6 /* GoogleSingleSignOnInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GoogleSingleSignOnInterface.h; path = nursenextdoor/Interfaces/GoogleSingleSignOnInterface.h; sourceTree = SOURCE_ROOT; };
+		2E330C031EFC87970056FC3F /* Auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Auth.h; sourceTree = "<group>"; };
+		2E330C041EFC87970056FC3F /* Auth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Auth.m; sourceTree = "<group>"; };
+		2E330C061EFC87970056FC3F /* GoogleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleController.h; sourceTree = "<group>"; };
+		2E330C071EFC87970056FC3F /* GoogleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleController.m; sourceTree = "<group>"; };
+		2E330C081EFC87970056FC3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E330C0A1EFC87970056FC3F /* GoogleViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleViewManager.h; sourceTree = "<group>"; };
+		2E330C0B1EFC87970056FC3F /* GoogleViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleViewManager.m; sourceTree = "<group>"; };
+		2E330C1F1EFC88320056FC3F /* UIViewFrameWorkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewFrameWorkModel.h; sourceTree = "<group>"; };
+		2E330C201EFC88320056FC3F /* UIViewFrameWorkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewFrameWorkModel.m; sourceTree = "<group>"; };
+		2E330C221EFC88320056FC3F /* UIViewManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewManagerProtocol.h; sourceTree = "<group>"; };
+		2E330C271EFC88870056FC3F /* slideViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = slideViewModel.h; sourceTree = "<group>"; };
+		2E330C281EFC88A90056FC3F /* slideViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slideViewModel.m; sourceTree = "<group>"; };
+		2E330C2A1EFC8A390056FC3F /* mainUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainUIViewController.h; sourceTree = "<group>"; };
+		2E330C2B1EFC8A390056FC3F /* mainUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainUIViewController.m; sourceTree = "<group>"; };
 		2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Google/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		2E9380BF1EF342E70093D296 /* Auth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Auth.h; sourceTree = "<group>"; };
-		2E9380C01EF342F50093D296 /* Auth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Auth.m; sourceTree = "<group>"; };
 		2EC2B7D01EF3402F0021CE60 /* nursenextdoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nursenextdoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC2B7D41EF3402F0021CE60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2EC2B7D61EF3402F0021CE60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,8 +82,6 @@
 		2EC2B7F71EF3402F0021CE60 /* nursenextdoorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nursenextdoorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC2B7FB1EF3402F0021CE60 /* nursenextdoorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nursenextdoorUITests.m; sourceTree = "<group>"; };
 		2EC2B7FD1EF3402F0021CE60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EC816CD1EF357E500B3E644 /* GoogleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoogleController.m; path = GoogleController/GoogleController.m; sourceTree = "<group>"; };
-		2EC816CF1EF357F700B3E644 /* GoogleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GoogleController.h; path = GoogleController/GoogleController.h; sourceTree = "<group>"; };
 		446EC59F7C06B34E0DF1C868 /* libPods-nursenextdoor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nursenextdoor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		521A51182D3698D3E0759524 /* libPods-nursenextdoorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nursenextdoorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E8B849002B11E5373D8C87 /* Pods-nursenextdoor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoor/Pods-nursenextdoor.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,69 +141,96 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		2E5246E31EF4A3100072998A /* UIViewFramework */ = {
+		2E330C011EFC87970056FC3F /* Google */ = {
 			isa = PBXGroup;
 			children = (
-				2E5246E41EF4A3100072998A /* Models */,
-				2E5246E71EF4A3100072998A /* Protocols */,
-				2E5246E91EF4A3100072998A /* Services */,
+				2E330C021EFC87970056FC3F /* Auth */,
+				2E330C051EFC87970056FC3F /* GoogleController */,
+				2E330C081EFC87970056FC3F /* GoogleService-Info.plist */,
+				2E330C091EFC87970056FC3F /* GoogleViewManager */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
+		2E330C021EFC87970056FC3F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2E330C031EFC87970056FC3F /* Auth.h */,
+				2E330C041EFC87970056FC3F /* Auth.m */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		2E330C051EFC87970056FC3F /* GoogleController */ = {
+			isa = PBXGroup;
+			children = (
+				2E330C061EFC87970056FC3F /* GoogleController.h */,
+				2E330C071EFC87970056FC3F /* GoogleController.m */,
+			);
+			path = GoogleController;
+			sourceTree = "<group>";
+		};
+		2E330C091EFC87970056FC3F /* GoogleViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				2E330C0A1EFC87970056FC3F /* GoogleViewManager.h */,
+				2E330C0B1EFC87970056FC3F /* GoogleViewManager.m */,
+			);
+			path = GoogleViewManager;
+			sourceTree = "<group>";
+		};
+		2E330C1C1EFC88320056FC3F /* UIViewFramework */ = {
+			isa = PBXGroup;
+			children = (
+				2E330C1E1EFC88320056FC3F /* Models */,
+				2E330C1D1EFC88320056FC3F /* Controllers */,
+				2E330C241EFC88320056FC3F /* Views */,
+				2E330C211EFC88320056FC3F /* Protocols */,
+				2E330C231EFC88320056FC3F /* Services */,
 			);
 			path = UIViewFramework;
 			sourceTree = "<group>";
 		};
-		2E5246E41EF4A3100072998A /* Models */ = {
+		2E330C1D1EFC88320056FC3F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2E5246E51EF4A3100072998A /* UIViewFrameWorkModel.h */,
-				2E5246E61EF4A3100072998A /* UIViewFrameWorkModel.m */,
+				2E330C2A1EFC8A390056FC3F /* mainUIViewController.h */,
+				2E330C2B1EFC8A390056FC3F /* mainUIViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2E330C1E1EFC88320056FC3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E330C1F1EFC88320056FC3F /* UIViewFrameWorkModel.h */,
+				2E330C201EFC88320056FC3F /* UIViewFrameWorkModel.m */,
+				2E330C271EFC88870056FC3F /* slideViewModel.h */,
+				2E330C281EFC88A90056FC3F /* slideViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		2E5246E71EF4A3100072998A /* Protocols */ = {
+		2E330C211EFC88320056FC3F /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				2E5246E81EF4A3100072998A /* UIViewManagerProtocol.h */,
+				2E330C221EFC88320056FC3F /* UIViewManagerProtocol.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		2E5246E91EF4A3100072998A /* Services */ = {
+		2E330C231EFC88320056FC3F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				2E5246EA1EF4A3100072998A /* UITableViewControllerCustimized.h */,
-				2E5246EB1EF4A3100072998A /* UITableViewControllerCustimized.m */,
-				2E5246EC1EF4A3100072998A /* UIViewManager.h */,
-				2E5246ED1EF4A3100072998A /* UIViewManager.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		2E7002D91EFB2FC100D3438B /* UIManager */ = {
+		2E330C241EFC88320056FC3F /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = UIManager;
-			sourceTree = "<group>";
-		};
-		2E74DD921EF730CF00CBA7E6 /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				2E74DD951EF731D500CBA7E6 /* GoogleSingleSignOnInterface.h */,
-				2E74DD931EF7310B00CBA7E6 /* GoogleSingleSignOnInterface.m */,
-			);
-			name = Interfaces;
-			sourceTree = "<group>";
-		};
-		2E9380BC1EF342BB0093D296 /* Google */ = {
-			isa = PBXGroup;
-			children = (
-				2E5246E31EF4A3100072998A /* UIViewFramework */,
-				2EC816CC1EF357C900B3E644 /* GoogleController */,
-				2E9380BF1EF342E70093D296 /* Auth.h */,
-				2E9380C01EF342F50093D296 /* Auth.m */,
-			);
-			path = Google;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		2EC2B7C71EF3402F0021CE60 = {
@@ -232,8 +258,8 @@
 		2EC2B7D21EF3402F0021CE60 /* nursenextdoor */ = {
 			isa = PBXGroup;
 			children = (
-				2E7002D91EFB2FC100D3438B /* UIManager */,
-				2E9380BC1EF342BB0093D296 /* Google */,
+				2E330C1C1EFC88320056FC3F /* UIViewFramework */,
+				2E330C011EFC87970056FC3F /* Google */,
 				2EC2B7D61EF3402F0021CE60 /* AppDelegate.h */,
 				2EC2B7D71EF3402F0021CE60 /* AppDelegate.m */,
 				2EC2B7D91EF3402F0021CE60 /* ViewController.h */,
@@ -273,18 +299,6 @@
 				2EC2B7FD1EF3402F0021CE60 /* Info.plist */,
 			);
 			path = nursenextdoorUITests;
-			sourceTree = "<group>";
-		};
-		2EC816CC1EF357C900B3E644 /* GoogleController */ = {
-			isa = PBXGroup;
-			children = (
-				2E74DD921EF730CF00CBA7E6 /* Interfaces */,
-				2EC816CF1EF357F700B3E644 /* GoogleController.h */,
-				2EC816CD1EF357E500B3E644 /* GoogleController.m */,
-				2E5246E01EF4982F0072998A /* GoogleViewManager.h */,
-				2E5246E11EF4983B0072998A /* GoogleViewManager.m */,
-			);
-			name = GoogleController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +421,7 @@
 			files = (
 				2EC2B7E61EF3402F0021CE60 /* LaunchScreen.storyboard in Resources */,
 				2E9380BE1EF342BB0093D296 /* GoogleService-Info.plist in Resources */,
+				2E330C0E1EFC87970056FC3F /* GoogleService-Info.plist in Resources */,
 				2EC2B7E31EF3402F0021CE60 /* Assets.xcassets in Resources */,
 				2EC2B7DE1EF3402F0021CE60 /* Main.storyboard in Resources */,
 			);
@@ -571,16 +586,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E9380C11EF342F50093D296 /* Auth.m in Sources */,
-				2E5246EE1EF4A3110072998A /* UIViewFrameWorkModel.m in Sources */,
 				2EC2B7DB1EF3402F0021CE60 /* ViewController.m in Sources */,
-				2E74DD941EF7310B00CBA7E6 /* GoogleSingleSignOnInterface.m in Sources */,
-				2EC816CE1EF357E500B3E644 /* GoogleController.m in Sources */,
+				2E330C261EFC88320056FC3F /* UIViewFrameWorkModel.m in Sources */,
+				2E330C291EFC88A90056FC3F /* slideViewModel.m in Sources */,
+				2E330C0D1EFC87970056FC3F /* GoogleController.m in Sources */,
 				2EC2B7D81EF3402F0021CE60 /* AppDelegate.m in Sources */,
+				2E330C0C1EFC87970056FC3F /* Auth.m in Sources */,
 				2EC2B7E11EF3402F0021CE60 /* nursenextdoor.xcdatamodeld in Sources */,
-				2E5246E21EF4983B0072998A /* GoogleViewManager.m in Sources */,
-				2E5246EF1EF4A3110072998A /* UITableViewControllerCustimized.m in Sources */,
-				2E5246F01EF4A3110072998A /* UIViewManager.m in Sources */,
+				2E330C0F1EFC87970056FC3F /* GoogleViewManager.m in Sources */,
+				2E330C2C1EFC8A390056FC3F /* mainUIViewController.m in Sources */,
 				2EC2B7D51EF3402F0021CE60 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
