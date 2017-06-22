@@ -11,7 +11,7 @@
 #import "GoogleViewManager.h"
 #import "Firebase.h"
 
-#import "mainUIViewController.h"
+#import "MainUIViewController.h"
 
 @import GoogleSignIn;
 
@@ -20,13 +20,13 @@
 @interface GoogleViewManager ()
 
 
-@property(strong, nonatomic) mainUIViewController *  mainUIViewControllerMember;
+@property(strong, nonatomic) MainUIViewController *  mainUIViewControllerMember;
 @end
 
 @implementation GoogleViewManager
 
 // constructure:
-//{mainUIViewControllerMember}
+//{MainUIViewControllerMember}
 
 - (instancetype)init
 {

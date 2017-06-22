@@ -8,7 +8,7 @@
 
 #ifndef slideViewModel_h
 #define slideViewModel_h
-@interface slideViewModel : NSObject
+@interface SlideViewModel : NSObject
 
 @end
 

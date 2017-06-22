@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "slideViewModel.h"
+#import "SlideViewModel.h"
 
 
-@implementation slideViewModel
+@implementation SlideViewModel
 
 - (instancetype)init
 {

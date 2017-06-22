@@ -9,13 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 //#import "UITableViewControllerCustimized.h"
-#import "mainUIViewController.h"
+#import "MainUIViewController.h"
 #import "UIViewFrameWorkModel.h"
 @import Firebase;
 @import FirebaseCore;
 @import GoogleSignIn;
 
-@implementation mainUIViewController
+@implementation MainUIViewController
 - (instancetype)init
 {
     self = [super init];

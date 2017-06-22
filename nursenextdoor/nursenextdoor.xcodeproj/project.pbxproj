@@ -12,8 +12,8 @@
 		2E330C0E1EFC87970056FC3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E330C081EFC87970056FC3F /* GoogleService-Info.plist */; };
 		2E330C0F1EFC87970056FC3F /* GoogleViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C0B1EFC87970056FC3F /* GoogleViewManager.m */; };
 		2E330C261EFC88320056FC3F /* UIViewFrameWorkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C201EFC88320056FC3F /* UIViewFrameWorkModel.m */; };
-		2E330C291EFC88A90056FC3F /* slideViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C281EFC88A90056FC3F /* slideViewModel.m */; };
-		2E330C2C1EFC8A390056FC3F /* mainUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C2B1EFC8A390056FC3F /* mainUIViewController.m */; };
+		2E330C291EFC88A90056FC3F /* SlideViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C281EFC88A90056FC3F /* SlideViewModel.m */; };
+		2E330C2C1EFC8A390056FC3F /* MainUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C2B1EFC8A390056FC3F /* MainUIViewController.m */; };
 		2E9380BE1EF342BB0093D296 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */; };
 		2EC2B7D51EF3402F0021CE60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7D41EF3402F0021CE60 /* main.m */; };
 		2EC2B7D81EF3402F0021CE60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7D71EF3402F0021CE60 /* AppDelegate.m */; };
@@ -60,10 +60,10 @@
 		2E330C1F1EFC88320056FC3F /* UIViewFrameWorkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewFrameWorkModel.h; sourceTree = "<group>"; };
 		2E330C201EFC88320056FC3F /* UIViewFrameWorkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewFrameWorkModel.m; sourceTree = "<group>"; };
 		2E330C221EFC88320056FC3F /* UIViewManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewManagerProtocol.h; sourceTree = "<group>"; };
-		2E330C271EFC88870056FC3F /* slideViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = slideViewModel.h; sourceTree = "<group>"; };
-		2E330C281EFC88A90056FC3F /* slideViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slideViewModel.m; sourceTree = "<group>"; };
-		2E330C2A1EFC8A390056FC3F /* mainUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainUIViewController.h; sourceTree = "<group>"; };
-		2E330C2B1EFC8A390056FC3F /* mainUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainUIViewController.m; sourceTree = "<group>"; };
+		2E330C271EFC88870056FC3F /* SlideViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideViewModel.h; sourceTree = "<group>"; };
+		2E330C281EFC88A90056FC3F /* SlideViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideViewModel.m; sourceTree = "<group>"; };
+		2E330C2A1EFC8A390056FC3F /* MainUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainUIViewController.h; sourceTree = "<group>"; };
+		2E330C2B1EFC8A390056FC3F /* MainUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainUIViewController.m; sourceTree = "<group>"; };
 		2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Google/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2EC2B7D01EF3402F0021CE60 /* nursenextdoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nursenextdoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC2B7D41EF3402F0021CE60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -194,8 +194,8 @@
 		2E330C1D1EFC88320056FC3F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2E330C2A1EFC8A390056FC3F /* mainUIViewController.h */,
-				2E330C2B1EFC8A390056FC3F /* mainUIViewController.m */,
+				2E330C2A1EFC8A390056FC3F /* MainUIViewController.h */,
+				2E330C2B1EFC8A390056FC3F /* MainUIViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -205,8 +205,8 @@
 			children = (
 				2E330C1F1EFC88320056FC3F /* UIViewFrameWorkModel.h */,
 				2E330C201EFC88320056FC3F /* UIViewFrameWorkModel.m */,
-				2E330C271EFC88870056FC3F /* slideViewModel.h */,
-				2E330C281EFC88A90056FC3F /* slideViewModel.m */,
+				2E330C271EFC88870056FC3F /* SlideViewModel.h */,
+				2E330C281EFC88A90056FC3F /* SlideViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -588,13 +588,13 @@
 			files = (
 				2EC2B7DB1EF3402F0021CE60 /* ViewController.m in Sources */,
 				2E330C261EFC88320056FC3F /* UIViewFrameWorkModel.m in Sources */,
-				2E330C291EFC88A90056FC3F /* slideViewModel.m in Sources */,
+				2E330C291EFC88A90056FC3F /* SlideViewModel.m in Sources */,
 				2E330C0D1EFC87970056FC3F /* GoogleController.m in Sources */,
 				2EC2B7D81EF3402F0021CE60 /* AppDelegate.m in Sources */,
 				2E330C0C1EFC87970056FC3F /* Auth.m in Sources */,
 				2EC2B7E11EF3402F0021CE60 /* nursenextdoor.xcdatamodeld in Sources */,
 				2E330C0F1EFC87970056FC3F /* GoogleViewManager.m in Sources */,
-				2E330C2C1EFC8A390056FC3F /* mainUIViewController.m in Sources */,
+				2E330C2C1EFC8A390056FC3F /* MainUIViewController.m in Sources */,
 				2EC2B7D51EF3402F0021CE60 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
