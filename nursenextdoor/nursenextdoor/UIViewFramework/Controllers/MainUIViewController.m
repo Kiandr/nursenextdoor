@@ -16,16 +16,13 @@
 @import GoogleSignIn;
 
 @implementation MainUIViewController
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
 
     }
     return self;
 }
-
-
 -(UIView*)  mainViewInit:           (UIViewFrameWorkModel*)     localUIViewFrameWorkModel setBrandColour:(UIColor*) locBrandColour{
     UIView *tempView = [[UIView alloc] init];
     tempView.backgroundColor = locBrandColour;
@@ -57,7 +54,6 @@
 
     return tempView;
 }
-
 -(UIView*)  mainViewUserProfile:  (UIViewFrameWorkModel*)     localUIViewFrameWorkModel setBrandColour:(UIColor*) locBrandColour{
     UIView *tempView = [[UIView alloc] init];
     tempView.backgroundColor = locBrandColour;
@@ -233,7 +229,6 @@
 
     return localUIViewFrameWorkModel;
 }
-//addGSSIButton
 -(UIView*)  addGSSIButton:     (UIViewFrameWorkModel*)     localUIViewFrameWorkModel {
 
 
@@ -294,7 +289,6 @@
     
     return uiBrandFooterView;
 }
- // addUerProfile
 -(UIView*)  addUerProfile:     (UIViewFrameWorkModel*)     localUIViewFrameWorkModel {
 
 
