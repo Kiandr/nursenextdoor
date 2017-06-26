@@ -8,7 +8,17 @@
 
 #ifndef slideViewModel_h
 #define slideViewModel_h
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 @interface SlideViewModel : NSObject
+@property (nonatomic, strong) UIView* userProfile;
+@property (nonatomic, strong) UIView* Patients;
+@property (nonatomic, strong) UIView* TakeAnExam;
+@property (nonatomic, strong) UIView* Notifications;
+@property (nonatomic, strong) UIView* Map;
+
+
 
 @end
 

@@ -12,6 +12,14 @@
 
 @implementation SlideViewModel
 
+/*
+ Author: Kian D.Rad
+ Date:   Jun 23rd 2017
+ README: This is a table view, slides from left to right, and this contains rfferences to navigate within the app.
+ 
+ */
+
+
 - (instancetype)init
 {
     self = [super init];

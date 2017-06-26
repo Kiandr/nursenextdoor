@@ -43,8 +43,10 @@
 
 
 
-    return _mainUIViewControllerMember.buildFirstPageViewAddGoogleSingInButton;
-
+ //   return _mainUIViewControllerMember.buildFirstPageViewAddGoogleSingInButton;
+    @throw [NSException exceptionWithName:NSInternalInconsistencyException
+                                   reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
+                                 userInfo:nil];
 
 }
 
@@ -53,8 +55,9 @@
     
 
 
-    return _mainUIViewControllerMember.buildUserProfile;
-
+    @throw [NSException exceptionWithName:NSInternalInconsistencyException
+                                   reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
+                                 userInfo:nil];
 }
 
 @end

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UIViewManagerProtocol.h"
 #import "UIViewFrameWorkModel.h"
+#import "SlideViewModel.h"
 @import Firebase;
 @import GoogleSignIn;
 
@@ -22,16 +23,21 @@
 @property (nonatomic, strong) UIColor*                  nNDBrandColour;
 @property (nonatomic, strong) UIViewFrameWorkModel*     frameWorkModel;
 @property (nonatomic, strong) UIDatePicker* UIDatePickerGlobarlVar;
-
+@property (nonatomic, strong) SlideViewModel* slideViewModel;
+@property (nonatomic, strong) UIView* masterView;
 
 
 // Main function available to viewController to deploy assets
 - (id)      init;
-- (UIView*) buildAViewAndLoadIntoMainViewParameteizedAndDatePicker;
-- (void)    callBackFunctionFromButton:(NSString*) someInput;
-- (void)    buildAndLoadUITableView;
-- (UIView*) buildFirstPageViewAddGoogleSingInButton;
-- (UIView*) buildUserProfile;
+//- (UIView*) buildAViewAndLoadIntoMainViewParameteizedAndDatePicker;
+//- (void)    callBackFunctionFromButton:(NSString*) someInput;
+//- (void)    buildAndLoadUITableView;
+//- (UIView*) buildFirstPageViewAddGoogleSingInButton;
+//- (UIView*) buildUserProfile;
+- (UIView*)  mainViewInitMultiScreen;
+- (instancetype)initWithSlideViewModel;
+-(void) loadUserProfileView;
+
 
 
 

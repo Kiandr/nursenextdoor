@@ -8,20 +8,61 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-//#import "UITableViewControllerCustimized.h"
 #import "MainUIViewController.h"
 #import "UIViewFrameWorkModel.h"
+#import "SlideViewModel.h"
 @import Firebase;
 @import FirebaseCore;
 @import GoogleSignIn;
 
 @implementation MainUIViewController
+
+#pragma Cunstroctors with Value
 - (instancetype)init {
     self = [super init];
     if (self) {
 
+
     }
     return self;
+}
+- (instancetype)initWithSlideViewModel {
+/*
+ Author: Kian D.Rad
+ Date:   Jun 23rd 2017
+ README: This is an initializer for the Slider View. Once the view is initailized, then the object will hold 
+        a refference to all of the internal uiviews. Thus, you can load and unload each of those views into 
+        the general UIViewMain holder. bring on top each other on demand.
+ */
+
+    self = [super init];
+    if (self) {
+                _slideViewModel = [[SlideViewModel alloc] init];
+                _slideViewModel.userProfile     = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+                _slideViewModel.userProfile = [UIColor yellowColor];
+
+                _slideViewModel.Patients        = [[UIView alloc] init];
+                _slideViewModel.TakeAnExam      = [[UIView alloc] init];
+                _slideViewModel.Notifications   = [[UIView alloc] init];
+                _slideViewModel.Map             = [[UIView alloc] init];
+                _masterView                     = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+                _masterView.backgroundColor = [UIColor blueColor];
+
+
+
+
+
+    }
+    return self;
+}
+
+
+
+
+
+-(UIView*) mainViewInitMultiScreen{
+    return _masterView;
+
 }
 -(UIView*)  mainViewInit:           (UIViewFrameWorkModel*)     localUIViewFrameWorkModel setBrandColour:(UIColor*) locBrandColour{
     UIView *tempView = [[UIView alloc] init];
@@ -375,12 +416,47 @@
 
 
 };
-@end
 
+
+
+#pragma Controller Views Initializers
+-(UIView*)InitalizeloadUserProfileView{
+
+    // Uiview
+    UIView *aView = [[UIView alloc]initWithFrame:CGRectMake(0,0,100,100)];
+    aView.backgroundColor = [UIColor blueColor];
+
+    return aView;
+
+
+
+}
+# pragma Controllers 
+-(void) loadUserProfileView{
 /*
- Notes:
-    // Refference:                          http://stackoverflow.com/questions/30728062/add-views-in-uistackview-programmatically
-    // How to change to a date only mode    http://stackoverflow.com/questions/15119565/showing-a-particular-date-in-uidatepicker-in-uidatepickermodedate-on-the-iphone
+ Authos: Kian D.Rad
+ Date: 
+ README: Once this function is loaded, it will load the usr profile. Have not thought how to load it 
+        and what is needed to load it, maybe a single UIView should be file. 
+ 
+ 
+
+ @property (nonatomic, strong) UIView* userProfile;
+ @property (nonatomic, strong) UIView* Patients;
+ @property (nonatomic, strong) UIView* TakeAnExam;
+ @property (nonatomic, strong) UIView* Notifications;
+ @property (nonatomic, strong) UIView* Map;
  */
+
+
+    _masterView = _slideViewModel.userProfile;
+}
+-(void) loadPatientsView{};
+-(void) loadTakeExamView{};
+-(void) loadNotificationView{};
+-(void) loadMapView{};
+
+
+@end
 
 

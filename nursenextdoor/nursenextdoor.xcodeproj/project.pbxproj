@@ -147,10 +147,10 @@
 		2E330C011EFC87970056FC3F /* Google */ = {
 			isa = PBXGroup;
 			children = (
+				2E330C091EFC87970056FC3F /* GoogleViewManager */,
 				2E330C021EFC87970056FC3F /* Auth */,
 				2E330C051EFC87970056FC3F /* GoogleController */,
 				2E330C081EFC87970056FC3F /* GoogleService-Info.plist */,
-				2E330C091EFC87970056FC3F /* GoogleViewManager */,
 			);
 			path = Google;
 			sourceTree = "<group>";
