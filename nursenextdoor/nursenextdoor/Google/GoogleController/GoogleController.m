@@ -22,28 +22,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"Google Controller was loaded");
 
-    // manage and build view
-    // _googleViewManager = [[GoogleViewManager alloc] init];
-
-    // manage multiViewControoler
     _mainViewController = [[MainUIViewController alloc]initWithSlideViewModel];
-    // This is Google View
-   // [self.view addSubview:_googleViewManager.initializetWithGIDSignInButton];
 
-    //
-    [self.view addSubview:_mainViewController.mainViewInitMultiScreen];
-
-    // This is the UserPofile View
-    //[self.view addSubview:_googleViewManager.mainViewUserProfile];
+    //[self.view addSubview:_mainViewController.AddMainSubView];
 
     // Google Single Sing In
     [GIDSignIn sharedInstance].uiDelegate = self;
-    // [[GIDSignIn sharedInstance] signIn];
 
-    // call this logout
-    // [[GIDSignIn sharedInstance] signOut];
+    // Google Sing Sing In Login As son as the app is being loaded.
+    // This method will keep the app logined in constantly.
+    [[GIDSignIn sharedInstance] signIn];
+
 
 }
 
@@ -88,7 +78,7 @@
 
 }
 - (IBAction)action:(id)sender {
-    [_mainViewController.loadUserProfileView];
+    [_mainViewController loadUserProfileView];
 
 }
     

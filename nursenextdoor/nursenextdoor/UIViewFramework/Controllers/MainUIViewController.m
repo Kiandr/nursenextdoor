@@ -11,6 +11,7 @@
 #import "MainUIViewController.h"
 #import "UIViewFrameWorkModel.h"
 #import "SlideViewModel.h"
+#import "MasterUIViewDataModel.h"
 @import Firebase;
 @import FirebaseCore;
 @import GoogleSignIn;
@@ -26,7 +27,7 @@
     }
     return self;
 }
-- (instancetype)initWithSlideViewModel {
+- (instancetype)initWithAllAvailableSubViews {
 /*
  Author: Kian D.Rad
  Date:   Jun 23rd 2017
@@ -38,15 +39,14 @@
     self = [super init];
     if (self) {
                 _slideViewModel = [[SlideViewModel alloc] init];
-                _slideViewModel.userProfile     = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-                _slideViewModel.userProfile = [UIColor yellowColor];
+                _slideViewModel.userProfileUIView     = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+                _slideViewModel.PatientsUIView        = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+                _slideViewModel.TakeAnExamUIView      = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+                _slideViewModel.NotificationsUIView   = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+                _slideViewModel.MapsUIView            = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
 
-                _slideViewModel.Patients        = [[UIView alloc] init];
-                _slideViewModel.TakeAnExam      = [[UIView alloc] init];
-                _slideViewModel.Notifications   = [[UIView alloc] init];
-                _slideViewModel.Map             = [[UIView alloc] init];
-                _masterView                     = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-                _masterView.backgroundColor = [UIColor blueColor];
+
+
 
 
 
@@ -55,11 +55,6 @@
     }
     return self;
 }
-
-
-
-
-
 -(UIView*) mainViewInitMultiScreen{
     return _masterView;
 
@@ -417,8 +412,6 @@
 
 };
 
-
-
 #pragma Controller Views Initializers
 -(UIView*)InitalizeloadUserProfileView{
 
@@ -431,7 +424,34 @@
 
 
 }
-# pragma Controllers 
+
+#pragma Controller Views Initializers
+- (UIView*) mainUIViewHasBeenInitalizedManagerRfferenceIsAvaiable{
+    /*
+     Author: Kian D.Rad
+     Date: Jun 28th 2017
+     README: This initalizes and buils all other UIVIews, then returns this directly to 
+            main View page, or super view. Eveything should be built and managed here, nothing take place any heigher.
+     ToDo: 1- Build other views and return them. add colour so we know what is happening. Also build the manager controller too. 
+
+     */
+    //  build a master UIVIew
+    // inite the Right view.
+    // RightUIVIew is UIView with guesture detection an a ponter to change dynamically the contianer UIVIew
+    // Init the LeftSlide view
+    // LeftUIVIew is a UITableView with Strings and pointers to all available UIVIews
+    // put animation put the gustrure detection
+    // return a data strucutre that has refference to
+
+    MasterUIViewDataModel *test = [[MasterUIViewDataModel alloc] init];
+    test.masterView= [[UIView alloc] initWithFrame:CGRectMake(0,0,100,100)];
+
+
+
+
+    return [[UIView alloc]initWithFrame:CGRectMake(0,0,100,100)];}
+
+# pragma Controllers
 -(void) loadUserProfileView{
 /*
  Authos: Kian D.Rad
@@ -449,7 +469,7 @@
  */
 
 
-    _masterView = _slideViewModel.userProfile;
+    _masterView = _slideViewModel.userProfileUIView;
 }
 -(void) loadPatientsView{};
 -(void) loadTakeExamView{};

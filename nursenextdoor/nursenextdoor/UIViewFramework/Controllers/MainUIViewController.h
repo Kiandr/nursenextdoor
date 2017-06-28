@@ -29,14 +29,14 @@
 
 // Main function available to viewController to deploy assets
 - (id)      init;
-//- (UIView*) buildAViewAndLoadIntoMainViewParameteizedAndDatePicker;
-//- (void)    callBackFunctionFromButton:(NSString*) someInput;
-//- (void)    buildAndLoadUITableView;
-//- (UIView*) buildFirstPageViewAddGoogleSingInButton;
-//- (UIView*) buildUserProfile;
+
 - (UIView*)  mainViewInitMultiScreen;
+
 - (instancetype)initWithSlideViewModel;
--(void) loadUserProfileView;
+
+- (void) loadUserProfileView;
+
+- (UIView*) mainUIViewHasBeenInitalizedManagerRfferenceIsAvaiable;
 
 
 

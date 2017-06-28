@@ -12,11 +12,11 @@
 #import <UIKit/UIKit.h>
 
 @interface SlideViewModel : NSObject
-@property (nonatomic, strong) UIView* userProfile;
-@property (nonatomic, strong) UIView* Patients;
-@property (nonatomic, strong) UIView* TakeAnExam;
-@property (nonatomic, strong) UIView* Notifications;
-@property (nonatomic, strong) UIView* Map;
+@property (nonatomic, strong) UIView* userProfileUIView;
+@property (nonatomic, strong) UIView* PatientsUIView;
+@property (nonatomic, strong) UIView* TakeAnExamUIView;
+@property (nonatomic, strong) UIView* NotificationsUIView;
+@property (nonatomic, strong) UIView* MapsUIView;
 
 
 
