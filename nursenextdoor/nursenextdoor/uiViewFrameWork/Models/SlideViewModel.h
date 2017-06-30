@@ -17,9 +17,6 @@
 @property (nonatomic, strong) UIView* TakeAnExamUIView;
 @property (nonatomic, strong) UIView* NotificationsUIView;
 @property (nonatomic, strong) UIView* MapsUIView;
-
-
-
 @end
 
 #endif /* slideViewModel_h */

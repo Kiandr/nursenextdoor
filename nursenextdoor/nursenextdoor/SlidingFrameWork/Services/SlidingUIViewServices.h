@@ -20,14 +20,11 @@
 @property(nonatomic, strong) UIView* rightUiView;
 @property(nonatomic, strong) UIView* masterUIView;
 @property(nonatomic, strong)UIButton *mainButton;
-
 @property(nonatomic, strong) NSMutableArray* leftUiViewTableView;
 
 - (instancetype) init;
 - (instancetype) buildMasterUiViewEntryPointToTheClass;
 - (instancetype) toggleBackAndForthTheSlidingUIView;
-
-
 
 @end
 

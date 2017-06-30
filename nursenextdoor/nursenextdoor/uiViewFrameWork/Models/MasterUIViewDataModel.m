@@ -12,16 +12,11 @@
 #import <UIKit/UIKit.h>
 
 @implementation MasterUIViewDataModel:NSObject
-
-
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
 
     }
     return self;
 }
-
-
 @end

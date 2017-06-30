@@ -18,17 +18,11 @@
  README: This is a table view, slides from left to right, and this contains rfferences to navigate within the app.
  
  */
-
-
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
 
     }
     return self;
 }
-
-
-
 @end

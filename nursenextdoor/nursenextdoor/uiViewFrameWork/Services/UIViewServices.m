@@ -491,7 +491,7 @@
 -(void) loadPatientsView{};
 -(void) loadTakeExamView{};
 -(void) loadNotificationView{};
--(void) loadMapView{};
+-(void) loadMapView{}
 //- (IBAction)toggleMainViews:(id)sender {
 //    [UIView transitionFromView:(displayingPrimary ? primaryView : secondaryView)
 //                        toView:(displayingPrimary ? secondaryView : primaryView)

@@ -30,7 +30,7 @@ bool animationIsInProgress;
 //SlidingUIViewDataModel
 #pragma Private Members
 
-- (UIView*)ButtonWithTitle  {
+- (UIView*)ButtonWithTitle {
 
 
 
@@ -50,11 +50,7 @@ bool animationIsInProgress;
         
         return uiBrandFooterView;
     }
-
-
-
-
--(instancetype) buildMasterUiViewEntryPointToTheClass{
+- (instancetype) buildMasterUiViewEntryPointToTheClass {
 
 /*
  Author: Kian D.Rad
@@ -84,7 +80,7 @@ bool animationIsInProgress;
     return _masterUIView;
 
 }
--(void)taggleUIViews:(id)sender{
+- (void)taggleUIViews:(id)sender {
 
 
     if (!animationIsInProgress){
@@ -115,9 +111,7 @@ bool animationIsInProgress;
 
 
 }
-// Called at the end of the preceding animation.
-- (void)showHideDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context
-{
+- (void)showHideDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
 
     [UIView beginAnimations:@"ShowHideView2" context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];

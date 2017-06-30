@@ -12,10 +12,7 @@
 #import <CoreData/CoreData.h>
 #import <UIKit/UIKit.h>
 
-@implementation MainLandingUIView 
-
-
-
+@implementation MainLandingUIView
 
 - (id)      init{
         /*
@@ -34,8 +31,6 @@
     }
     return self;
 }
-
-
 -(UIView*) testUIViewWorksWell{
     /*
      Author: Kian D.Rad
@@ -50,8 +45,5 @@
         else return [[UIView alloc] init];
 
 }
-
-
-
 
 @end

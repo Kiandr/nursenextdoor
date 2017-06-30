@@ -10,26 +10,20 @@
 #import "UIViewFrameWorkModel.h"
 
 @implementation UIViewFrameWorkModel : NSObject
-
-- (id) initWithUIviewSize: (UIView*) uiViewScreen
-{
+- (id) initWithUIviewSize: (UIView*) uiViewScreen {
     self = [super init];
     if (self)
     {
     }
     return self;
 }
-
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
 
     }
     return self;
 }
-
-
 @end
 
 
