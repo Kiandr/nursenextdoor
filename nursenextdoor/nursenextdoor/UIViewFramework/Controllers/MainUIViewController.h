@@ -11,6 +11,7 @@
 #import "UIViewFrameWorkModel.h"
 #import "SlideViewModel.h"
 #import "SlidingUIViewServices.h"
+#import "UIViewServices.h"
 @import Firebase;
 @import GoogleSignIn;
 
@@ -18,7 +19,7 @@
 
 @interface MainUIViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@property(strong, nonatomic) SlidingUIViewServices *service;
+@property(strong, nonatomic) UIViewServices *service;
 
 - (id) init;
 

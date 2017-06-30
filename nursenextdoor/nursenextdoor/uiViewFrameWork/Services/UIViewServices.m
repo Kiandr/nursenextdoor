@@ -21,7 +21,7 @@
 #import "SlideViewModel.h"
 #import "MasterUIViewDataModel.h"
 #import "UIViewServices.h"
-
+#import "MasterUIViewCLass.h"
 @import Firebase;
 @import FirebaseCore;
 @import GoogleSignIn;
@@ -67,6 +67,25 @@
     }
     return self;
 }
+
+
+- (instancetype)initWithSlidingUIViewDataModel{
+    self = [super init];
+    if (self) {
+
+        _slidingUIViewDataModel = [[SlidingUIViewDataModel alloc]initWithSlidingUIViewDataModel: nil];
+
+    }
+    return self;
+}
+
+
+
+- (UIView*)GetterSlidingUIViewDataModel{
+    return _slidingUIViewDataModel.masterUIViewClass.masterUIView;
+
+}
+
 -(UIView*) mainViewInitMultiScreen{
     return _masterView;
 
@@ -425,7 +444,7 @@
 };
 
 #pragma Controller Views Initializers
--(UIView*)InitalizeloadUserProfileView{
+- (UIView*)InitalizeloadUserProfileView{
 
     // Uiview
     UIView *aView = [[UIView alloc]initWithFrame:CGRectMake(0,0,100,100)];

@@ -13,6 +13,7 @@
 #import "SlideViewModel.h"
 #import "MasterUIViewDataModel.h"
 #import "SlidingUIViewServices.h"
+#import "UIViewServices.h"
 @import Firebase;
 @import FirebaseCore;
 @import GoogleSignIn;
@@ -30,8 +31,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _service = [[SlidingUIViewServices alloc]init];
-    UIView *testTheViewBuilder = [_service buildMasterUiViewEntryPointToTheClass];
+
+    // Construct services
+    _service = [[UIViewServices alloc]initWithSlidingUIViewDataModel];
+
+    // GetMaster UIVIew Model
+    UIView *testTheViewBuilder = [_service GetterSlidingUIViewDataModel];
+
     // Do any additional setup after loading the view, typically from a nib.
     [self.view addSubview:testTheViewBuilder];
 }

@@ -21,6 +21,7 @@
 #import "UIViewManagerProtocol.h"
 #import "UIViewFrameWorkModel.h"
 #import "SlideViewModel.h"
+#import "SlidingUIViewDataModel.h"
 @import Firebase;
 @import GoogleSignIn;
 
@@ -35,18 +36,17 @@
 @property (nonatomic, strong) UIDatePicker* UIDatePickerGlobarlVar;
 @property (nonatomic, strong) SlideViewModel* slideViewModel;
 @property (nonatomic, strong) UIView* masterView;
-
+@property (nonatomic, strong) SlidingUIViewDataModel *slidingUIViewDataModel;
 
 // Main function available to viewController to deploy assets
-- (id)      init;
+- (id) init;
+- (UIView*)  mainViewInitMultiScreenWithSlidingUIViewDataModel;
 
-- (UIView*)  mainViewInitMultiScreen;
-
-- (instancetype)initWithSlideViewModel;
+- (instancetype)initWithSlidingUIViewDataModel;
 
 - (void) loadUserProfileView;
-
 - (UIView*) mainUIViewHasBeenInitalizedManagerRfferenceIsAvaiable;
+- (UIView*)GetterSlidingUIViewDataModel;
 
 
 

@@ -15,6 +15,7 @@
 		2E330C291EFC88A90056FC3F /* SlideViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C281EFC88A90056FC3F /* SlideViewModel.m */; };
 		2E330C2C1EFC8A390056FC3F /* MainUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C2B1EFC8A390056FC3F /* MainUIViewController.m */; };
 		2E330C2F1EFC908F0056FC3F /* MainLandingUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C2E1EFC908F0056FC3F /* MainLandingUIView.m */; };
+		2E3C62C31F06D7FA0008A3FF /* MasterUIViewCLass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3C62C21F06D7FA0008A3FF /* MasterUIViewCLass.m */; };
 		2E5E2DC21F05755B00EAD603 /* SlidingUIViewDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E2DC11F05755B00EAD603 /* SlidingUIViewDataModel.m */; };
 		2E5E2E061F05A7BA00EAD603 /* SlidingUIViewServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E2E051F05A7BA00EAD603 /* SlidingUIViewServices.m */; };
 		2E790C601F04C74500758794 /* UIViewServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E790C5F1F04C74500758794 /* UIViewServices.m */; };
@@ -71,6 +72,8 @@
 		2E330C2B1EFC8A390056FC3F /* MainUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainUIViewController.m; sourceTree = "<group>"; };
 		2E330C2D1EFC90800056FC3F /* MainLandingUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainLandingUIView.h; path = nursenextdoor/UIViewFramework/Views/MainLandingUIView.h; sourceTree = SOURCE_ROOT; };
 		2E330C2E1EFC908F0056FC3F /* MainLandingUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainLandingUIView.m; sourceTree = "<group>"; };
+		2E3C62C11F06D7DC0008A3FF /* MasterUIViewCLass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MasterUIViewCLass.h; path = SlidingFrameWork/Models/MasterUIViewCLass.h; sourceTree = "<group>"; };
+		2E3C62C21F06D7FA0008A3FF /* MasterUIViewCLass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterUIViewCLass.m; path = SlidingFrameWork/Models/MasterUIViewCLass.m; sourceTree = "<group>"; };
 		2E5E2DBD1F056D0200EAD603 /* SlidingUIViewServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlidingUIViewServices.h; path = SlidingFrameWork/Services/SlidingUIViewServices.h; sourceTree = "<group>"; };
 		2E5E2DC01F0573AB00EAD603 /* SlidingUIViewDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlidingUIViewDataModel.h; path = SlidingFrameWork/Models/SlidingUIViewDataModel.h; sourceTree = "<group>"; };
 		2E5E2DC11F05755B00EAD603 /* SlidingUIViewDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SlidingUIViewDataModel.m; path = SlidingFrameWork/Models/SlidingUIViewDataModel.m; sourceTree = "<group>"; };
@@ -279,6 +282,8 @@
 			children = (
 				2E5E2DC01F0573AB00EAD603 /* SlidingUIViewDataModel.h */,
 				2E5E2DC11F05755B00EAD603 /* SlidingUIViewDataModel.m */,
+				2E3C62C11F06D7DC0008A3FF /* MasterUIViewCLass.h */,
+				2E3C62C21F06D7FA0008A3FF /* MasterUIViewCLass.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -657,6 +662,7 @@
 				2E330C291EFC88A90056FC3F /* SlideViewModel.m in Sources */,
 				2E330C0D1EFC87970056FC3F /* GoogleController.m in Sources */,
 				2EC2B7D81EF3402F0021CE60 /* AppDelegate.m in Sources */,
+				2E3C62C31F06D7FA0008A3FF /* MasterUIViewCLass.m in Sources */,
 				2E330C2F1EFC908F0056FC3F /* MainLandingUIView.m in Sources */,
 				2E9883F41F043E7300943962 /* MasterUIViewDataModel.m in Sources */,
 				2E330C0C1EFC87970056FC3F /* Auth.m in Sources */,
