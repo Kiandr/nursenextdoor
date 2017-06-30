@@ -10,34 +10,17 @@
 #import "UIViewManagerProtocol.h"
 #import "UIViewFrameWorkModel.h"
 #import "SlideViewModel.h"
+#import "SlidingUIViewServices.h"
 @import Firebase;
 @import GoogleSignIn;
 
 @class MainUIViewController;
 
-@interface MainUIViewController : UIView <UITableViewDelegate, UITableViewDataSource>
+@interface MainUIViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-// Properties
+@property(strong, nonatomic) SlidingUIViewServices *service;
 
-@property (nonatomic, strong) UITableView*              uITableViewComponent;
-@property (nonatomic, strong) UIColor*                  nNDBrandColour;
-@property (nonatomic, strong) UIViewFrameWorkModel*     frameWorkModel;
-@property (nonatomic, strong) UIDatePicker* UIDatePickerGlobarlVar;
-@property (nonatomic, strong) SlideViewModel* slideViewModel;
-@property (nonatomic, strong) UIView* masterView;
-
-
-// Main function available to viewController to deploy assets
-- (id)      init;
-
-- (UIView*)  mainViewInitMultiScreen;
-
-- (instancetype)initWithSlideViewModel;
-
-- (void) loadUserProfileView;
-
-- (UIView*) mainUIViewHasBeenInitalizedManagerRfferenceIsAvaiable;
-
+- (id) init;
 
 
 

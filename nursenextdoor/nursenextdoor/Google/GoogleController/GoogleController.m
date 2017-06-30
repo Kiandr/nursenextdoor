@@ -23,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    _mainViewController = [[MainUIViewController alloc]initWithSlideViewModel];
+    _mainViewController = [[MainUIViewController alloc]init];
 
     //[self.view addSubview:_mainViewController.AddMainSubView];
 
@@ -78,7 +78,7 @@
 
 }
 - (IBAction)action:(id)sender {
-    [_mainViewController loadUserProfileView];
+    //[_mainViewController loadUserProfileView];
 
 }
     

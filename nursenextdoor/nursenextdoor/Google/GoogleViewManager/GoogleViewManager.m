@@ -18,18 +18,13 @@
 
 
 @interface GoogleViewManager ()
-
-
 @property(strong, nonatomic) MainUIViewController *  mainUIViewControllerMember;
 @end
 
 @implementation GoogleViewManager
 
-// constructure:
-//{MainUIViewControllerMember}
 
-- (instancetype)init
-{
+- (instancetype)init{
     self = [super init];
     if (self) {
 
@@ -37,19 +32,16 @@
     return self;
 }
 
-
-
 - (UIView*) initializetWithGIDSignInButton{
 
-
+    return [[UIView alloc]init];
 
  //   return _mainUIViewControllerMember.buildFirstPageViewAddGoogleSingInButton;
-    @throw [NSException exceptionWithName:NSInternalInconsistencyException
-                                   reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
-                                 userInfo:nil];
+//    @throw [NSException exceptionWithName:NSInternalInconsistencyException
+//                                   reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
+//                                 userInfo:nil];
 
 }
-
 
 - (UIView*) mainViewUserProfile{
     
