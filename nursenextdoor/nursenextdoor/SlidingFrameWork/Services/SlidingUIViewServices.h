@@ -24,7 +24,7 @@
 
 - (instancetype) init;
 - (instancetype) buildMasterUiViewEntryPointToTheClass;
-- (instancetype) toggleBackAndForthTheSlidingUIView;
+//- (instancetype) toggleBackAndForthTheSlidingUIView;
 
 @end
 

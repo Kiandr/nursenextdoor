@@ -492,18 +492,4 @@
 -(void) loadTakeExamView{};
 -(void) loadNotificationView{};
 -(void) loadMapView{}
-//- (IBAction)toggleMainViews:(id)sender {
-//    [UIView transitionFromView:(displayingPrimary ? primaryView : secondaryView)
-//                        toView:(displayingPrimary ? secondaryView : primaryView)
-//                      duration:1.0
-//                       options:(displayingPrimary ? UIViewAnimationOptionTransitionFlipFromRight :
-//                                UIViewAnimationOptionTransitionFlipFromLeft)
-//                    completion:^(BOOL finished) {
-//                        if (finished) {
-//                            displayingPrimary = !displayingPrimary;
-//                        }
-//                    }];
-//}
-
-
 @end
