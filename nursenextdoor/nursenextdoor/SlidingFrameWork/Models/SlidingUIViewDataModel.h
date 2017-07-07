@@ -22,10 +22,16 @@
  Author: Kian D.Rad
  Date:   Jun 30th 2017
  README: The only UIView that travels is thet rightUIVIew.
- In order to keep the transition localized, we use two
- coorindates, A and B. A is the intial location of RighUIView
- and B respectively is the target location of RightUIView.
- At the Initalization, the A is the same as dynamic size of SuperView.
+        In order to keep the transition localized, we use two
+        coorindates, A and B. A is the intial location of RighUIView
+        and B respectively is the target location of RightUIView.
+        At the Initalization, the A is the same as dynamic size of SuperView.
+ ToDo: 
+    - Build the following UIViews dynamically 
+        1- UserProfiile 
+        2- TakeExame
+        3- Review Exams
+
  */
 @property(nonatomic,assign) NSMutableArray* mutableArrayPrtToHeader;
 
