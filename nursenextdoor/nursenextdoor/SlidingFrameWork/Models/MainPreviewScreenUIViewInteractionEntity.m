@@ -23,7 +23,7 @@
 }
 
 
-// masterUIViewDataStructure
+   // masterUIViewDataStructure
 - (instancetype) initWithMainPreviewScreenUIViewInteractionEntity:(MainPreviewScreenUIViewInteractionEntity*) model{
     self = [super init];
     if (self) {
@@ -35,5 +35,6 @@
     }
     return self;
 }
+
 @end
 

@@ -17,11 +17,13 @@
 
 @interface MainPreviewScreenUIViewInteractionEntity : NSObject
 /*
+ 
  Author:    Kian D.Rad
  Date:      July 7th 2017
  README:    This class contains individual components such as 
-            uibutton, gestures. For detail of available guestures please visit.
+            UIButton, gestures. For detail of available guestures please visit.
  https://developer.apple.com/ios/human-interface-guidelines/interaction/gestures/
+
  */
 
 
