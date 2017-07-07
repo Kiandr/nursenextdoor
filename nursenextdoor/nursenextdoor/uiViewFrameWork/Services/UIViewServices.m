@@ -82,7 +82,25 @@
 
 
 - (UIView*)GetterSlidingUIViewDataModel{
-    return _slidingUIViewDataModel.masterUIViewClass.masterUIView;
+/*
+ Auhto: Kian D.Rad
+ Date: July 7th 2017
+ README: This function is just calling a controller at UIFramework. 
+    The framework shall take care of nasty coding, and reader shall
+    be able to initalize that lib, only by includin the *.h files. 
+    The *.h files contain the structs and classes, required to move
+    cubes of data around, however, the reader wont need to take 
+    further action. Please reffer to controller view to examine the
+    detail of the function itself. At this point, reader is able to 
+    put a point into this, such that on debugger, a clear fully 
+    funtional UIView is able to be reviewed. For further detail 
+    please reffer to desing manual at: 
+    https://drive.google.com/file/d/0B1kNDgdfL1swQ2dDN0RzeDMxY0k/view?usp=sharing
+ ToDo: retrun _slidingUIViewDataModel.masterUIViewClass builts and operational
+ */
+
+
+    return nil;
 
 }
 
