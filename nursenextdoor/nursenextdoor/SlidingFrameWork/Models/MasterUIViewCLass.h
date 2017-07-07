@@ -18,6 +18,15 @@
 @interface MasterUIViewCLass:NSObject
 
 
+/*
+ Author: Kian D.Rad
+ Date:   July 7th 2017
+ README: Use this data strucutre, to build content of mainPewviewScreenUIView. 
+    The intention is to avoid "MAGIC SCRIPTS". Evey single line of this code shall
+    be easy undrestandable to others, transparent and self descriptive. If you have 
+    any question, please review the visual and colourful digaram of desing at kindr:
+    https://kindrsite.wordpress.com/2017/06/29/uiview-animation/
+ */
 typedef struct MasterUIViewDataStructure{
     __unsafe_unretained UIView  *UIView;
     __unsafe_unretained CGRect  Frame;
@@ -27,13 +36,13 @@ typedef struct MasterUIViewDataStructure{
 
 
 
-@property (nonatomic, strong) UIView    *masterUIView;
-@property (nonatomic, assign) CGRect    masterUIViewFrame;
-@property (nonatomic, assign) UIColor   *masterUIViewBackGroundColor;
+@property (nonatomic, strong) UIView    *mainPewviewScreenUIView;
+@property (nonatomic, assign) CGRect    mainPewviewScreenUIViewFrame;
+@property (nonatomic, assign) UIColor   *mainPewviewScreenUIViewBackGroundColor;
 
 // Master Initalizer:
 - (instancetype) init;
--(instancetype)initWithMasterUIViewDataStructureApplicationUIView: (UIView*) applicationUIView;
+- (instancetype) initWithMasterUIViewDataStructureApplicationUIView: (UIView*) applicationUIView;
 
 @end
 
