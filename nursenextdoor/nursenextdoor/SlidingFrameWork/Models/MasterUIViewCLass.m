@@ -27,9 +27,11 @@
     if (self) {
 
 
-        _masterUIView = [[UIView alloc] initWithFrame:(applicationUIView.frame)];
-        _masterUIViewFrame  = applicationUIView.frame;
-        _masterUIViewBackGroundColor = [UIColor greenColor];
+        _mainPewviewScreenUIView = [[UIView alloc] init];
+
+
+        _mainPewviewScreenUIView.frame  = applicationUIView.frame;
+        _mainPewviewScreenUIView.backgroundColor = [UIColor greenColor];
 
 
     }

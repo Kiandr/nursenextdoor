@@ -50,12 +50,13 @@
 
     self = [super init];
     if (self) {
-        _slideViewModel = [[SlideViewModel alloc] init];
-        _slideViewModel.userProfileUIView     = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-        _slideViewModel.PatientsUIView        = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-        _slideViewModel.TakeAnExamUIView      = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-        _slideViewModel.NotificationsUIView   = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-        _slideViewModel.MapsUIView            = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+//        _slideViewModel = [[SlideViewModel alloc] init];
+//        _slideViewModel.userProfileUIView     = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+//        _slideViewModel.PatientsUIView        = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+//        _slideViewModel.TakeAnExamUIView      = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+//        _slideViewModel.NotificationsUIView   = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+//        _slideViewModel.MapsUIView            = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+//        _slidingUIViewDataModel = [[SlidingUIViewDataModel alloc] initWithSlidingUIViewDataModel:_slidingUIViewDataModel];
 
 
 
@@ -73,7 +74,7 @@
     self = [super init];
     if (self) {
 
-        _slidingUIViewDataModel = [[SlidingUIViewDataModel alloc]initWithSlidingUIViewDataModel: nil];
+        _slidingUIViewDataModel = [[SlidingUIViewDataModel alloc] initWithSlidingUIViewDataModel:_slidingUIViewDataModel];
 
     }
     return self;
@@ -100,7 +101,10 @@
  */
 
 
-    return nil;
+    //UIView *test = _slidingUIViewDataModel.masterUIViewClass.mainPewviewScreenUIView;
+
+    return _slidingUIViewDataModel.masterUIViewClass.mainPewviewScreenUIView;
+
 
 }
 

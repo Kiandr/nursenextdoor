@@ -36,10 +36,10 @@
     _service = [[UIViewServices alloc]initWithSlidingUIViewDataModel];
 
     // GetMaster UIVIew Model
-    UIView *testTheViewBuilder = [_service GetterSlidingUIViewDataModel];
+    // UIView *testTheViewBuilder = [_service GetterSlidingUIViewDataModel];
 
     // Do any additional setup after loading the view, typically from a nib.
-    [self.view addSubview:testTheViewBuilder];
+    [self.view addSubview:[_service GetterSlidingUIViewDataModel]];
 }
 
 - (void)didReceiveMemoryWarning {
