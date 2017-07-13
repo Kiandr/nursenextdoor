@@ -78,14 +78,16 @@ bool animationIsInProgress;
         // this is the class for interaction components: it contains button and gesture
         _mainPreviewScreenUIViewInteractionEntity = [[MainPreviewScreenUIViewInteractionEntity alloc]initWithMainPreviewScreenUIViewInteractionEntityWithModel:_mainPreviewScreenUIViewInteractionEntity];
 
+        // _masterUIViewCLass.masterUIViewCLass.mainPewviewScreenUIView
+        _masterUIViewCLass = [[MasterUIViewCLass alloc] initWithMasterUIViewDataStructureApplicationUIView];
 
         // this is the main movable UIVIew that moves from a to b
-
+        UIView *test = _masterUIViewCLass.mainPewviewScreenUIView;
 
         //
         //_slidingUIViewDataModel.templateOfMasterUIView = [UIView alloc];
-        [_slidingUIViewDataModel.templateOfMasterUIView insertSubview:_masterUIViewCLass.masterUIViewCLass.mainPewviewScreenUIView atIndex:1];
-        [_slidingUIViewDataModel.templateOfMasterUIView insertSubview:_mainPreviewScreenUIViewInteractionEntity.bringOnSlidingMenueUIButton atIndex:0];
+        [_slidingUIViewDataModel.templateOfMasterUIView insertSubview: _masterUIViewCLass.mainPewviewScreenUIView atIndex:0];
+        [_slidingUIViewDataModel.templateOfMasterUIView insertSubview:_mainPreviewScreenUIViewInteractionEntity.bringOnSlidingMenueUIButton atIndex:1];
         
 
         
