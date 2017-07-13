@@ -38,7 +38,7 @@ typedef struct {
 
 // Public Properties:
 @property (strong, nonatomic) UIGestureRecognizer* tapGesturePropery;
-@property (strong, nonatomic) UIButton* bringOnSlidingMenueUIButtonStruct;
+@property (strong, nonatomic) UIButton* bringOnSlidingMenueUIButton;
 @property (strong,nonatomic) MainPreviewScreenUIViewInteractionEntity *mainPreviewScreenUIViewInteractionEntity;
 
 

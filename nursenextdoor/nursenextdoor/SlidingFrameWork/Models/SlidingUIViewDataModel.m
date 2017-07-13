@@ -35,12 +35,9 @@
 
         @try {
 
-            _masterUIViewClass = [[MasterUIViewCLass alloc] initWithMasterUIViewDataStructureApplicationUIView:([UIApplication sharedApplication].delegate.window)];
-
-            _slidingUIViewDataModel = self;
+            _templateOfMasterUIView = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
             incomingSlidingUIViewDataModel = self;
-            
-
+            _slidingUIViewDataModel = incomingSlidingUIViewDataModel;
 
         }
         @catch (NSException *exception) {

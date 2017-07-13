@@ -10,7 +10,8 @@
 #import <UIKit/UIKit.h>
 #import "SlidingUIViewDataModel.h"
 #import "SlidingUIViewServices.h"
-
+#import "MainPreviewScreenUIViewInteractionEntity.h"
+#import "MasterUIViewCLass.h"
 @implementation SlidingUIViewServices:NSObject
 
 bool animationIsInProgress;
@@ -20,6 +21,13 @@ bool animationIsInProgress;
 - (instancetype)init {
     self = [super init];
     if (self) {
+
+        // init SlidingUIViewDataModel it contains all UIVIews
+        _slidingUIViewDataModel = [[SlidingUIViewDataModel alloc]initWithSlidingUIViewDataModel:_slidingUIViewDataModel];
+
+        // this is the class for interaction components: it contains button and gesture
+         _mainPreviewScreenUIViewInteractionEntity = [[MainPreviewScreenUIViewInteractionEntity alloc]initWithMainPreviewScreenUIViewInteractionEntityWithModel:_mainPreviewScreenUIViewInteractionEntity];
+
 
 
     }
@@ -50,7 +58,7 @@ bool animationIsInProgress;
         
         return uiBrandFooterView;
     }
-- (instancetype) buildMasterUiViewEntryPointToTheClass {
+- (instancetype) initWithSlidingUIViewDataModel {
 
 /*
  Author: Kian D.Rad
@@ -60,96 +68,131 @@ bool animationIsInProgress;
  */
 
 
-    _leftUiView  = [[UIView alloc] initWithFrame:CGRectMake(0,0,500,500)];
-    _leftUiView.backgroundColor = [UIColor redColor];
-    _rightUiView = [[UIView alloc] initWithFrame:CGRectMake(0,0,500,500)];
-    _rightUiView.backgroundColor = [UIColor greenColor];
-    _masterUIView = [[UIView alloc]initWithFrame:CGRectMake(0,0,500,500)];
-    _masterUIView.backgroundColor = [UIColor clearColor];
-    _mainButton = [self ButtonWithTitle];
+    self = [super init];
+    if (self) {
 
-    [_rightUiView insertSubview:_mainButton atIndex:0];
+        // init SlidingUIViewDataModel it contains all UIVIews
+        //_slidingUIViewDataModel =
+        _slidingUIViewDataModel = [[SlidingUIViewDataModel alloc]initWithSlidingUIViewDataModel:_slidingUIViewDataModel];
 
-
+        // this is the class for interaction components: it contains button and gesture
+        _mainPreviewScreenUIViewInteractionEntity = [[MainPreviewScreenUIViewInteractionEntity alloc]initWithMainPreviewScreenUIViewInteractionEntityWithModel:_mainPreviewScreenUIViewInteractionEntity];
 
 
-    [_masterUIView insertSubview: _leftUiView atIndex:0];
-    [_masterUIView insertSubview:_rightUiView atIndex:1];
+        // this is the main movable UIVIew that moves from a to b
 
 
-    return _masterUIView;
+        //
+        //_slidingUIViewDataModel.templateOfMasterUIView = [UIView alloc];
+        [_slidingUIViewDataModel.templateOfMasterUIView insertSubview:_masterUIViewCLass.masterUIViewCLass.mainPewviewScreenUIView atIndex:1];
+        [_slidingUIViewDataModel.templateOfMasterUIView insertSubview:_mainPreviewScreenUIViewInteractionEntity.bringOnSlidingMenueUIButton atIndex:0];
+        
+
+        
+    }
+    return self;
+
 
 }
-- (void)taggleUIViews:(id)sender {
+
+
+
 
 /*
- Author: Kian D.RAd
- Date:   Jun 30th 2017
- README: Here, I only call private methods to perform transition on number of UIVIews, 
-        But, the actual position of X and Y (Coordinates) have been built in more generic 
-        manner, please have a look at those function to change transition direction.
+ Author: Kian D.Rad
+ Date: July 13th 2017
+ README: callBack Functions
  */
 
-
-
-
-    if (!animationIsInProgress){
-
-
-        // If its running dont do anything waite.
-        animationIsInProgress  = true;
-
-        // Transition sequence
-        [UIView beginAnimations:@"ShowHideView" context:nil];
-        [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-        [UIView setAnimationDuration:0.250];
-        [UIView setAnimationDelegate:self];
-        [UIView setAnimationDidStopSelector:@selector(showHideDidStop:finished:context:)];
-
-        // Make the animatable changes.
-        // _leftUiView.alpha = 1.0;
-        // _rightUiView.alpha = 0.0;
-
-
-        // Transition Direction
-        _rightUiView.frame = CGRectMake(100, 0, 500, 500);
-
-        // Commit the changes and perform the animation.
-        [UIView commitAnimations];
-    }
-    else {
-
-        UIButton * myButton = sender;
-        NSLog(@"did call arrive to taggleUIViews function by UIBotton:[%@], but it did not run!",myButton);
-
-    }
-
-
-}
-- (void)showHideDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
+//- (void)taggleUIViews:(id)sender {
+//
+///*
+// Author: Kian D.RAd
+// Date:   Jun 30th 2017
+// README: Here, I only call private methods to perform transition on number of UIVIews, 
+//        But, the actual position of X and Y (Coordinates) have been built in more generic 
+//        manner, please have a look at those function to change transition direction.
+// */
+//
+//
+//
+//
+//    if (!animationIsInProgress){
+//
+//
+//        // If its running dont do anything waite.
+//        animationIsInProgress  = true;
+//
+//        // Transition sequence
+//        [UIView beginAnimations:@"ShowHideView" context:nil];
+//        [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+//        [UIView setAnimationDuration:0.250];
+//        [UIView setAnimationDelegate:self];
+//        [UIView setAnimationDidStopSelector:@selector(showHideDidStop:finished:context:)];
+//
+//        // Make the animatable changes.
+//        // _leftUiView.alpha = 1.0;
+//        // _rightUiView.alpha = 0.0;
+//
+//
+//        // Transition Direction
+//        _rightUiView.frame = CGRectMake(100, 0, 500, 500);
+//
+//        // Commit the changes and perform the animation.
+//        [UIView commitAnimations];
+//    }
+//    else {
+//
+//        UIButton * myButton = sender;
+//        NSLog(@"did call arrive to taggleUIViews function by UIBotton:[%@], but it did not run!",myButton);
+//
+//    }
+//
+//
+//}
+//- (void)showHideDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
+//    /*
+//     Author: Kian D.RAd
+//     Date:   Jun 30th 2017
+//     README: This is a delegate like method that informs me, when the transition or 
+//     animation have been completed. So based on this accurately take the next step */
+//
+//    // Set book value to false, so the progam knows that the transition was finished.
+//    // This is for internal use, if you wanna use publicly use, the Objective C method.
+//     animationIsInProgress  = false;
+//
+//    // Test Animation
+//    [UIView beginAnimations:@"ShowHideView2" context:nil];
+//    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+//    [UIView setAnimationDuration:0.25];
+//    [UIView setAnimationDelay:0.5];
+//
+//    //    _rightUiView.alpha = 1.0;
+//    _rightUiView.frame = CGRectMake(0, 0, 500, 500);
+//
+//    [UIView commitAnimations];
+//
+//
+//}
+//
+//
+//
+//
+/*
+ Author: Kian D.Rad
+ Date: July 13th 2017
+ README: Getters and Setter;
+ */
+- (UIView*) getterMasterUIView{
     /*
-     Author: Kian D.RAd
-     Date:   Jun 30th 2017
-     README: This is a delegate like method that informs me, when the transition or 
-     animation have been completed. So based on this accurately take the next step */
+     Author: Kian D.Rad
+     Date:   July 13th 2017
+     ReadMe: Get master UIView, abstraction
+     */
 
-    // Set book value to false, so the progam knows that the transition was finished.
-    // This is for internal use, if you wanna use publicly use, the Objective C method.
-     animationIsInProgress  = false;
+    //UIView *t = _slidingUIViewDataModel.masterUIViewClass.mainPewviewScreenUIView;
+    return _slidingUIViewDataModel.templateOfMasterUIView;
 
-    // Test Animation
-    [UIView beginAnimations:@"ShowHideView2" context:nil];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-    [UIView setAnimationDuration:0.25];
-    [UIView setAnimationDelay:0.5];
-
-    //    _rightUiView.alpha = 1.0;
-    _rightUiView.frame = CGRectMake(0, 0, 500, 500);
-
-    [UIView commitAnimations];
-
-
-}
-
+};
 
 @end

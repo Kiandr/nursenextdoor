@@ -39,22 +39,18 @@
     if (self) {
 
         _tapGesturePropery = [[UIGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
-        _bringOnSlidingMenueUIButtonStruct = [[UIButton alloc] initWithFrame:CGRectMake(0,0,100,100)];
+        _bringOnSlidingMenueUIButton = [[UIButton alloc] initWithFrame:CGRectMake(0,0,100,100)];
 
 
 
 
-        [_bringOnSlidingMenueUIButtonStruct addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventAllEvents];
-        [_bringOnSlidingMenueUIButtonStruct setFrame:CGRectMake(52, 252, 215, 40)];
-        [_bringOnSlidingMenueUIButtonStruct setTitle:@"Login" forState:UIControlStateNormal];
-        [_bringOnSlidingMenueUIButtonStruct setExclusiveTouch:YES];
-
-        // if you like to add backgroundImage else no need
-        //[_bringOnSlidingMenueUIButtonStruct setbackgroundImage:[UIImage imageNamed:@"XXX.png"] forState:UIControlStateNormal];
-
-
-
-
+        [_bringOnSlidingMenueUIButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventAllEvents];
+        [_bringOnSlidingMenueUIButton setFrame:CGRectMake(52, 252, 100, 100)];
+        [_bringOnSlidingMenueUIButton setTitle:@"Login" forState:UIControlStateNormal];
+        [_bringOnSlidingMenueUIButton  setTitle:@"clicked!" forState:UIControlStateSelected];
+        [_bringOnSlidingMenueUIButton  setExclusiveTouch:YES];
+        [_bringOnSlidingMenueUIButton  backgroundImageForState:UIControlStateNormal];
+        _bringOnSlidingMenueUIButton.backgroundColor =  [UIColor redColor];
 
         _mainPreviewScreenUIViewInteractionEntity = self;
         model = self;
@@ -75,7 +71,7 @@
 
 -(void) buttonClicked:(UIButton*)sender
 {
-    NSLog(@"you clicked on button %ld", (long)sender.tag);
+    NSLog(@"you clicked on button %ld", (long)sender);
 }
 
 @end

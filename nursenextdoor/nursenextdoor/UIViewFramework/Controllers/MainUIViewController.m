@@ -36,7 +36,7 @@
     _service = [[UIViewServices alloc]initWithSlidingUIViewDataModel:_slidingUIViewDataModel];
 
     // GetMaster UIVIew Model
-    // UIView *testTheViewBuilder = [_service GetterSlidingUIViewDataModel];
+     UIView *testTheViewBuilder = [_service GetterSlidingUIViewDataModel];
 
     // Do any additional setup after loading the view, typically from a nib.
     [self.view addSubview:[_service GetterSlidingUIViewDataModel]];
@@ -57,13 +57,12 @@
 
 - (void)viewDidAppear:(BOOL)animated{
 }
-//-(void)taggleUIViews:(id)sender{
-//
-//    UIButton * myButton = sender;
-//
-//    [_service toggleBackAndForthTheSlidingUIView];
-//    NSLog(@"did call the function");
-//}
+
+-(void) buttonClicked:(UIButton*)sender
+{
+    NSLog(@"you clicked on button %ld", (long)sender.tag);
+}
+
 @end
 
 

@@ -74,7 +74,7 @@
     self = [super init];
     if (self) {
 
-        _slidingUIViewDataModel = [[SlidingUIViewDataModel alloc] initWithSlidingUIViewDataModel:_slidingUIViewDataModel];
+            _slidingUIViewServices = [[SlidingUIViewServices alloc] initWithSlidingUIViewDataModel];
 
     }
     return self;
@@ -100,10 +100,9 @@
  ToDo: retrun _slidingUIViewDataModel.masterUIViewClass builts and operational
  */
 
+    UIView *t = _slidingUIViewServices.getterMasterUIView;
 
-    // UIView *test = _slidingUIViewDataModel.masterUIViewClass.mainPewviewScreenUIView;
-
-    return _slidingUIViewDataModel.masterUIViewClass.mainPewviewScreenUIView;
+    return t;
 
 
 }

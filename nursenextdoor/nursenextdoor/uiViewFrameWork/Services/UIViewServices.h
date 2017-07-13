@@ -37,7 +37,7 @@
 @property (nonatomic, strong) SlideViewModel* slideViewModel;
 @property (nonatomic, strong) UIView* masterView;
 @property (nonatomic, strong) SlidingUIViewDataModel *slidingUIViewDataModel;
-
+@property(strong, nonatomic) SlidingUIViewServices *slidingUIViewServices;
 // Main function available to viewController to deploy assets
 - (id) init;
 - (UIView*)  mainViewInitMultiScreenWithSlidingUIViewDataModel;

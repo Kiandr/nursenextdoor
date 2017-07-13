@@ -21,23 +21,17 @@
     return self;
 }
 
--(instancetype)initWithMasterUIViewDataStructureApplicationUIView: (UIView*) applicationUIView{
+-(instancetype)initWithMasterUIViewDataStructureApplicationUIView{
 
     self = [super init];
     if (self) {
 
 
-        _mainPewviewScreenUIView = [[UIView alloc] init];
-        _mainPewviewScreenUIView.frame  = applicationUIView.frame;
+        _mainPewviewScreenUIView =  [[UIView alloc] init];
+        _mainPewviewScreenUIView.frame  = [UIApplication sharedApplication].delegate.window.frame;
         _mainPewviewScreenUIView.backgroundColor = [UIColor greenColor];
-        _mainPreviewScreenUIViewInteractionEntity = [[MainPreviewScreenUIViewInteractionEntity alloc] initWithMainPreviewScreenUIViewInteractionEntityWithModel:self.mainPreviewScreenUIViewInteractionEntity];
 
-
-
-        [_mainPewviewScreenUIView addGestureRecognizer:_mainPreviewScreenUIViewInteractionEntity.tapGesturePropery];
-        [_mainPewviewScreenUIView addSubview:_mainPreviewScreenUIViewInteractionEntity.bringOnSlidingMenueUIButtonStruct];
-
-
+        // Doubly linked list
         _masterUIViewCLass = self;
 
     }
