@@ -33,7 +33,7 @@
     [super viewDidLoad];
 
     // Construct services
-    _service = [[UIViewServices alloc]initWithSlidingUIViewDataModel];
+    _service = [[UIViewServices alloc]initWithSlidingUIViewDataModel:_slidingUIViewDataModel];
 
     // GetMaster UIVIew Model
     // UIView *testTheViewBuilder = [_service GetterSlidingUIViewDataModel];

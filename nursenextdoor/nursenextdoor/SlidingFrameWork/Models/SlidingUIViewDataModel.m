@@ -36,18 +36,12 @@
         @try {
 
             _masterUIViewClass = [[MasterUIViewCLass alloc] initWithMasterUIViewDataStructureApplicationUIView:([UIApplication sharedApplication].delegate.window)];
-            //_masterUIViewClass.masterUIView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 500, 500)];
-            //_masterUIViewClass.masterUIView.backgroundColor = [UIColor blueColor];
-            //_masterUIViewClass.masterUIView.frame = _masterUIViewClass.masterUIView.frame;
 
-            /*
-             
-             _masterUIView = [[UIView alloc] initWithFrame:(applicationUIView.frame)];
-             _masterUIViewFrame  = applicationUIView.frame;
-             _masterUIViewBackGroundColor = [UIColor greenColor];
-
-             */
+            _slidingUIViewDataModel = self;
             incomingSlidingUIViewDataModel = self;
+            
+
+
         }
         @catch (NSException *exception) {
             NSLog(@" Error at SlidingUIViewDataModel.m function setUpUIViewFrameSizeA %@", exception.reason);

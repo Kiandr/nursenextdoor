@@ -39,11 +39,20 @@ typedef struct {
 // Public Properties:
 @property (strong, nonatomic) UIGestureRecognizer* tapGesturePropery;
 @property (strong, nonatomic) UIButton* bringOnSlidingMenueUIButtonStruct;
-@property (strong,nonatomic) MainPreviewScreenUIViewInteractionEntity *selfClassDataModel;
+@property (strong,nonatomic) MainPreviewScreenUIViewInteractionEntity *mainPreviewScreenUIViewInteractionEntity;
 
 
-//- (IBAction)myActionMethod:(UIGestureRecognizer*)sender;
-//- ()
+
+- (instancetype)init ;
+
+- (instancetype) initWithMainPreviewScreenUIViewInteractionEntityWithModel:(MainPreviewScreenUIViewInteractionEntity*)model;
+
+
+//The event handling method
+- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer;
+
+
+-(void) buttonClicked:(UIButton*)sender;
 
 @end
 

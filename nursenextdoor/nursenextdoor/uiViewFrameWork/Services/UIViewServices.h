@@ -41,7 +41,7 @@
 // Main function available to viewController to deploy assets
 - (id) init;
 - (UIView*)  mainViewInitMultiScreenWithSlidingUIViewDataModel;
-- (instancetype)initWithSlidingUIViewDataModel;
+- (instancetype)initWithSlidingUIViewDataModel:(SlidingUIViewDataModel*)incomingSlidingUIViewDataModel;
 - (void) loadUserProfileView;
 - (UIView*) mainUIViewHasBeenInitalizedManagerRfferenceIsAvaiable;
 - (UIView*)GetterSlidingUIViewDataModel;

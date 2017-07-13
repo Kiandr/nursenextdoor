@@ -10,6 +10,7 @@
 #define MasterUIViewDataStructure_h
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "MainPreviewScreenUIViewInteractionEntity.h"
 
 
 
@@ -37,8 +38,11 @@ typedef struct MasterUIViewDataStructure{
 
 
 @property (nonatomic, strong) UIView    *mainPewviewScreenUIView;
-@property (nonatomic, assign) CGRect    mainPewviewScreenUIViewFrame;
+@property (nonatomic, assign) CGRect     mainPewviewScreenUIViewFrame;
 @property (nonatomic, assign) UIColor   *mainPewviewScreenUIViewBackGroundColor;
+@property (nonatomic, strong) MainPreviewScreenUIViewInteractionEntity* mainPreviewScreenUIViewInteractionEntity;
+@property (nonatomic,strong) MasterUIViewCLass* masterUIViewCLass;
+
 
 
 // struct mainPreviewScreenUIViewInteractionEntity

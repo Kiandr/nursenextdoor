@@ -45,21 +45,16 @@ typedef struct masterUIViewDataStructure{
 
 
 
-@property(nonatomic, strong) MasterUIViewCLass* masterUIViewClass;
-
-//@property(nonatomic, assign) CGRect  masterUIViewFrameSize;
 
 @property(nonatomic, strong) UIView* rightUIView;
 @property(nonatomic, assign) CGRect  rightUIViewFrameSize;
 @property(nonatomic, assign) CGRect  rightUIViewCoordinatesA;
 @property(nonatomic, assign) CGRect  rightUIViewCoordinatesB;
-
 @property(nonatomic, strong) UIView* buttonMenuPlaceHolderBarUIView;
 @property(nonatomic, assign) CGRect  buttonMenuPlaceHolderBarUIViewFrameSize;
-
 @property(nonatomic, strong) UIView* buttonMenuPlaceHolderFrameUIView;
 @property(nonatomic, assign) CGRect  buttonMenuPlaceHolderFrameUIViewFrameSize;
-
+@property(nonatomic, strong) MasterUIViewCLass* masterUIViewClass;
 @property(nonatomic, strong) SlidingUIViewDataModel *slidingUIViewDataModel;
 
 - (instancetype)initWithSlidingUIViewDataModel:(SlidingUIViewDataModel*) incomingSlidingUIViewDataModel;

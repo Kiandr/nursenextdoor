@@ -70,7 +70,7 @@
 }
 
 
-- (instancetype)initWithSlidingUIViewDataModel{
+- (instancetype)initWithSlidingUIViewDataModel:(SlidingUIViewDataModel*)incomingSlidingUIViewDataModel{
     self = [super init];
     if (self) {
 
@@ -101,7 +101,7 @@
  */
 
 
-    //UIView *test = _slidingUIViewDataModel.masterUIViewClass.mainPewviewScreenUIView;
+    // UIView *test = _slidingUIViewDataModel.masterUIViewClass.mainPewviewScreenUIView;
 
     return _slidingUIViewDataModel.masterUIViewClass.mainPewviewScreenUIView;
 

@@ -21,6 +21,8 @@
 
 @property(strong, nonatomic) UIViewServices *service;
 
+@property(strong, nonatomic) SlidingUIViewDataModel *slidingUIViewDataModel;
+
 - (id) init;
 
 
