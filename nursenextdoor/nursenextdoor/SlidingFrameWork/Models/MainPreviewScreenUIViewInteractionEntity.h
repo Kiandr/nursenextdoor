@@ -11,6 +11,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "SlidingUIViewDataModel.h"
 
 @class MainPreviewScreenUIViewInteractionEntity;
 
@@ -39,13 +40,15 @@ typedef struct {
 // Public Properties:
 @property (strong, nonatomic) UIGestureRecognizer* tapGesturePropery;
 @property (strong, nonatomic) UIButton* bringOnSlidingMenueUIButton;
-@property (strong,nonatomic) MainPreviewScreenUIViewInteractionEntity *mainPreviewScreenUIViewInteractionEntity;
-
+//@property (strong, nonatomic) MainPreviewScreenUIViewInteractionEntity *mainPreviewScreenUIViewInteractionEntity;
+//@property (strong, nonatomic) SlidingUIViewDataModel *slidingUIViewDataModel;
 
 
 - (instancetype)init ;
 
 - (instancetype) initWithMainPreviewScreenUIViewInteractionEntityWithModel:(MainPreviewScreenUIViewInteractionEntity*)model;
+
+- (instancetype) initWithMainPreviewScreenUIViewInteractionEntityWithModel:(MainPreviewScreenUIViewInteractionEntity*)model AndWithSlidingUIViewDataModel: (SlidingUIViewDataModel*)slidingUIViewDataModel;
 
 
 //The event handling method

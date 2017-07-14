@@ -13,6 +13,7 @@
 #import <UIKit/UIKit.h>
 #import "SlidingUIViewDataModel.h"
 #import "MainPreviewScreenUIViewInteractionEntity.h"
+#import "MasterUIViewCLass.h"
 @class SlidingUIViewServices;
 
 @interface SlidingUIViewServices : NSObject

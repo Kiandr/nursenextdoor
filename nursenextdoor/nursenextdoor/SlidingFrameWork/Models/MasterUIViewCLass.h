@@ -10,8 +10,6 @@
 #define MasterUIViewDataStructure_h
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "MainPreviewScreenUIViewInteractionEntity.h"
-
 
 
 @class MasterUIViewCLass;

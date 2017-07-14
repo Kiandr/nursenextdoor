@@ -32,7 +32,7 @@
         _mainPewviewScreenUIView.backgroundColor = [UIColor greenColor];
 
         // Doubly linked list
-        _masterUIViewCLass = self;
+        //_masterUIViewCLass = self;
 
     }
     return self;

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "SlidingUIViewDataModel.h"
-#import "MasterUIViewCLass.h"
+
 @implementation SlidingUIViewDataModel: NSObject
 
 - (instancetype)init {
@@ -36,8 +36,8 @@
         @try {
 
             _templateOfMasterUIView = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
-            incomingSlidingUIViewDataModel = self;
-            _slidingUIViewDataModel = incomingSlidingUIViewDataModel;
+          //  incomingSlidingUIViewDataModel = self;
+          //  _slidingUIViewDataModel = incomingSlidingUIViewDataModel;
 
         }
         @catch (NSException *exception) {
@@ -48,7 +48,22 @@
 
     }
     return self;
+
 }
 
+// Tester to observe the callBackfunction being invoked by an other class
+
+- (id)callBackFunctionButton:(id)sender{
+    NSLog(@"Success!");
+
+    NSDate * now = [NSDate date];
+    NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
+    [outputFormatter setDateFormat:@"HH:mm:ss"];
+    NSString *newDateString = [outputFormatter stringFromDate:now];
+    NSLog(@"newDateString %@", newDateString);
+
+    return nil;
+
+}
 
 @end

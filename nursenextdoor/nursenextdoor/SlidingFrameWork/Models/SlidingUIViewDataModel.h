@@ -10,7 +10,7 @@
 #define SlidingUIViewDataModel_h
 
 
-#import "MasterUIViewCLass.h"
+
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
@@ -33,7 +33,6 @@
         3- Review Exams
 
  */
-@property(nonatomic,assign) NSMutableArray* mutableArrayPrtToHeader;
 
 
 typedef struct masterUIViewDataStructure{
@@ -55,11 +54,12 @@ typedef struct masterUIViewDataStructure{
 @property(nonatomic, strong) UIView* buttonMenuPlaceHolderFrameUIView;
 @property(nonatomic, assign) CGRect  buttonMenuPlaceHolderFrameUIViewFrameSize;
 @property(nonatomic, strong) UIView  *templateOfMasterUIView;
-@property(nonatomic, strong) SlidingUIViewDataModel *slidingUIViewDataModel;
+//@property(nonatomic, weak) SlidingUIViewDataModel *slidingUIViewDataModel;
 
 //@property(nonatomic, strong) SlidingUIViewDataModel *slidingUIViewDataModel;
 
 - (instancetype)initWithSlidingUIViewDataModel:(SlidingUIViewDataModel*) incomingSlidingUIViewDataModel;
 
+-(id)callBackFunctionButton:(id)sender;
 @end
 #endif /* SlidingUIViewDataModel_h */

@@ -52,13 +52,38 @@
         [_bringOnSlidingMenueUIButton  backgroundImageForState:UIControlStateNormal];
         _bringOnSlidingMenueUIButton.backgroundColor =  [UIColor redColor];
 
-        _mainPreviewScreenUIViewInteractionEntity = self;
+      //  _mainPreviewScreenUIViewInteractionEntity = self;
         model = self;
         
     }
     return self;
 }
+- (instancetype) initWithMainPreviewScreenUIViewInteractionEntityWithModel:(MainPreviewScreenUIViewInteractionEntity*)model AndWithSlidingUIViewDataModel: (SlidingUIViewDataModel*)slidingUIViewDataModelIncomingModel{
+    self = [super init];
+    if (self) {
 
+        _tapGesturePropery = [[UIGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
+        _bringOnSlidingMenueUIButton = [[UIButton alloc] initWithFrame:CGRectMake(0,0,100,100)];
+
+
+
+        // callBackInAnOtherClass
+        [_bringOnSlidingMenueUIButton addTarget:slidingUIViewDataModelIncomingModel action:@selector(callBackFunctionButton:) forControlEvents:UIControlEventTouchDown];
+        // CallbackInThisClass
+        //[_bringOnSlidingMenueUIButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventAllEvents];
+        [_bringOnSlidingMenueUIButton setFrame:CGRectMake(52, 252, 100, 100)];
+        [_bringOnSlidingMenueUIButton setTitle:@"Login" forState:UIControlStateNormal];
+        [_bringOnSlidingMenueUIButton  setTitle:@"clicked!" forState:UIControlStateSelected];
+        [_bringOnSlidingMenueUIButton  setExclusiveTouch:YES];
+        [_bringOnSlidingMenueUIButton  backgroundImageForState:UIControlStateNormal];
+        _bringOnSlidingMenueUIButton.backgroundColor =  [UIColor redColor];
+
+     //    _mainPreviewScreenUIViewInteractionEntity = self;
+       // model = self;
+        
+    }
+    return self;
+}
 
 //The event handling method
 - (void)handleSingleTap:(UITapGestureRecognizer *)recognizer
