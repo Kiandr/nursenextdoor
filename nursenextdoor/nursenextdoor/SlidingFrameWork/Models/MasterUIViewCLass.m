@@ -29,7 +29,7 @@
 
         _mainPewviewScreenUIView =  [[UIView alloc] init];
         _mainPewviewScreenUIView.frame  = [UIApplication sharedApplication].delegate.window.frame;
-        _mainPewviewScreenUIView.backgroundColor = [UIColor greenColor];
+        _mainPewviewScreenUIView.backgroundColor = [UIColor blackColor];
 
         // Doubly linked list
         //_masterUIViewCLass = self;

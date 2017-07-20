@@ -5,6 +5,11 @@
 //  Created by Kian Davoudi-Rad on 2017-06-29.
 //  Copyright © 2017 Kian Davoudi-Rad. All rights reserved.
 //
+/*
+ Author: Kian D.Rad
+ Date:   July 17th 2017
+ README:
+ */
 
 #ifndef SlidingUIViewDataModel_h
 #define SlidingUIViewDataModel_h
@@ -14,6 +19,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "UIViewNNDBar.h"
 @class SlidingUIViewDataModel;
 
 
@@ -44,22 +50,34 @@ typedef struct masterUIViewDataStructure{
 
 
 
+// These screens are for Melanoma
+@property(nonatomic, strong) UIView* uiViewUserProfile;
+@property(nonatomic, strong) UIView* uiViewGoogleLogIn;
+@property(nonatomic, strong) UIView* uiViewTakePicture;
+@property(nonatomic, strong) UIView* uiViewMelanomaDBar;
 
-@property(nonatomic, strong) UIView* rightUIView;
-@property(nonatomic, assign) CGRect  rightUIViewFrameSize;
-@property(nonatomic, assign) CGRect  rightUIViewCoordinatesA;
-@property(nonatomic, assign) CGRect  rightUIViewCoordinatesB;
-@property(nonatomic, strong) UIView* buttonMenuPlaceHolderBarUIView;
-@property(nonatomic, assign) CGRect  buttonMenuPlaceHolderBarUIViewFrameSize;
-@property(nonatomic, strong) UIView* buttonMenuPlaceHolderFrameUIView;
-@property(nonatomic, assign) CGRect  buttonMenuPlaceHolderFrameUIViewFrameSize;
+
+// These screens are for NND
+@property(nonatomic, strong) UIView* uiViewGeoHomeView;
+@property(nonatomic, strong) UIView* uiViewGeoScheduledVisitsView;
+@property(nonatomic, strong) UIView* uiViewGeoMapView;
+@property(nonatomic, strong) UIView* uiViewGeoHelpView;
+@property(nonatomic, strong) UIViewNNDBar* uiViewNNDBar;
+@property(nonatomic, strong) SlidingUIViewDataModel* slidingUIViewDataModel;
+
+
+/*
+ Author: Kian D.Rad
+ Date:   Jun 30th 2017
+ README:
+        This is the top UIVIew, this is the place that all other views will be deployed and removed.
+        So, when the app opens, user sees this UIView first.
+*/
 @property(nonatomic, strong) UIView  *templateOfMasterUIView;
-//@property(nonatomic, weak) SlidingUIViewDataModel *slidingUIViewDataModel;
 
-//@property(nonatomic, strong) SlidingUIViewDataModel *slidingUIViewDataModel;
 
 - (instancetype)initWithSlidingUIViewDataModel:(SlidingUIViewDataModel*) incomingSlidingUIViewDataModel;
-
 -(id)callBackFunctionButton:(id)sender;
+
 @end
 #endif /* SlidingUIViewDataModel_h */

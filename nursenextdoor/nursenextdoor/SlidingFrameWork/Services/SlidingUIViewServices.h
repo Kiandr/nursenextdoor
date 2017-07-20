@@ -24,9 +24,14 @@
 //@property(nonatomic, strong)UIButton *mainButton;
 //@property(nonatomic, strong) NSMutableArray* leftUiViewTableView;
 
+
 @property (nonatomic, strong) MasterUIViewCLass* masterUIViewCLass;
+
 @property (nonatomic, strong) SlidingUIViewDataModel* slidingUIViewDataModel;
+// These are buttons
 @property (nonatomic, strong) MainPreviewScreenUIViewInteractionEntity *mainPreviewScreenUIViewInteractionEntity;
+// This is the low level bar
+@property (nonatomic, strong) UIViewNNDBar *uIViewNNDBar;
 
 
 

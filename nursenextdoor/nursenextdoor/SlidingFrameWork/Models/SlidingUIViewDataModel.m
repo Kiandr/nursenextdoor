@@ -11,6 +11,13 @@
 
 @implementation SlidingUIViewDataModel: NSObject
 
+/*
+ Author: Kian D.Rad
+ Date: July 14th 2017
+ README: The following classes are UIVIews and callBackFunctions to manage in and out transition
+ ToDo:
+
+ */
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -19,7 +26,6 @@
     }
     return self;
 }
-
 - (instancetype)initWithSlidingUIViewDataModel:(SlidingUIViewDataModel*) incomingSlidingUIViewDataModel{
     /*
 
@@ -36,8 +42,8 @@
         @try {
 
             _templateOfMasterUIView = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
-          //  incomingSlidingUIViewDataModel = self;
-          //  _slidingUIViewDataModel = incomingSlidingUIViewDataModel;
+            [_templateOfMasterUIView setBackgroundColor:[UIColor whiteColor]];
+            _slidingUIViewDataModel = incomingSlidingUIViewDataModel;
 
         }
         @catch (NSException *exception) {
@@ -51,8 +57,15 @@
 
 }
 
-// Tester to observe the callBackfunction being invoked by an other class
 
+
+/*
+Author: Kian D.Rad
+Date: July 14th 2017
+README:Tester to observe the callBackfunction being invoked by an other class
+ToDo:
+    1- Return te template UIView if no other button was selected. If so, return it back and load that UIView on top.
+*/
 - (id)callBackFunctionButton:(id)sender{
     NSLog(@"Success!");
 
@@ -62,45 +75,26 @@
     NSString *newDateString = [outputFormatter stringFromDate:now];
     NSLog(@"newDateString %@", newDateString);
 
-
-//
-
+    // Transition sequence
+    [UIView beginAnimations:@"ShowHideView" context:nil];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    [UIView setAnimationDuration:0.250];
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationDidStopSelector:@selector(showHideDidStop:finished:context:)];
     
-    
-            
+    // Make the animatable changes.
+    // _leftUiView.alpha = 1.0;
+    // _rightUiView.alpha = 0.0;
 
-    
-            // Transition sequence
-            [UIView beginAnimations:@"ShowHideView" context:nil];
-            [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-            [UIView setAnimationDuration:0.250];
-            [UIView setAnimationDelegate:self];
-            [UIView setAnimationDidStopSelector:@selector(showHideDidStop:finished:context:)];
-    
-            // Make the animatable changes.
-            // _leftUiView.alpha = 1.0;
-            // _rightUiView.alpha = 0.0;
-    
-    
-            // Transition Direction
-            _templateOfMasterUIView.frame = CGRectMake(0, -100,[UIApplication sharedApplication].delegate.window.frame.size.height, [UIApplication sharedApplication].delegate.window.frame.size.width);
-    
-            // Commit the changes and perform the animation.
-            [UIView commitAnimations];
+    // Transition Direction
+    _slidingUIViewDataModel.templateOfMasterUIView.frame = CGRectMake(0, -100,[UIApplication sharedApplication].delegate.window.frame.size.height, [UIApplication sharedApplication].delegate.window.frame.size.width);
 
-    //
-
-
-
-
-
+    // Commit the changes and perform the animation.
+    [UIView commitAnimations];
 
     return nil;
 
 }
-
-
-
 - (void)showHideDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
         /*
          Author: Kian D.RAd
@@ -119,13 +113,22 @@
         [UIView setAnimationDelay:0.5];
     
         //    _rightUiView.alpha = 1.0;
-        _templateOfMasterUIView.frame = [UIApplication sharedApplication].delegate.window.frame;
+        _slidingUIViewDataModel.templateOfMasterUIView.frame = [UIApplication sharedApplication].delegate.window.frame;
     
         [UIView commitAnimations];
     
     
     }
 
+
+/*
+ 
+ 
+ if sender == "button1"
+    templateUIView remove:x;
+    templateUIView add:UIVIewButton1;
+ 
+ */
 
 
 @end

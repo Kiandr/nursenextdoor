@@ -23,7 +23,7 @@
  Date:      July 7th 2017
  README:    This class contains individual components such as 
             UIButton, gestures. For detail of available guestures please visit.
- https://developer.apple.com/ios/human-interface-guidelines/interaction/gestures/
+            https://developer.apple.com/ios/human-interface-guidelines/interaction/gestures/
 
  */
 
@@ -40,13 +40,16 @@ typedef struct {
 // Public Properties:
 @property (strong, nonatomic) UIGestureRecognizer* tapGesturePropery;
 @property (strong, nonatomic) UIButton* bringOnSlidingMenueUIButton;
+@property (strong, nonatomic) UIButton* CheckInUIButton;
+@property (strong, nonatomic)  UIView *uiViewButtonHolderFrame;
+
 //@property (strong, nonatomic) MainPreviewScreenUIViewInteractionEntity *mainPreviewScreenUIViewInteractionEntity;
 //@property (strong, nonatomic) SlidingUIViewDataModel *slidingUIViewDataModel;
 
 
 - (instancetype)init ;
 
-- (instancetype) initWithMainPreviewScreenUIViewInteractionEntityWithModel:(MainPreviewScreenUIViewInteractionEntity*)model;
+//- (instancetype) initWithMainPreviewScreenUIViewInteractionEntityWithModel:(MainPreviewScreenUIViewInteractionEntity*)model;
 
 - (instancetype) initWithMainPreviewScreenUIViewInteractionEntityWithModel:(MainPreviewScreenUIViewInteractionEntity*)model AndWithSlidingUIViewDataModel: (SlidingUIViewDataModel*)slidingUIViewDataModel;
 

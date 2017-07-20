@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E253ED11F1D5403003B616D /* VisistDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E253ED01F1D5403003B616D /* VisistDataModel.m */; };
 		2E330C0C1EFC87970056FC3F /* Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C041EFC87970056FC3F /* Auth.m */; };
 		2E330C0D1EFC87970056FC3F /* GoogleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C071EFC87970056FC3F /* GoogleController.m */; };
 		2E330C0E1EFC87970056FC3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E330C081EFC87970056FC3F /* GoogleService-Info.plist */; };
@@ -19,6 +20,7 @@
 		2E5E2DC21F05755B00EAD603 /* SlidingUIViewDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E2DC11F05755B00EAD603 /* SlidingUIViewDataModel.m */; };
 		2E5E2E061F05A7BA00EAD603 /* SlidingUIViewServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E2E051F05A7BA00EAD603 /* SlidingUIViewServices.m */; };
 		2E790C601F04C74500758794 /* UIViewServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E790C5F1F04C74500758794 /* UIViewServices.m */; };
+		2E81A1091F19AC7D00D03A36 /* UIViewNNDBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E81A1081F19AC7D00D03A36 /* UIViewNNDBar.m */; };
 		2E8685291F0FFBC50050F0BE /* MainPreviewScreenUIViewInteractionEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8685281F0FFBC50050F0BE /* MainPreviewScreenUIViewInteractionEntity.m */; };
 		2E9380BE1EF342BB0093D296 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */; };
 		2E9883F41F043E7300943962 /* MasterUIViewDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9883F31F043E7300943962 /* MasterUIViewDataModel.m */; };
@@ -31,6 +33,8 @@
 		2EC2B7E61EF3402F0021CE60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2B7E41EF3402F0021CE60 /* LaunchScreen.storyboard */; };
 		2EC2B7F11EF3402F0021CE60 /* nursenextdoorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7F01EF3402F0021CE60 /* nursenextdoorTests.m */; };
 		2EC2B7FC1EF3402F0021CE60 /* nursenextdoorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7FB1EF3402F0021CE60 /* nursenextdoorUITests.m */; };
+		2EE09D181F1FF20400F26B72 /* CommomUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE09D171F1FF20400F26B72 /* CommomUtility.m */; };
+		2EE09D1C1F1FF3E200F26B72 /* UIButtonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE09D1B1F1FF3E200F26B72 /* UIButtonDataModel.m */; };
 		9138E15E99FFBFC6D9AC467C /* libPods-nursenextdoor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 446EC59F7C06B34E0DF1C868 /* libPods-nursenextdoor.a */; };
 		ACBC2E481EF2DF1BE8C827D6 /* libPods-nursenextdoorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 037CFB994FD4B0961460765B /* libPods-nursenextdoorTests.a */; };
 		ECADCE0DBAEF2A31BA28D3E5 /* libPods-nursenextdoorUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 521A51182D3698D3E0759524 /* libPods-nursenextdoorUITests.a */; };
@@ -57,6 +61,14 @@
 		037CFB994FD4B0961460765B /* libPods-nursenextdoorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nursenextdoorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2790AA569DCD37B17E60F77D /* Pods-nursenextdoorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoorUITests/Pods-nursenextdoorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2A43912824F33E57B4926E72 /* Pods-nursenextdoorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoorUITests/Pods-nursenextdoorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2E253ECF1F1D53F0003B616D /* VisistDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisistDataModel.h; sourceTree = "<group>"; };
+		2E253ED01F1D5403003B616D /* VisistDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisistDataModel.m; sourceTree = "<group>"; };
+		2E253ED21F1D5530003B616D /* BaseModelVisitData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BaseModelVisitData.h; path = BaseModels/BaseModelVisitData.h; sourceTree = "<group>"; };
+		2E253ED61F1D57B7003B616D /* NurseDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NurseDataModel.h; path = CommonTools/CommonDataModels/NurseDataModel.h; sourceTree = "<group>"; };
+		2E253ED71F1D5809003B616D /* ClientDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ClientDataModel.h; path = CommonTools/CommonDataModels/ClientDataModel.h; sourceTree = "<group>"; };
+		2E253ED81F1D5828003B616D /* GeoDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GeoDataModel.h; path = CommonTools/CommonDataModels/GeoDataModel.h; sourceTree = "<group>"; };
+		2E253ED91F1D5E56003B616D /* VisitDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VisitDataModel.h; path = CommonTools/CommonDataModels/VisitDataModel.h; sourceTree = "<group>"; };
+		2E253EDA1F1D5F01003B616D /* ProcuraDateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProcuraDateModel.h; path = CommonTools/CommonDataModels/ProcuraDateModel.h; sourceTree = "<group>"; };
 		2E330C031EFC87970056FC3F /* Auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Auth.h; sourceTree = "<group>"; };
 		2E330C041EFC87970056FC3F /* Auth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Auth.m; sourceTree = "<group>"; };
 		2E330C061EFC87970056FC3F /* GoogleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleController.h; sourceTree = "<group>"; };
@@ -81,6 +93,8 @@
 		2E5E2E051F05A7BA00EAD603 /* SlidingUIViewServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SlidingUIViewServices.m; path = SlidingFrameWork/Services/SlidingUIViewServices.m; sourceTree = "<group>"; };
 		2E790C5E1F04C73500758794 /* UIViewServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewServices.h; sourceTree = "<group>"; };
 		2E790C5F1F04C74500758794 /* UIViewServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewServices.m; sourceTree = "<group>"; };
+		2E81A1051F19AC4E00D03A36 /* UIViewNNDBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIViewNNDBar.h; path = SlidingFrameWork/Views/UIViewNNDBar.h; sourceTree = "<group>"; };
+		2E81A1081F19AC7D00D03A36 /* UIViewNNDBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewNNDBar.m; path = SlidingFrameWork/Views/UIViewNNDBar.m; sourceTree = "<group>"; };
 		2E8685271F0FFBAD0050F0BE /* MainPreviewScreenUIViewInteractionEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainPreviewScreenUIViewInteractionEntity.h; path = SlidingFrameWork/Models/MainPreviewScreenUIViewInteractionEntity.h; sourceTree = "<group>"; };
 		2E8685281F0FFBC50050F0BE /* MainPreviewScreenUIViewInteractionEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainPreviewScreenUIViewInteractionEntity.m; path = SlidingFrameWork/Models/MainPreviewScreenUIViewInteractionEntity.m; sourceTree = "<group>"; };
 		2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Google/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -103,6 +117,10 @@
 		2EC2B7F71EF3402F0021CE60 /* nursenextdoorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nursenextdoorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC2B7FB1EF3402F0021CE60 /* nursenextdoorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nursenextdoorUITests.m; sourceTree = "<group>"; };
 		2EC2B7FD1EF3402F0021CE60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EE09D161F1FF1F100F26B72 /* CommomUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CommomUtility.h; path = CommonTools/CommonUtilites/CommomUtility.h; sourceTree = "<group>"; };
+		2EE09D171F1FF20400F26B72 /* CommomUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommomUtility.m; path = CommonTools/CommonUtilites/CommomUtility.m; sourceTree = "<group>"; };
+		2EE09D191F1FF3C300F26B72 /* UIButtonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIButtonDataModel.h; path = CommonTools/CommonDataModels/UIButtonDataModel.h; sourceTree = "<group>"; };
+		2EE09D1B1F1FF3E200F26B72 /* UIButtonDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIButtonDataModel.m; path = CommonTools/CommonDataModels/UIButtonDataModel.m; sourceTree = "<group>"; };
 		446EC59F7C06B34E0DF1C868 /* libPods-nursenextdoor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nursenextdoor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		521A51182D3698D3E0759524 /* libPods-nursenextdoorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nursenextdoorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E8B849002B11E5373D8C87 /* Pods-nursenextdoor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoor/Pods-nursenextdoor.debug.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +178,37 @@
 				2A43912824F33E57B4926E72 /* Pods-nursenextdoorUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		2E253ED31F1D5535003B616D /* BaseModels */ = {
+			isa = PBXGroup;
+			children = (
+				2E253ED21F1D5530003B616D /* BaseModelVisitData.h */,
+			);
+			name = BaseModels;
+			sourceTree = "<group>";
+		};
+		2E253ED41F1D575D003B616D /* CommonTools */ = {
+			isa = PBXGroup;
+			children = (
+				2EE09D151F1FF1C300F26B72 /* CommonUtilities */,
+				2E253ED51F1D577A003B616D /* CommonDataModels */,
+			);
+			name = CommonTools;
+			sourceTree = "<group>";
+		};
+		2E253ED51F1D577A003B616D /* CommonDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				2E253ED91F1D5E56003B616D /* VisitDataModel.h */,
+				2E253ED61F1D57B7003B616D /* NurseDataModel.h */,
+				2E253ED71F1D5809003B616D /* ClientDataModel.h */,
+				2E253ED81F1D5828003B616D /* GeoDataModel.h */,
+				2E253EDA1F1D5F01003B616D /* ProcuraDateModel.h */,
+				2EE09D191F1FF3C300F26B72 /* UIButtonDataModel.h */,
+				2EE09D1B1F1FF3E200F26B72 /* UIButtonDataModel.m */,
+			);
+			name = CommonDataModels;
 			sourceTree = "<group>";
 		};
 		2E330C011EFC87970056FC3F /* Google */ = {
@@ -224,12 +273,15 @@
 		2E330C1E1EFC88320056FC3F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2E253ED31F1D5535003B616D /* BaseModels */,
 				2E330C1F1EFC88320056FC3F /* UIViewFrameWorkModel.h */,
 				2E330C201EFC88320056FC3F /* UIViewFrameWorkModel.m */,
 				2E330C271EFC88870056FC3F /* SlideViewModel.h */,
 				2E330C281EFC88A90056FC3F /* SlideViewModel.m */,
 				2E9883F21F043C8500943962 /* MasterUIViewDataModel.h */,
 				2E9883F31F043E7300943962 /* MasterUIViewDataModel.m */,
+				2E253ECF1F1D53F0003B616D /* VisistDataModel.h */,
+				2E253ED01F1D5403003B616D /* VisistDataModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -303,8 +355,26 @@
 		2E5E2DBC1F056C0200EAD603 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2E81A1071F19AC5A00D03A36 /* UND */,
+				2E81A1061F19AC5300D03A36 /* NND */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		2E81A1061F19AC5300D03A36 /* NND */ = {
+			isa = PBXGroup;
+			children = (
+				2E81A1051F19AC4E00D03A36 /* UIViewNNDBar.h */,
+				2E81A1081F19AC7D00D03A36 /* UIViewNNDBar.m */,
+			);
+			name = NND;
+			sourceTree = "<group>";
+		};
+		2E81A1071F19AC5A00D03A36 /* UND */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UND;
 			sourceTree = "<group>";
 		};
 		2EC2B7C71EF3402F0021CE60 = {
@@ -332,6 +402,7 @@
 		2EC2B7D21EF3402F0021CE60 /* nursenextdoor */ = {
 			isa = PBXGroup;
 			children = (
+				2E253ED41F1D575D003B616D /* CommonTools */,
 				2E5E2DB81F056BCD00EAD603 /* SlidingFrameWork */,
 				2E330C1C1EFC88320056FC3F /* UIViewFramework */,
 				2E330C011EFC87970056FC3F /* Google */,
@@ -374,6 +445,15 @@
 				2EC2B7FD1EF3402F0021CE60 /* Info.plist */,
 			);
 			path = nursenextdoorUITests;
+			sourceTree = "<group>";
+		};
+		2EE09D151F1FF1C300F26B72 /* CommonUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				2EE09D161F1FF1F100F26B72 /* CommomUtility.h */,
+				2EE09D171F1FF20400F26B72 /* CommomUtility.m */,
+			);
+			name = CommonUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -663,15 +743,19 @@
 			files = (
 				2EC2B7DB1EF3402F0021CE60 /* ViewController.m in Sources */,
 				2E790C601F04C74500758794 /* UIViewServices.m in Sources */,
+				2EE09D181F1FF20400F26B72 /* CommomUtility.m in Sources */,
 				2E330C261EFC88320056FC3F /* UIViewFrameWorkModel.m in Sources */,
 				2E330C291EFC88A90056FC3F /* SlideViewModel.m in Sources */,
 				2E330C0D1EFC87970056FC3F /* GoogleController.m in Sources */,
+				2E81A1091F19AC7D00D03A36 /* UIViewNNDBar.m in Sources */,
 				2EC2B7D81EF3402F0021CE60 /* AppDelegate.m in Sources */,
 				2E3C62C31F06D7FA0008A3FF /* MasterUIViewCLass.m in Sources */,
 				2E330C2F1EFC908F0056FC3F /* MainLandingUIView.m in Sources */,
 				2E8685291F0FFBC50050F0BE /* MainPreviewScreenUIViewInteractionEntity.m in Sources */,
 				2E9883F41F043E7300943962 /* MasterUIViewDataModel.m in Sources */,
+				2E253ED11F1D5403003B616D /* VisistDataModel.m in Sources */,
 				2E330C0C1EFC87970056FC3F /* Auth.m in Sources */,
+				2EE09D1C1F1FF3E200F26B72 /* UIButtonDataModel.m in Sources */,
 				2E5E2E061F05A7BA00EAD603 /* SlidingUIViewServices.m in Sources */,
 				2EC2B7E11EF3402F0021CE60 /* nursenextdoor.xcdatamodeld in Sources */,
 				2E330C0F1EFC87970056FC3F /* GoogleViewManager.m in Sources */,
