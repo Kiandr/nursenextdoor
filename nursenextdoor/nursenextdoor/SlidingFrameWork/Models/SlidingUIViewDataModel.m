@@ -42,8 +42,8 @@
         @try {
 
             _templateOfMasterUIView = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
-            [_templateOfMasterUIView setBackgroundColor:[UIColor whiteColor]];
-            _slidingUIViewDataModel = incomingSlidingUIViewDataModel;
+            [_templateOfMasterUIView setBackgroundColor:[UIColor greenColor]];
+            _slidingUIViewDataModel = self;
 
         }
         @catch (NSException *exception) {
@@ -86,8 +86,12 @@ ToDo:
     // _leftUiView.alpha = 1.0;
     // _rightUiView.alpha = 0.0;
 
+
+    int x = _slidingUIViewDataModel.templateOfMasterUIView.frame.size.width;
+    int y = _slidingUIViewDataModel.templateOfMasterUIView.frame.size.height;
+
     // Transition Direction
-    _slidingUIViewDataModel.templateOfMasterUIView.frame = CGRectMake(0, -100,[UIApplication sharedApplication].delegate.window.frame.size.height, [UIApplication sharedApplication].delegate.window.frame.size.width);
+    _templateOfMasterUIView.frame = CGRectMake(0, -100, x,y);//);[UIApplication sharedApplication].delegate.window.frame.size.height, [UIApplication sharedApplication].delegate.window.frame.size.width);
 
     // Commit the changes and perform the animation.
     [UIView commitAnimations];
@@ -113,7 +117,7 @@ ToDo:
         [UIView setAnimationDelay:0.5];
     
         //    _rightUiView.alpha = 1.0;
-        _slidingUIViewDataModel.templateOfMasterUIView.frame = [UIApplication sharedApplication].delegate.window.frame;
+        _templateOfMasterUIView.frame = [UIApplication sharedApplication].delegate.window.frame;
     
         [UIView commitAnimations];
     

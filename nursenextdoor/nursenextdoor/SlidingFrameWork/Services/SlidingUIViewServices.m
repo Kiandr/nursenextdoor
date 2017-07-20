@@ -71,9 +71,13 @@ bool animationIsInProgress;
     self = [super init];
     if (self) {
 
-        // Initialize necessary components within this class
+        // Initialize necessary components within this class with the following order.
+        // Do not looss order, you need the slidingUIVIewDataModel pointer to pass to next function for refference.
         _slidingUIViewDataModel = [[SlidingUIViewDataModel alloc]initWithSlidingUIViewDataModel:_slidingUIViewDataModel];
         _mainPreviewScreenUIViewInteractionEntity = [[MainPreviewScreenUIViewInteractionEntity alloc]initWithMainPreviewScreenUIViewInteractionEntityWithModel:_mainPreviewScreenUIViewInteractionEntity AndWithSlidingUIViewDataModel:_slidingUIViewDataModel];
+
+        [_slidingUIViewDataModel.templateOfMasterUIView addSubview:_mainPreviewScreenUIViewInteractionEntity.uiViewButtonHolderFrame];
+        // Sliding view
 
 
 //        _uIViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uIViewNNDBar];
@@ -112,8 +116,8 @@ bool animationIsInProgress;
     //return _slidingUIViewDataModel.templateOfMasterUIView;
 //    return _masterUIViewCLass.mainPewviewScreenUIView;
 
-    //return _slidingUIViewDataModel.templateOfMasterUIView;
-    return _mainPreviewScreenUIViewInteractionEntity.uiViewButtonHolderFrame;
+    return _slidingUIViewDataModel.templateOfMasterUIView ;
+    //return _mainPreviewScreenUIViewInteractionEntity.uiViewButtonHolderFrame;
 };
 
 @end
