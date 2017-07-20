@@ -79,16 +79,18 @@ bool animationIsInProgress;
         [_slidingUIViewDataModel.templateOfMasterUIView addSubview:_mainPreviewScreenUIViewInteractionEntity.uiViewButtonHolderFrame];
         // Sliding view
 
+        _uIViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uIViewNNDBar];
+        _masterUIViewCLass = [[MasterUIViewCLass alloc] initWithMasterUIViewDataStructureApplicationUIView];
 
-//        _uIViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uIViewNNDBar];
-//        _masterUIViewCLass = [[MasterUIViewCLass alloc] initWithMasterUIViewDataStructureApplicationUIView];
+
+
 
         // Pre-Build the SlidingUIView with button and interactivity options
  //       [_slidingUIViewDataModel.templateOfMasterUIView addSubview: _mainPreviewScreenUIViewInteractionEntity.bringOnSlidingMenueUIButton];
         // Build sandwitch with the layers. Priorotize layers.
 
- //       [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.templateOfMasterUIView atIndex:0];
-//        [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_uIViewNNDBar.uiVIewNNDBarView atIndex:0];
+        [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.templateOfMasterUIView atIndex:1];
+        [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_uIViewNNDBar.uiVIewNNDBarView atIndex:0];
 
 
 
@@ -114,9 +116,9 @@ bool animationIsInProgress;
 
     //UIView *t = _slidingUIViewDataModel.masterUIViewClass.mainPewviewScreenUIView;
     //return _slidingUIViewDataModel.templateOfMasterUIView;
-//    return _masterUIViewCLass.mainPewviewScreenUIView;
+   return _masterUIViewCLass.mainPewviewScreenUIView;
 
-    return _slidingUIViewDataModel.templateOfMasterUIView ;
+//    return _slidingUIViewDataModel.templateOfMasterUIView ;
     //return _mainPreviewScreenUIViewInteractionEntity.uiViewButtonHolderFrame;
 };
 

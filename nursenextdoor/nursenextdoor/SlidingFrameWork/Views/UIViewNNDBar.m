@@ -36,7 +36,7 @@
     if (self) {
 
             _uiVIewNNDBarView = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
-            _uiVIewNNDBarView.backgroundColor = [UIColor yellowColor];
+            _uiVIewNNDBarView.backgroundColor = [UIColor whiteColor];
 
         /*
          Author: Kian D.Rad
