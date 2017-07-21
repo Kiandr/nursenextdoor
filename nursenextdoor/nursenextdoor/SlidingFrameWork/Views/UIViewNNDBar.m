@@ -107,9 +107,6 @@
 
 }
 
-
-
-
 // Call it with Self here. Or the _uiViewNNDBar
 -(void)InitButtons {
     /*
@@ -150,50 +147,4 @@
     
 }
 
-//
-//-(instancetype*)initwithButtonsWithSelf :(UIViewNNDBar*) uiViewNNDBarIncoming{
-//    /*
-//     Author: Kian D.Rad
-//     Date:   July 14th 2017
-//     README: This class build button with an incomind datamodel
-//     ToDO:
-//     1- keep reffernce to the interncal class;
-//     2- Build all menue buttons and add to incoming class
-//     3- incoming class and itnernal class reffer to the same pointer
-//
-//
-//     */
-//
-//
-//    // build four uibuttons with icon inject them all appropriately, no magic number though.
-//    _uiButtonHome = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 400, 400)];
-//    //[_uiButtonHome setTitle:buttonText forState:UIControlStateNormal];
-//    [_uiButtonHome setTitle:@"Home" forState:UIControlStateNormal];
-//
-//
-//
-//
-//    _uiButtonScheduledVisits = [[UIButton alloc]init];
-//    [_uiButtonScheduledVisits setTitle:@"Scheduled Visits" forState:UIControlStateNormal];
-//
-//
-//    _uiButtonMap = [[UIButton alloc]init];
-//    [_uiButtonMap setTitle:@"Map" forState:UIControlStateNormal];
-//
-//    _uiButtonHelp = [[UIButton alloc]init];
-//    [_uiButtonHelp setTitle:@"Help" forState:UIControlStateNormal];
-//
-//
-//    // Add them all into the UIView
-//    // [_slidingUIViewDataModel.templateOfMasterUIView insertSubview: _masterUIViewCLass.mainPewviewScreenUIView atIndex:0];
-//    [uiViewNNDBarIncoming.uiVIewNNDBarView insertSubview:_uiButtonHome atIndex:0 ];
-//    [uiViewNNDBarIncoming.uiVIewNNDBarView insertSubview:_uiButtonScheduledVisits atIndex:0 ];
-//    [uiViewNNDBarIncoming.uiVIewNNDBarView insertSubview:_uiButtonMap atIndex:0 ];
-//    [uiViewNNDBarIncoming.uiVIewNNDBarView insertSubview:_uiButtonHelp atIndex:0 ];
-//
-//    // keep reffernce to the interncal class
-//    _uIViewNNDBar = uiViewNNDBarIncoming;
-//
-//    return self;
-//}
 @end
