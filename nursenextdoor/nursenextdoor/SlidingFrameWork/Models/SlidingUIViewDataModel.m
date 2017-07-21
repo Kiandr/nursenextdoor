@@ -114,9 +114,9 @@ ToDo:
         [UIView beginAnimations:@"ShowHideView2" context:nil];
         [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
         [UIView setAnimationDuration:0.25];
-        [UIView setAnimationDelay:0.5];
+        [UIView setAnimationDelay:2.5];
     
-        //    _rightUiView.alpha = 1.0;
+            //_rightUiView.alpha = 2.0;
         _templateOfMasterUIView.frame = [UIApplication sharedApplication].delegate.window.frame;
     
         [UIView commitAnimations];
