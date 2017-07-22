@@ -20,10 +20,19 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "UIButtonDataModel.h"
 
+@protocol UIButtonDataModelControllerDelegate <NSObject>
+
+-(void) callBackFunctionUIButtonDataModelControllerDelegate;
+
+@end
 
 @class UIViewNNDBar;
-@interface UIViewNNDBar : UIViewController
+@interface UIViewNNDBar : UIViewController<UIButtonDataModelControllerDelegate>
+
+
+@property (retain, nonatomic) id<UIButtonDataModelControllerDelegate> delegate;
 
 // Return this class, only. One UIView with eveything
 @property (strong,nonatomic) UIView *uiVIewNNDBarView;
@@ -33,10 +42,10 @@
 
 
 // Each button represents a UIVIew, should follow the same as SlidingUIViewDataModel
-@property (strong,nonatomic) UIButton *uiButtonHome;
-@property (strong,nonatomic) UIButton *uiButtonScheduledVisits;
-@property (strong,nonatomic) UIButton *uiButtonMap;
-@property (strong,nonatomic) UIButton *uiButtonHelp;
+@property (strong,nonatomic) UIButtonDataModel *uiButtonHome;
+@property (strong,nonatomic) UIButtonDataModel *uiButtonScheduledVisits;
+@property (strong,nonatomic) UIButtonDataModel *uiButtonMap;
+@property (strong,nonatomic) UIButtonDataModel *uiButtonHelp;
 
 
 

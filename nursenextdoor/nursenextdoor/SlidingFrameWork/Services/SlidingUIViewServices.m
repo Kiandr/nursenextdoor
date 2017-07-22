@@ -89,7 +89,7 @@ bool animationIsInProgress;
  //       [_slidingUIViewDataModel.templateOfMasterUIView addSubview: _mainPreviewScreenUIViewInteractionEntity.bringOnSlidingMenueUIButton];
         // Build sandwitch with the layers. Priorotize layers.
 
-        [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.templateOfMasterUIView atIndex:1];
+      //  [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.templateOfMasterUIView atIndex:1];
         [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_uIViewNNDBar.uiVIewNNDBarView atIndex:0];
 
 

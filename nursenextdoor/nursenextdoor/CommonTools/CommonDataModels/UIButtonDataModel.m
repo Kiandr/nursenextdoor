@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import "UIButtonDataModel.h"
 @implementation UIButtonDataModel: NSObject
 
 
@@ -24,5 +24,33 @@
 
 
 
+
+-(instancetype) initWithDataModel: (UIButtonDataModel*) model{
+/*
+ Author: 
+ Date: 
+ README: 
+ ToDo: 
+ 1- initalize the only uibutton so others can have access to it.  DONE
+ 2- Once the initalize uses the model to set properties of the UIButton
+ */
+
+
+    self = [super init];
+    if (self) {
+
+        _uiButtonReturnObject =[[UIButton alloc]initWithFrame:CGRectMake(0, 500 , 200, 200)];
+        [_uiButtonReturnObject setTitle:@"TestButton" forState:UIControlStateNormal];
+        [_uiButtonReturnObject setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [_uiButtonReturnObject addTarget:self action:@selector(callBackFunctionUIButtonDataModel) forControlEvents:UIControlEventTouchUpInside];
+
+       // [_uiButtonReturnObject setHighlighted:YES];
+        //[_uiButtonReturnObject sendActionsForControlEvents:UIControlEventTouchUpInside];
+       // [_uiButtonReturnObject performSelector:@selector(setHighlighted:) withObject:NO afterDelay:0.25];
+
+    }
+    return self;
+
+};
 
 @end
