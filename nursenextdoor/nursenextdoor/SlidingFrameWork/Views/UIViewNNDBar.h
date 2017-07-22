@@ -22,14 +22,14 @@
 #import <UIKit/UIKit.h>
 #import "UIButtonDataModel.h"
 
-@protocol UIButtonDataModelControllerDelegate <NSObject>
-
--(void) callBackFunctionUIButtonDataModelControllerDelegate;
-
-@end
+//@protocol UIViewNNDBarControllerDelegate <NSObject>
+//
+//-(void) callBackFunctionUIButtonDataModelControllerDelegate;
+//
+//@end
 
 @class UIViewNNDBar;
-@interface UIViewNNDBar : UIViewController<UIButtonDataModelControllerDelegate>
+@interface UIViewNNDBar : NSObject<UIButtonDataModelControllerDelegate>
 
 
 @property (retain, nonatomic) id<UIButtonDataModelControllerDelegate> delegate;

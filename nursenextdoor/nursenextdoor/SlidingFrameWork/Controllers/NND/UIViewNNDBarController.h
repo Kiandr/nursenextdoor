@@ -20,7 +20,7 @@
  */
 
 @class UIViewNNDBarController;
-@interface UIViewNNDBarController : UIViewController<UIButtonDataModelControllerDelegate>
+@interface UIViewNNDBarController : NSObject  //: UIViewController<UIButtonDataModelControllerDelegate>
 
 
 @end

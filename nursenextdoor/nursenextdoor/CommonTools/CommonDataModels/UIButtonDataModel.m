@@ -10,7 +10,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "UIButtonDataModel.h"
-@implementation UIButtonDataModel: NSObject
+#import "UIViewNNDBarController.h"
+@implementation UIButtonDataModel
 
 
 - (instancetype)init {
@@ -42,7 +43,7 @@
         _uiButtonReturnObject =[[UIButton alloc]initWithFrame:CGRectMake(0, 500 , 200, 200)];
         [_uiButtonReturnObject setTitle:@"TestButton" forState:UIControlStateNormal];
         [_uiButtonReturnObject setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-        [_uiButtonReturnObject addTarget:self action:@selector(callBackFunctionUIButtonDataModel) forControlEvents:UIControlEventTouchUpInside];
+        [_uiButtonReturnObject addTarget:model.reciverClass action:@selector(callBackFunctionUIButtonDataModel) forControlEvents:UIControlEventTouchUpInside];
 
        // [_uiButtonReturnObject setHighlighted:YES];
         //[_uiButtonReturnObject sendActionsForControlEvents:UIControlEventTouchUpInside];
@@ -52,5 +53,10 @@
     return self;
 
 };
+
+
+-(void) callBackFunctionUIButtonDataModel{
+    NSLog(@"test");
+}
 
 @end

@@ -15,9 +15,9 @@
 
 
 
--(void) callBackFunctionUIButtonDataModel{
-
-    NSLog(@"delgate method at -(void) callBackFunctionUIButtonDataModelControllerDelegate; worked");
-}
+//-(void) callBackFunctionUIButtonDataModel{
+//
+//    NSLog(@"delgate method at -(void) callBackFunctionUIButtonDataModelControllerDelegate; worked");
+//}
 
 @end

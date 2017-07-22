@@ -56,7 +56,10 @@
         //[_uiButtonHome setTitle:buttonText forState:UIControlStateNormal];
 //        [_uiButtonHome setTitle:@"Home" forState:UIControlStateNormal];
 
-        _uiButtonHome = [[UIButtonDataModel alloc]initWithDataModel:nil];
+        UIButtonDataModel *builder = [[UIButtonDataModel alloc]init];
+        builder.reciverClass = self;
+
+        _uiButtonHome = [[UIButtonDataModel alloc]initWithDataModel:builder];
         // Set a pointer to the self class.
         _uIViewNNDBar = self;
 

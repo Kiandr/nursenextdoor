@@ -20,7 +20,7 @@
 
 
 @class UIButtonDataModel;
-@interface UIButtonDataModel : NSObject
+@interface UIButtonDataModel : NSObject//UIControl <UIButtonDataModelControllerDelegate>
 
 typedef struct {
 /*
@@ -36,6 +36,7 @@ typedef struct {
 @property (retain, nonatomic) id<UIButtonDataModelControllerDelegate> delegate;
 @property (strong, nonatomic) NSString * titleString;
 @property (strong, nonatomic) UIButton * uiButtonReturnObject;
+@property (retain, nonatomic) id reciverClass; 
 
 
 /*
