@@ -40,7 +40,7 @@
     self = [super init];
     if (self) {
 
-        _uiButtonReturnObject =[[UIButton alloc]initWithFrame:CGRectMake(0, 500 , 200, 200)];
+        _uiButtonReturnObject =[[UIButton alloc]initWithFrame:CGRectMake(0, 500 , 400, 400)];
         [_uiButtonReturnObject setTitle:@"TestButton" forState:UIControlStateNormal];
         [_uiButtonReturnObject setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         [_uiButtonReturnObject addTarget:model.reciverClass action:@selector(callBackFunctionUIButtonDataModel) forControlEvents:UIControlEventTouchUpInside];

@@ -35,29 +35,7 @@ bool animationIsInProgress;
 }
 
 
-//SlidingUIViewDataModel
-#pragma Private Members
 
-- (UIView*)ButtonWithTitle {
-
-
-
-        UIView *uiBrandFooterView =[[UIView alloc]initWithFrame:CGRectMake(0,0,150,100)];
-        uiBrandFooterView.backgroundColor = [UIColor clearColor];
-
-        UIButton *upcomingVisistsButton = [UIButton buttonWithType:UIButtonTypeSystem];
-        upcomingVisistsButton.frame = CGRectMake(0,0,150,100);
-        upcomingVisistsButton.backgroundColor = [UIColor yellowColor];
-        // This shall be localized for various languages
-        NSString *UpcomingVisits = [[NSString alloc] initWithFormat:@"upcoming visits"];
-        upcomingVisistsButton.userInteractionEnabled = YES;
-        [upcomingVisistsButton setTitle:UpcomingVisits forState:UIControlStateNormal];
-        [upcomingVisistsButton setTintColor:[UIColor whiteColor]];
-        [upcomingVisistsButton addTarget:self  action:@selector(taggleUIViews:) forControlEvents:UIControlEventTouchDown];
-        [uiBrandFooterView addSubview:upcomingVisistsButton];
-        
-        return uiBrandFooterView;
-    }
 - (instancetype) initWithSlidingUIViewDataModel {
 
 /*
@@ -71,30 +49,13 @@ bool animationIsInProgress;
     self = [super init];
     if (self) {
 
-        // Initialize necessary components within this class with the following order.
-        // Do not looss order, you need the slidingUIVIewDataModel pointer to pass to next function for refference.
         _slidingUIViewDataModel = [[SlidingUIViewDataModel alloc]initWithSlidingUIViewDataModel:_slidingUIViewDataModel];
         _mainPreviewScreenUIViewInteractionEntity = [[MainPreviewScreenUIViewInteractionEntity alloc]initWithMainPreviewScreenUIViewInteractionEntityWithModel:_mainPreviewScreenUIViewInteractionEntity AndWithSlidingUIViewDataModel:_slidingUIViewDataModel];
-
         [_slidingUIViewDataModel.templateOfMasterUIView addSubview:_mainPreviewScreenUIViewInteractionEntity.uiViewButtonHolderFrame];
-        // Sliding view
-
         _uIViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uIViewNNDBar];
         _masterUIViewCLass = [[MasterUIViewCLass alloc] initWithMasterUIViewDataStructureApplicationUIView];
-
-
-
-
-        // Pre-Build the SlidingUIView with button and interactivity options
- //       [_slidingUIViewDataModel.templateOfMasterUIView addSubview: _mainPreviewScreenUIViewInteractionEntity.bringOnSlidingMenueUIButton];
-        // Build sandwitch with the layers. Priorotize layers.
-
-      //  [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.templateOfMasterUIView atIndex:1];
+        [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.templateOfMasterUIView atIndex:1];
         [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_uIViewNNDBar.uiVIewNNDBarView atIndex:0];
-
-
-
-
 
     }
     return self;
