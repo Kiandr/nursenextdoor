@@ -36,7 +36,7 @@
     if (self) {
 
             _uiVIewNNDBarView = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
-            _uiVIewNNDBarView.backgroundColor = [UIColor whiteColor];
+            _uiVIewNNDBarView.backgroundColor = [UIColor darkGrayColor];
 
         /*
          Author: Kian D.Rad
@@ -51,11 +51,6 @@
          */
 
 
-        // build four uibuttons with icon inject them all appropriately, no magic number though.
-  //      _uiButtonHome = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 400, 400)];
-        //[_uiButtonHome setTitle:buttonText forState:UIControlStateNormal];
-//        [_uiButtonHome setTitle:@"Home" forState:UIControlStateNormal];
-
         UIButtonDataModel *builder = [[UIButtonDataModel alloc]init];
         builder.reciverClass = self;
 
@@ -64,34 +59,9 @@
         _uIViewNNDBar = self;
 
 
-//        _uiButtonScheduledVisits = [[UIButton alloc]init];
-//        [_uiButtonScheduledVisits setTitle:@"Scheduled Visits" forState:UIControlStateNormal];
-//
-//
-//        _uiButtonMap = [[UIButton alloc]init];
-//        [_uiButtonMap setTitle:@"Map" forState:UIControlStateNormal];
-//
-//        _uiButtonHelp = [[UIButton alloc]init];
-//        [_uiButtonHelp setTitle:@"Help" forState:UIControlStateNormal];
+        [_uIViewNNDBar.uiVIewNNDBarView addSubview:_uiButtonHome.uiButtonReturnObject];
+        //[_uIViewNNDBar.uiVIewNNDBarView insertSubview:_uiButtonHome.uiButtonReturnObject atIndex:0 ];
 
-
-        // Add them all into the UIView
-        // [_slidingUIViewDataModel.templateOfMasterUIView insertSubview: _masterUIViewCLass.mainPewviewScreenUIView atIndex:0];
-        [_uIViewNNDBar.uiVIewNNDBarView insertSubview:_uiButtonHome.uiButtonReturnObject atIndex:0 ];
-//        [uiViewNNDBarIncoming.uiVIewNNDBarView insertSubview:_uiButtonScheduledVisits atIndex:0 ];
-//        [uiViewNNDBarIncoming.uiVIewNNDBarView insertSubview:_uiButtonMap atIndex:0 ];
-//        [uiViewNNDBarIncoming.uiVIewNNDBarView insertSubview:_uiButtonHelp atIndex:0 ];
-//        
-        // keep reffernce to the interncal class
-        //_uIViewNNDBar = uiViewNNDBarIncoming;
-
-
-
-
-
-            // Not proud of this
-            //[self InitButtons];
-            // [self InitButtonsWithSelf:self];
     }
     return self;
 }
