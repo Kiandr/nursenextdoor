@@ -43,6 +43,8 @@
 
             _templateOfMasterUIView = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
             [_templateOfMasterUIView setBackgroundColor:[UIColor greenColor]];
+            _uiViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uiViewNNDBar];
+            _templateOfMasterUIView = _uiViewNNDBar.uiviewPermenantConnectionToSlidingUIViewModel;
             _slidingUIViewDataModel = self;
 
         }

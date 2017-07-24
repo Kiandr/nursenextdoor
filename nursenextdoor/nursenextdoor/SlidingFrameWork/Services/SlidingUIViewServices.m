@@ -52,10 +52,10 @@ bool animationIsInProgress;
         _slidingUIViewDataModel = [[SlidingUIViewDataModel alloc]initWithSlidingUIViewDataModel:_slidingUIViewDataModel];
         _mainPreviewScreenUIViewInteractionEntity = [[MainPreviewScreenUIViewInteractionEntity alloc]initWithMainPreviewScreenUIViewInteractionEntityWithModel:_mainPreviewScreenUIViewInteractionEntity AndWithSlidingUIViewDataModel:_slidingUIViewDataModel];
         [_slidingUIViewDataModel.templateOfMasterUIView addSubview:_mainPreviewScreenUIViewInteractionEntity.uiViewButtonHolderFrame];
-        _uIViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uIViewNNDBar];
+        //_uIViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uIViewNNDBar];
         _masterUIViewCLass = [[MasterUIViewCLass alloc] initWithMasterUIViewDataStructureApplicationUIView];
         [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.templateOfMasterUIView atIndex:1];
-        [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_uIViewNNDBar.uiVIewNNDBarView atIndex:0];
+        [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.uiViewNNDBar.uiVIewNNDBarView atIndex:0];
 
     }
     return self;

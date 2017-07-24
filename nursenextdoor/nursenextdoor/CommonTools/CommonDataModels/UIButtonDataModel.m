@@ -45,9 +45,15 @@
         [_uiButtonReturnObject setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
         [_uiButtonReturnObject addTarget:model.reciverClass action:@selector(callBackFunctionUIButtonDataModel:) forControlEvents:UIControlEventTouchUpInside];
         [_uiButtonReturnObject setBackgroundColor:[UIColor blueColor]];
-       // [_uiButtonReturnObject setHighlighted:YES];
-        //[_uiButtonReturnObject sendActionsForControlEvents:UIControlEventTouchUpInside];
-       // [_uiButtonReturnObject performSelector:@selector(setHighlighted:) withObject:NO afterDelay:0.25];
+
+        /*
+         Author: Kian D.Rad
+         Date: July 24th 2017
+         README: UIView associated to the UIButton
+
+         */
+
+
 
     }
     return self;

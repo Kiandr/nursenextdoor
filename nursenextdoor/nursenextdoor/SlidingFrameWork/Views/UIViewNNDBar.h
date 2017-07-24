@@ -47,7 +47,9 @@
 @property (strong,nonatomic) UIButtonDataModel *uiButtonMap;
 @property (strong,nonatomic) UIButtonDataModel *uiButtonHelp;
 
-@property (strong,nonatomic) UIButtonDataModel *currentUiButtonSelector;
+@property (strong,nonatomic) UIView *uiviewTesterToReplacePermeneantConnectionToSlidingView;
+
+@property (strong,nonatomic) UIView *uiviewPermenantConnectionToSlidingUIViewModel;
 
 
 

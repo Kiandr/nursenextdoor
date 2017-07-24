@@ -36,7 +36,14 @@ typedef struct {
 @property (retain, nonatomic) id<UIButtonDataModelControllerDelegate> delegate;
 @property (strong, nonatomic) NSString * titleString;
 @property (strong, nonatomic) UIButton * uiButtonReturnObject;
-@property (retain, nonatomic) id reciverClass; 
+@property (retain, nonatomic) id reciverClass;
+/*
+ /*
+ Author: Kian D.Rad
+ Date: July 24rd 2017
+ README: When the button is initated, the UIBotton also correlated to an UIView.
+ */
+@property (strong, nonatomic) UIView *uiViewUiButto;
 
 
 /*
