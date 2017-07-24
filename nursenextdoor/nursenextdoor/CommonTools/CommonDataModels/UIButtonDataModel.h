@@ -14,7 +14,7 @@
 
 @protocol UIButtonDataModelControllerDelegate <NSObject>
 
--(void) callBackFunctionUIButtonDataModel;
+-(void) callBackFunctionUIButtonDataModel:(id) sender;
 
 @end
 
