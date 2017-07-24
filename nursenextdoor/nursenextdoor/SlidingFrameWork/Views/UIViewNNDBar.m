@@ -115,8 +115,8 @@
      */
 
 
-
-
+// replace xx with xx
+    [_uiviewPermenantConnectionToSlidingUIViewModel addSubview:_uiviewTesterToReplacePermeneantConnectionToSlidingView ];
     NSLog(@"delgate method at -(void) callBackFunctionUIButtonDataModelControllerDelegate; worked @%@", sender.titleLabel);
 }
 
