@@ -86,7 +86,7 @@
      README:    In this function I know which button was selected by user on the UIViewNNDBar. 
         Now, I have to load the appropriate UIView into _currentButtonSelector or a common UIView, 
         which behaves as a pointer. The UIView should have been already initated. And then you ask 
-        UIView animation to buring that UIView into the template holder. 
+        UIView animation to buring that UIView into the template holder.
      ToDO:
      */
 
