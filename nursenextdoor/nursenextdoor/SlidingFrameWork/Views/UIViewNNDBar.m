@@ -116,7 +116,10 @@
 
 
 // replace xx with xx
-    [_uiviewPermenantConnectionToSlidingUIViewModel addSubview:_uiviewTesterToReplacePermeneantConnectionToSlidingView ];
+//    [_uiviewPermenantConnectionToSlidingUIViewModel addSubview:_uiviewTesterToReplacePermeneantConnectionToSlidingView ];
+  //  [_uiviewPermenantConnectionToSlidingUIViewModel setFrame:[UIApplication sharedApplication].delegate.window.frame];
+
+    [self updateUiViewAnimcation:nil finished:nil context:nil  ];
     NSLog(@"delgate method at -(void) callBackFunctionUIButtonDataModelControllerDelegate; worked @%@", sender.titleLabel);
 }
 
@@ -135,6 +138,25 @@
      UIView animation to buring that UIView into the template holder.
      ToDO:
      */
+
+
+
+
+
+        [UIView animateWithDuration:0.25
+                              delay:0.0
+                            options:(UIViewAnimationCurveEaseInOut|UIViewAnimationOptionAllowUserInteraction)
+                         animations:^{
+                             [UIView setAnimationDelegate:self];
+
+                             // This line also calls an other function upon completion too.
+                             //[UIView setAnimationDidStopSelector:@selector(goDown:finished:context:)];
+                             [_uiviewPermenantConnectionToSlidingUIViewModel setFrame:[UIApplication sharedApplication].delegate.window.frame];
+                         }completion:^(BOOL finished){
+                             NSLog(@"Face Up done");
+                             
+                         }];
+        
 
 }
 
