@@ -47,7 +47,7 @@
 @property (strong,nonatomic) UIButtonDataModel *uiButtonMap;
 @property (strong,nonatomic) UIButtonDataModel *uiButtonHelp;
 
-
+@property (strong,nonatomic) UIButtonDataModel *currentUiButtonSelector;
 
 
 

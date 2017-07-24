@@ -46,8 +46,6 @@
          1- keep reffernce to the interncal class;
          2- Build all menue buttons and add to incoming class
          3- incoming class and itnernal class reffer to the same pointer
-
-
          */
 
 
@@ -80,47 +78,20 @@
 
 }
 
-// Call it with Self here. Or the _uiViewNNDBar
--(void)InitButtons {
-//    /*
-//     Author: Kian D.Rad
-//     Date:   July 14th 2017
-//     README: This class build button inside the bar from internal properties
-//     ToDO:
-//     1- Localize the stupid strings, i hate that!
-//
-//     */
-//
-//
-//    // build four uibuttons with icon inject them all appropriately, no magic number though.
-//    _uiButtonHome = [[UIButton alloc]init];
-//    //[_uiButtonHome setTitle:buttonText forState:UIControlStateNormal];
-//    [_uiButtonHome setTitle:@"Home" forState:UIControlStateNormal];
-//    [_uiButtonHome setFrame:CGRectMake(100, ([[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame].frame.size.height)-100, 100, 100)];
-//    [_uiButtonHome setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//
-//    _uiButtonScheduledVisits = [[UIButton alloc]init];
-//    [_uiButtonScheduledVisits setTitle:@"Scheduled Visits" forState:UIControlStateNormal];
-//    [_uiButtonScheduledVisits setFrame:CGRectMake(100, 0, 100, 100)];
-//    _uiButtonMap = [[UIButton alloc]init];
-//    [_uiButtonMap setTitle:@"Map" forState:UIControlStateNormal];
-//
-//    [_uiButtonScheduledVisits setFrame:CGRectMake(200, 0, 100, 100)];
-//    _uiButtonHelp = [[UIButton alloc]init];
-//    [_uiButtonHelp setTitle:@"Help" forState:UIControlStateNormal];
-//
-//
-//
-//    // Add them all into the UIView
-//    // [_slidingUIViewDataModel.templateOfMasterUIView insertSubview: _masterUIViewCLass.mainPewviewScreenUIView atIndex:0];
-//    [_uIViewNNDBar.uiVIewNNDBarView insertSubview:_uiButtonHome atIndex:0 ];
-//    [_uIViewNNDBar.uiVIewNNDBarView insertSubview:_uiButtonScheduledVisits atIndex:0 ];
-//    [_uIViewNNDBar.uiVIewNNDBarView insertSubview:_uiButtonMap atIndex:0 ];
-//    [_uIViewNNDBar.uiVIewNNDBarView insertSubview:_uiButtonHelp atIndex:0 ];
-
-}
 
 -(void) callBackFunctionUIButtonDataModel:(UIButton*) sender{
+    /*
+     Author: Kian D.Rad
+     Date:   July 23th 2017
+     README:    In this function I know which button was selected by user on the UIViewNNDBar. 
+        Now, I have to load the appropriate UIView into _currentButtonSelector or a common UIView, 
+        which behaves as a pointer. The UIView should have been already initated. And then you ask 
+        UIView animation to buring that UIView into the template holder. 
+     ToDO:
+     */
+
+
+    _currentUiButtonSelector.uiButtonReturnObject = sender;
 
     NSLog(@"delgate method at -(void) callBackFunctionUIButtonDataModelControllerDelegate; worked @%@", sender.titleLabel);
 }

@@ -23,7 +23,7 @@
 @class SlidingUIViewDataModel;
 
 
-@interface SlidingUIViewDataModel : NSObject
+@interface SlidingUIViewDataModel : NSObject<UIButtonDataModelControllerDelegate>
 /*
  Author: Kian D.Rad
  Date:   Jun 30th 2017
