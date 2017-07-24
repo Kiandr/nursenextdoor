@@ -32,7 +32,7 @@
      Author: Kian D.Rad
      Date: Jun30th2017
      README: This function sets all coordinates for the UIView funamendal layers.
-     
+
      */
 
     self = [super init];
@@ -60,77 +60,120 @@
 
 
 /*
-Author: Kian D.Rad
-Date: July 14th 2017
-README:Tester to observe the callBackfunction being invoked by an other class
-ToDo:
-    1- Return te template UIView if no other button was selected. If so, return it back and load that UIView on top.
-*/
+ Author: Kian D.Rad
+ Date: July 14th 2017
+ README:Tester to observe the callBackfunction being invoked by an other class
+ ToDo:
+ 1- Return te template UIView if no other button was selected. If so, return it back and load that UIView on top.
+ */
 - (id)callBackFunctionButton:(id)sender{
-    NSLog(@"Success!");
+    //    NSLog(@"Success!");
+    //
+    //    NSDate * now = [NSDate date];
+    //    NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
+    //    [outputFormatter setDateFormat:@"HH:mm:ss"];
+    //    NSString *newDateString = [outputFormatter stringFromDate:now];
+    //    NSLog(@"newDateString %@", newDateString);
 
-    NSDate * now = [NSDate date];
-    NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
-    [outputFormatter setDateFormat:@"HH:mm:ss"];
-    NSString *newDateString = [outputFormatter stringFromDate:now];
-    NSLog(@"newDateString %@", newDateString);
+    //    // Transition sequence
+    //    [UIView beginAnimations:@"ShowHideView" context:nil];
+    //    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    //    [UIView setAnimationDuration:0.250];
+    //    [UIView setAnimationDelegate:self];
+    //    [UIView setAnimationDidStopSelector:@selector(goDown:finished:context:)];
+    //
+    //    // Make the animatable changes.
+    //    // _leftUiView.alpha = 1.0;
+    //    // _rightUiView.alpha = 0.0;
+    //
+    //
+    //    int x = _slidingUIViewDataModel.templateOfMasterUIView.frame.size.width;
+    //    int y = _slidingUIViewDataModel.templateOfMasterUIView.frame.size.height;
+    //
+    //    // Transition Direction
+    //    _templateOfMasterUIView.frame = CGRectMake(0, -100, x,y);//);[UIApplication sharedApplication].delegate.window.frame.size.height, [UIApplication sharedApplication].delegate.window.frame.size.width);
+    //
+    //    // Commit the changes and perform the animation.
+    //    [UIView commitAnimations];
 
-    // Transition sequence
-    [UIView beginAnimations:@"ShowHideView" context:nil];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-    [UIView setAnimationDuration:0.250];
-    [UIView setAnimationDelegate:self];
-    [UIView setAnimationDidStopSelector:@selector(showHideDidStop:finished:context:)];
-    
-    // Make the animatable changes.
-    // _leftUiView.alpha = 1.0;
-    // _rightUiView.alpha = 0.0;
 
+    [self goUp:nil finished:nil context:nil];
 
-    int x = _slidingUIViewDataModel.templateOfMasterUIView.frame.size.width;
-    int y = _slidingUIViewDataModel.templateOfMasterUIView.frame.size.height;
-
-    // Transition Direction
-    _templateOfMasterUIView.frame = CGRectMake(0, -100, x,y);//);[UIApplication sharedApplication].delegate.window.frame.size.height, [UIApplication sharedApplication].delegate.window.frame.size.width);
-
-    // Commit the changes and perform the animation.
-    [UIView commitAnimations];
 
     return nil;
 
 }
 - (void)showHideDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
-        /*
-         Author: Kian D.RAd
-         Date:   Jun 30th 2017
-         README: This is a delegate like method that informs me, when the transition or
-         animation have been completed. So based on this accurately take the next step */
-    
-        // Set book value to false, so the progam knows that the transition was finished.
-        // This is for internal use, if you wanna use publicly use, the Objective C method.
+    /*
+     Author: Kian D.RAd
+     Date:   Jun 30th 2017
+     README: This is a delegate like method that informs me, when the transition or
+     animation have been completed. So based on this accurately take the next step */
 
+    // Set book value to false, so the progam knows that the transition was finished.
+    // This is for internal use, if you wanna use publicly use, the Objective C method.
+
+
+    // Test Animation
+    [UIView beginAnimations:@"ShowHideView2" context:nil];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    [UIView setAnimationDuration:0.25];
+    [UIView setAnimationDelay:2.5];
+
+    //_rightUiView.alpha = 2.0;
+    _templateOfMasterUIView.frame = [UIApplication sharedApplication].delegate.window.frame;
+
+    [UIView commitAnimations];
+
+
+}
+
+- (void)goDown:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
+
+    [UIView animateWithDuration:0.25
+                          delay:3.0
+                        options:(UIViewAnimationOptionAllowUserInteraction)
+                     animations:^{
+                         [UIView setAnimationDelegate:self];
+
+                         // [UIView setAnimationDidStopSelector:@selector(moveToLeft:finished:context:)];
+                         _templateOfMasterUIView.frame = [UIApplication sharedApplication].delegate.window.frame;
+
+
+                     }completion:^(BOOL finished){
+                         NSLog(@"Face left done");
+
+                     }];
+
+}
+
+
+
+- (void)goUp:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
+
+    [UIView animateWithDuration:0.25
+                          delay:0.0
+                        options:(UIViewAnimationCurveEaseInOut|UIViewAnimationOptionAllowUserInteraction)
+                     animations:^{
+                         [UIView setAnimationDelegate:self];
+
+                         //[UIView setAnimationDidStopSelector:@selector(goDown:finished:context:)];
+                         _templateOfMasterUIView.frame = CGRectMake(0, -100, _slidingUIViewDataModel.templateOfMasterUIView.frame.size.width,_slidingUIViewDataModel.templateOfMasterUIView.frame.size.height);
+
+                     }completion:^(BOOL finished){
+                         NSLog(@"Face Up done");
+                         
+                     }];
     
-        // Test Animation
-        [UIView beginAnimations:@"ShowHideView2" context:nil];
-        [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-        [UIView setAnimationDuration:0.25];
-        [UIView setAnimationDelay:2.5];
-    
-            //_rightUiView.alpha = 2.0;
-        _templateOfMasterUIView.frame = [UIApplication sharedApplication].delegate.window.frame;
-    
-        [UIView commitAnimations];
-    
-    
-    }
+}
 
 
 /*
  
  
  if sender == "button1"
-    templateUIView remove:x;
-    templateUIView add:UIVIewButton1;
+ templateUIView remove:x;
+ templateUIView add:UIVIewButton1;
  
  */
 
