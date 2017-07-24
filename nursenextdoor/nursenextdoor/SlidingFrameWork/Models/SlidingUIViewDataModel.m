@@ -64,37 +64,9 @@
  Date: July 14th 2017
  README:Tester to observe the callBackfunction being invoked by an other class
  ToDo:
- 1- Return te template UIView if no other button was selected. If so, return it back and load that UIView on top.
+
  */
 - (id)callBackFunctionButton:(id)sender{
-    //    NSLog(@"Success!");
-    //
-    //    NSDate * now = [NSDate date];
-    //    NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
-    //    [outputFormatter setDateFormat:@"HH:mm:ss"];
-    //    NSString *newDateString = [outputFormatter stringFromDate:now];
-    //    NSLog(@"newDateString %@", newDateString);
-
-    //    // Transition sequence
-    //    [UIView beginAnimations:@"ShowHideView" context:nil];
-    //    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-    //    [UIView setAnimationDuration:0.250];
-    //    [UIView setAnimationDelegate:self];
-    //    [UIView setAnimationDidStopSelector:@selector(goDown:finished:context:)];
-    //
-    //    // Make the animatable changes.
-    //    // _leftUiView.alpha = 1.0;
-    //    // _rightUiView.alpha = 0.0;
-    //
-    //
-    //    int x = _slidingUIViewDataModel.templateOfMasterUIView.frame.size.width;
-    //    int y = _slidingUIViewDataModel.templateOfMasterUIView.frame.size.height;
-    //
-    //    // Transition Direction
-    //    _templateOfMasterUIView.frame = CGRectMake(0, -100, x,y);//);[UIApplication sharedApplication].delegate.window.frame.size.height, [UIApplication sharedApplication].delegate.window.frame.size.width);
-    //
-    //    // Commit the changes and perform the animation.
-    //    [UIView commitAnimations];
 
 
     [self goUp:nil finished:nil context:nil];
@@ -135,7 +107,7 @@
                         options:(UIViewAnimationOptionAllowUserInteraction)
                      animations:^{
                          [UIView setAnimationDelegate:self];
-
+                         // Completion selector. Multiple ways of doing the same thing.
                          // [UIView setAnimationDidStopSelector:@selector(moveToLeft:finished:context:)];
                          _templateOfMasterUIView.frame = [UIApplication sharedApplication].delegate.window.frame;
 
@@ -157,6 +129,7 @@
                      animations:^{
                          [UIView setAnimationDelegate:self];
 
+                         // This line also calls an other function upon completion too.
                          //[UIView setAnimationDidStopSelector:@selector(goDown:finished:context:)];
                          _templateOfMasterUIView.frame = CGRectMake(0, -100, _slidingUIViewDataModel.templateOfMasterUIView.frame.size.width,_slidingUIViewDataModel.templateOfMasterUIView.frame.size.height);
 
@@ -166,16 +139,6 @@
                      }];
     
 }
-
-
-/*
- 
- 
- if sender == "button1"
- templateUIView remove:x;
- templateUIView add:UIVIewButton1;
- 
- */
 
 
 @end
