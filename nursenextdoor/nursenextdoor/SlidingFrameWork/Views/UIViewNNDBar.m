@@ -102,7 +102,6 @@
 
 }
 
-
 -(void) callBackFunctionUIButtonDataModel:(UIButton*) sender{
     /*
      Author: Kian D.Rad
@@ -112,19 +111,15 @@
         which behaves as a pointer. The UIView should have been already initated. And then you ask 
         UIView animation to buring that UIView into the template holder.
      ToDO:
+        1- July 25th 2017: load the Home "UIView", keep reffernce to the componetns.
      */
 
 
-// replace xx with xx
-//    [_uiviewPermenantConnectionToSlidingUIViewModel addSubview:_uiviewTesterToReplacePermeneantConnectionToSlidingView ];
-  //  [_uiviewPermenantConnectionToSlidingUIViewModel setFrame:[UIApplication sharedApplication].delegate.window.frame];
+
 
     [self updateUiViewAnimcation:nil finished:nil context:nil  ];
     NSLog(@"delgate method at -(void) callBackFunctionUIButtonDataModelControllerDelegate; worked @%@", sender.titleLabel);
 }
-
-
-
 
 - (void)updateUiViewAnimcation:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
 
