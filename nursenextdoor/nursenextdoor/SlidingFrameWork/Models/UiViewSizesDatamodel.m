@@ -58,8 +58,16 @@
                 _uIViewButtonDataModelFrameOriginey   = _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginey +( [[UIApplication sharedApplication] statusBarFrame].size.height + _logoUiButtonFrameSizeHeight);
                 _uIViewButtonDataModelFrameSizeHeight =  windowView.frame.size.height - ( [[UIApplication sharedApplication] statusBarFrame].size.height + _logoUiButtonFrameSizeHeight);
                 _uIViewButtonDataModelFrameSizeWidth  = _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeWidth;
-                
-                
+
+
+                //_templateOfMasterUIView
+                _templateOfMasterUIViewFrameOriginex   = windowView.frame.origin.x;
+                _templateOfMasterUIViewlFrameOriginey  = windowView.frame.origin.y;
+                _templateOfMasterUIViewFrameSizeHeight = windowView.frame.size.height;
+                _templateOfMasterUIViewlFrameSizeWidth = windowView.frame.size.width;
+                _templateOfMasterUIViewBackGroundColor = [UIColor greenColor];
+
+
 
             _returnUIViewFrameWorkModel = self;
         }

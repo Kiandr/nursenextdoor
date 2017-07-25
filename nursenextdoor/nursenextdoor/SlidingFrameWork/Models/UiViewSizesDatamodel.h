@@ -46,8 +46,18 @@
 @property (nonatomic,assign)  CGFloat uIViewButtonDataModelFrameSizeWidth;
 
 
+//_templateOfMasterUIView
+@property (nonatomic,assign)  CGFloat templateOfMasterUIViewFrameOriginex;
+@property (nonatomic,assign)  CGFloat templateOfMasterUIViewlFrameOriginey;
+@property (nonatomic,assign)  CGFloat templateOfMasterUIViewFrameSizeHeight;
+@property (nonatomic,assign)  CGFloat templateOfMasterUIViewlFrameSizeWidth;
+@property (nonatomic, strong) UIColor* templateOfMasterUIViewBackGroundColor;
+
+
 @property (nonatomic, strong) UiViewSizesDatamodel * returnUIViewFrameWorkModel;
 
+
+- (instancetype)initDefaultModel;
 @end
 
 #endif /* UiViewSizesDatamodel_h */

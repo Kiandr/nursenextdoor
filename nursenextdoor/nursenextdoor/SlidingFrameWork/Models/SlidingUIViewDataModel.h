@@ -18,7 +18,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import "UiViewSizesDatamodel.h"
 #import "UIViewNNDBar.h"
 @class SlidingUIViewDataModel;
 
@@ -76,8 +76,8 @@ typedef struct masterUIViewDataStructure{
 @property(nonatomic, strong) UIView  *templateOfMasterUIView;
 
 
-- (instancetype)initWithSlidingUIViewDataModel:(SlidingUIViewDataModel*) incomingSlidingUIViewDataModel;
--(id)callBackFunctionButton:(id)sender;
+- (instancetype)initWithSlidingUIViewDataModel:(UiViewSizesDatamodel*) uiViewSizesDatamodel;
+- (id)callBackFunctionButton:(id)sender;
 
 @end
 #endif /* SlidingUIViewDataModel_h */

@@ -26,7 +26,7 @@
     }
     return self;
 }
-- (instancetype)initWithSlidingUIViewDataModel:(SlidingUIViewDataModel*) incomingSlidingUIViewDataModel{
+- (instancetype)initWithSlidingUIViewDataModel:(UiViewSizesDatamodel*) uiViewSizesDatamodel{
     /*
 
      Author: Kian D.Rad
@@ -40,11 +40,28 @@
 
 
         @try {
+            /*
+             Author: Kian D.Rad
+             Date: July 25th 2017
+             README: This function sets all coordinates for the UIView funamendal layers.
+             Note: I could have used the application size, but I rather use a strongly bounded data model.
+             */
+            _templateOfMasterUIView = [[UIView alloc]initWithFrame:CGRectMake(uiViewSizesDatamodel.templateOfMasterUIViewFrameOriginex,
+                                                                              uiViewSizesDatamodel.templateOfMasterUIViewlFrameOriginey,
+                                                                              uiViewSizesDatamodel.templateOfMasterUIViewlFrameSizeWidth,
+                                                                              uiViewSizesDatamodel.templateOfMasterUIViewFrameSizeHeight )];
 
-            _templateOfMasterUIView = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
-            [_templateOfMasterUIView setBackgroundColor:[UIColor greenColor]];
+
+            // Color is also stronly bonded, pre-built in a defined location. You can view on one eye all the colour sections in that class
+            [_templateOfMasterUIView setBackgroundColor: uiViewSizesDatamodel.templateOfMasterUIViewBackGroundColor];
+
+
+            // Sets the pointer, else pointer witll die and will be null, thus stackoverflow
             _uiViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uiViewNNDBar];
+
+            //
             _templateOfMasterUIView = _uiViewNNDBar.uiviewPermenantConnectionToSlidingUIViewModel;
+
             _slidingUIViewDataModel = self;
 
         }

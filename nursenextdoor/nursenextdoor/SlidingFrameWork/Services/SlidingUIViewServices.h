@@ -14,6 +14,7 @@
 #import "SlidingUIViewDataModel.h"
 #import "MainPreviewScreenUIViewInteractionEntity.h"
 #import "MasterUIViewCLass.h"
+#import "UiViewSizesDatamodel.h"
 @class SlidingUIViewServices;
 
 @interface SlidingUIViewServices : NSObject
@@ -32,6 +33,10 @@
 @property (nonatomic, strong) MainPreviewScreenUIViewInteractionEntity *mainPreviewScreenUIViewInteractionEntity;
 // This is the low level bar
 @property (nonatomic, strong) UIViewNNDBar *uIViewNNDBar;
+
+// this is the right sizes for the screens, all localized collected into a single class.
+@property (nonatomic, strong) UiViewSizesDatamodel *uiViewSizesDatamodel;
+
 
 
 
