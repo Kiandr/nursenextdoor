@@ -1,0 +1,91 @@
+diff --git a/nursenextdoor/nursenextdoor/SlidingFrameWork/Models/MainPreviewScreenUIViewInteractionEntity.h b/nursenextdoor/nursenextdoor/SlidingFrameWork/Models/MainPreviewScreenUIViewInteractionEntity.h
+index bc1ee9f..5d2ce91 100644
+--- a/nursenextdoor/nursenextdoor/SlidingFrameWork/Models/MainPreviewScreenUIViewInteractionEntity.h
++++ b/nursenextdoor/nursenextdoor/SlidingFrameWork/Models/MainPreviewScreenUIViewInteractionEntity.h
+@@ -11,6 +11,7 @@
+ 
+ #import <Foundation/Foundation.h>
+ #import <UIKit/UIKit.h>
++#import "SlidingUIViewDataModel.h"
+ 
+ @class MainPreviewScreenUIViewInteractionEntity;
+ 
+@@ -39,8 +40,8 @@ typedef struct {
+ // Public Properties:
+ @property (strong, nonatomic) UIGestureRecognizer* tapGesturePropery;
+ @property (strong, nonatomic) UIButton* bringOnSlidingMenueUIButton;
+-@property (strong,nonatomic) MainPreviewScreenUIViewInteractionEntity *mainPreviewScreenUIViewInteractionEntity;
+-
++@property (strong, nonatomic) MainPreviewScreenUIViewInteractionEntity *mainPreviewScreenUIViewInteractionEntity;
++@property (strong, nonatomic) SlidingUIViewDataModel *slidingUIViewDataModel;
+ 
+ 
+ - (instancetype)init ;
+diff --git a/nursenextdoor/nursenextdoor/SlidingFrameWork/Models/MasterUIViewCLass.h b/nursenextdoor/nursenextdoor/SlidingFrameWork/Models/MasterUIViewCLass.h
+index fc463f3..e4aa3ab 100644
+--- a/nursenextdoor/nursenextdoor/SlidingFrameWork/Models/MasterUIViewCLass.h
++++ b/nursenextdoor/nursenextdoor/SlidingFrameWork/Models/MasterUIViewCLass.h
+@@ -10,8 +10,6 @@
+ #define MasterUIViewDataStructure_h
+ #import <Foundation/Foundation.h>
+ #import <UIKit/UIKit.h>
+-#import "MainPreviewScreenUIViewInteractionEntity.h"
+-
+ 
+ 
+ @class MasterUIViewCLass;
+diff --git a/nursenextdoor/nursenextdoor/SlidingFrameWork/Models/SlidingUIViewDataModel.h b/nursenextdoor/nursenextdoor/SlidingFrameWork/Models/SlidingUIViewDataModel.h
+index eb18eff..ee19560 100644
+--- a/nursenextdoor/nursenextdoor/SlidingFrameWork/Models/SlidingUIViewDataModel.h
++++ b/nursenextdoor/nursenextdoor/SlidingFrameWork/Models/SlidingUIViewDataModel.h
+@@ -10,7 +10,7 @@
+ #define SlidingUIViewDataModel_h
+ 
+ 
+-#import "MasterUIViewCLass.h"
++
+ #import <Foundation/Foundation.h>
+ #import <UIKit/UIKit.h>
+ 
+@@ -33,7 +33,6 @@
+         3- Review Exams
+ 
+  */
+-@property(nonatomic,assign) NSMutableArray* mutableArrayPrtToHeader;
+ 
+ 
+ typedef struct masterUIViewDataStructure{
+@@ -55,7 +54,7 @@ typedef struct masterUIViewDataStructure{
+ @property(nonatomic, strong) UIView* buttonMenuPlaceHolderFrameUIView;
+ @property(nonatomic, assign) CGRect  buttonMenuPlaceHolderFrameUIViewFrameSize;
+ @property(nonatomic, strong) UIView  *templateOfMasterUIView;
+-@property(nonatomic, strong) SlidingUIViewDataModel *slidingUIViewDataModel;
++@property(nonatomic, weak) SlidingUIViewDataModel *slidingUIViewDataModel;
+ 
+ //@property(nonatomic, strong) SlidingUIViewDataModel *slidingUIViewDataModel;
+ 
+diff --git a/nursenextdoor/nursenextdoor/SlidingFrameWork/Models/SlidingUIViewDataModel.m b/nursenextdoor/nursenextdoor/SlidingFrameWork/Models/SlidingUIViewDataModel.m
+index a0eca66..95ce1f0 100644
+--- a/nursenextdoor/nursenextdoor/SlidingFrameWork/Models/SlidingUIViewDataModel.m
++++ b/nursenextdoor/nursenextdoor/SlidingFrameWork/Models/SlidingUIViewDataModel.m
+@@ -8,7 +8,7 @@
+ 
+ #import <Foundation/Foundation.h>
+ #import "SlidingUIViewDataModel.h"
+-#import "MasterUIViewCLass.h"
++
+ @implementation SlidingUIViewDataModel: NSObject
+ 
+ - (instancetype)init {
+diff --git a/nursenextdoor/nursenextdoor/SlidingFrameWork/Services/SlidingUIViewServices.h b/nursenextdoor/nursenextdoor/SlidingFrameWork/Services/SlidingUIViewServices.h
+index 9e5609e..a6cc8dd 100644
+--- a/nursenextdoor/nursenextdoor/SlidingFrameWork/Services/SlidingUIViewServices.h
++++ b/nursenextdoor/nursenextdoor/SlidingFrameWork/Services/SlidingUIViewServices.h
+@@ -13,6 +13,7 @@
+ #import <UIKit/UIKit.h>
+ #import "SlidingUIViewDataModel.h"
+ #import "MainPreviewScreenUIViewInteractionEntity.h"
++#import "MasterUIViewCLass.h"
+ @class SlidingUIViewServices;
+ 
+ @interface SlidingUIViewServices : NSObject

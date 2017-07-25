@@ -1,0 +1,26 @@
+/*
+
+Author: Kian D.Rad	
+Date: 	Jun 21st 2017
+README: The following is the system desing for the iOS app melanoma
+*/
+
+public class UIViewModel{
+
+UIVIew *MainView;
+UIVIew *SlideView; 
+UIVIew *Loging;
+
+}
+
+// DataModel SlideView Entity
+public class SlideView{
+
+string* Notifications;
+string Patients;
+string AddPatient;
+string QuickSnap;
+string UserProfile;
+
+}
+
