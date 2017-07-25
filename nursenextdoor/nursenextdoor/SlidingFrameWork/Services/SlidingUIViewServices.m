@@ -22,13 +22,6 @@ bool animationIsInProgress;
     self = [super init];
     if (self) {
 
-        // init SlidingUIViewDataModel it contains all UIVIews
-        _slidingUIViewDataModel = [[SlidingUIViewDataModel alloc]initWithSlidingUIViewDataModel:_slidingUIViewDataModel];
-
-        // this is the class for interaction components: it contains button and gesture
-         _mainPreviewScreenUIViewInteractionEntity = [[MainPreviewScreenUIViewInteractionEntity alloc]initWithMainPreviewScreenUIViewInteractionEntityWithModel:_mainPreviewScreenUIViewInteractionEntity AndWithSlidingUIViewDataModel:_slidingUIViewDataModel];
-
-
 
     }
     return self;
