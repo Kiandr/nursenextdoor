@@ -43,22 +43,12 @@ typedef struct {
 @property (strong, nonatomic) UIButton* CheckInUIButton;
 @property (strong, nonatomic)  UIView *uiViewButtonHolderFrame;
 
-//@property (strong, nonatomic) MainPreviewScreenUIViewInteractionEntity *mainPreviewScreenUIViewInteractionEntity;
-//@property (strong, nonatomic) SlidingUIViewDataModel *slidingUIViewDataModel;
-
-
 - (instancetype)init ;
 
-//- (instancetype) initWithMainPreviewScreenUIViewInteractionEntityWithModel:(MainPreviewScreenUIViewInteractionEntity*)model;
 
 - (instancetype) initWithMainPreviewScreenUIViewInteractionEntityWithModel:(MainPreviewScreenUIViewInteractionEntity*)model AndWithSlidingUIViewDataModel: (SlidingUIViewDataModel*)slidingUIViewDataModel;
 
 
-//The event handling method
-- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer;
-
-
--(void) buttonClicked:(UIButton*)sender;
 
 @end
 
