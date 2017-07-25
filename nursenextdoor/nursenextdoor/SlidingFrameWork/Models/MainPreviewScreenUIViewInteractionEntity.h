@@ -8,7 +8,7 @@
 
 #ifndef MainPreviewScreenUIViewInteractionEntity_h
 #define MainPreviewScreenUIViewInteractionEntity_h
-
+#import "UiViewSizesDatamodel.h"
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "SlidingUIViewDataModel.h"
@@ -46,7 +46,7 @@ typedef struct {
 - (instancetype)init ;
 
 
-- (instancetype) initWithMainPreviewScreenUIViewInteractionEntityWithModel:(MainPreviewScreenUIViewInteractionEntity*)model AndWithSlidingUIViewDataModel: (SlidingUIViewDataModel*)slidingUIViewDataModel;
+- (instancetype) initWithMainPreviewScreenUIViewInteractionEntityWithModel:(MainPreviewScreenUIViewInteractionEntity*)model AndWithSlidingUIViewDataModel: (SlidingUIViewDataModel*)slidingUIViewDataModel AndSizesDataModel: (UiViewSizesDatamodel*) uiViewSizesDatamodel;
 
 
 

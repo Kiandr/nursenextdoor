@@ -48,8 +48,8 @@
 
                 // UIButton Logo
                 _logoUiButtonFrameOriginex   = _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginex;
-                _logoUiButtonFrameOriginey   = _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginey;
-                _logoUiButtonFrameSizeHeight = _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeHeight;
+                _logoUiButtonFrameOriginey   = windowView.frame.size.height -(windowView.frame.size.height/20);
+                _logoUiButtonFrameSizeHeight = windowView.frame.size.height/20;
                 _logoUiButtonFrameSizeWidth  = _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeWidth;
 
 
@@ -67,6 +67,12 @@
                 _templateOfMasterUIViewlFrameSizeWidth = windowView.frame.size.width;
                 _templateOfMasterUIViewBackGroundColor = [UIColor greenColor];
 
+                //_mainPewviewScreenUIView
+                _mainPewviewScreenUIViewFrameOriginex = windowView.frame.origin.x;
+                _mainPewviewScreenUIViewFrameOriginey = windowView.frame.origin.y;
+                _mainPewviewScreenUIViewFrameSizeHeight = windowView.frame.size.height;
+                _mainPewviewScreenUIViewFrameSizeWidth =  windowView.frame.size.width;
+                _mainPewviewScreenUIViewBackGroundColor = [UIColor whiteColor];
 
 
             _returnUIViewFrameWorkModel = self;

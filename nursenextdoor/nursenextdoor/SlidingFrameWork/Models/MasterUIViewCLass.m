@@ -21,18 +21,18 @@
     return self;
 }
 
--(instancetype)initWithMasterUIViewDataStructureApplicationUIView{
+- (instancetype) initWithUIViewSizesDatamodel :(UiViewSizesDatamodel*) uiViewSizesDatamodel{
 
     self = [super init];
     if (self) {
 
 
-        _mainPewviewScreenUIView =  [[UIView alloc] init];
-        _mainPewviewScreenUIView.frame  = [UIApplication sharedApplication].delegate.window.frame;
-        _mainPewviewScreenUIView.backgroundColor = [UIColor blackColor];
+        _mainPewviewScreenUIView =  [[UIView alloc] initWithFrame:CGRectMake(uiViewSizesDatamodel.mainPewviewScreenUIViewFrameOriginex,
+                                                                             uiViewSizesDatamodel.mainPewviewScreenUIViewFrameOriginey,
+                                                                             uiViewSizesDatamodel.mainPewviewScreenUIViewFrameSizeWidth,
+                                                                             uiViewSizesDatamodel.mainPewviewScreenUIViewFrameSizeHeight)];
 
-        // Doubly linked list
-        //_masterUIViewCLass = self;
+        [_mainPewviewScreenUIView setBackgroundColor:uiViewSizesDatamodel.mainPewviewScreenUIViewBackGroundColor ];
 
     }
     return self;

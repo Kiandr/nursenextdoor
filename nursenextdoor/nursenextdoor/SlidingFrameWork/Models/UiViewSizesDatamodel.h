@@ -54,6 +54,14 @@
 @property (nonatomic, strong) UIColor* templateOfMasterUIViewBackGroundColor;
 
 
+
+@property (nonatomic,assign)  CGFloat mainPewviewScreenUIViewFrameOriginex;
+@property (nonatomic,assign)  CGFloat mainPewviewScreenUIViewFrameOriginey;
+@property (nonatomic,assign)  CGFloat mainPewviewScreenUIViewFrameSizeHeight;
+@property (nonatomic,assign)  CGFloat mainPewviewScreenUIViewFrameSizeWidth;
+@property (nonatomic,strong)  UIColor * mainPewviewScreenUIViewBackGroundColor;
+
+
 @property (nonatomic, strong) UiViewSizesDatamodel * returnUIViewFrameWorkModel;
 
 

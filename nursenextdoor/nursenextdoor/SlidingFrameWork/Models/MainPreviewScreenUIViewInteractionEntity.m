@@ -24,13 +24,18 @@
 
 
 
-- (instancetype) initWithMainPreviewScreenUIViewInteractionEntityWithModel:(MainPreviewScreenUIViewInteractionEntity*)model AndWithSlidingUIViewDataModel: (SlidingUIViewDataModel*)slidingUIViewDataModelIncomingModel{
+- (instancetype) initWithMainPreviewScreenUIViewInteractionEntityWithModel:(MainPreviewScreenUIViewInteractionEntity*)model AndWithSlidingUIViewDataModel: (SlidingUIViewDataModel*)slidingUIViewDataModelIncomingModel AndSizesDataModel: (UiViewSizesDatamodel*) uiViewSizesDatamodel{
     self = [super init];
     if (self) {
 
 
-        _bringOnSlidingMenueUIButton = [[UIButton alloc] initWithFrame:CGRectMake(0,0,slidingUIViewDataModelIncomingModel.templateOfMasterUIView.frame.size.width,50)];
-        _uiViewButtonHolderFrame = [[UIView alloc]initWithFrame:CGRectMake(0,0,slidingUIViewDataModelIncomingModel.templateOfMasterUIView.frame.size.width,50)];
+        _bringOnSlidingMenueUIButton = [[UIButton alloc] initWithFrame:CGRectMake(uiViewSizesDatamodel.logoUiButtonFrameOriginex,
+                                                                                  uiViewSizesDatamodel.logoUiButtonFrameOriginey,
+                                                                                  uiViewSizesDatamodel.logoUiButtonFrameSizeWidth,
+                                                                                  uiViewSizesDatamodel.logoUiButtonFrameSizeHeight)];
+
+        _uiViewButtonHolderFrame = [[UIView alloc]initWithFrame:_bringOnSlidingMenueUIButton.frame];
+
 
         [_bringOnSlidingMenueUIButton addTarget:slidingUIViewDataModelIncomingModel action:@selector(callBackFunctionButton:) forControlEvents:UIControlEventTouchDown];
         [_bringOnSlidingMenueUIButton setTitle:@"SlideUp" forState:UIControlStateNormal];

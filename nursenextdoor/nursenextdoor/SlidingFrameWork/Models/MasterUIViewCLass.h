@@ -10,7 +10,7 @@
 #define MasterUIViewDataStructure_h
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import "UiViewSizesDatamodel.h"
 
 @class MasterUIViewCLass;
 
@@ -46,7 +46,8 @@ typedef struct MasterUIViewDataStructure{
 // struct mainPreviewScreenUIViewInteractionEntity
 // Master Initalizer:
 - (instancetype) init;
-- (instancetype) initWithMasterUIViewDataStructureApplicationUIView;
+
+- (instancetype) initWithUIViewSizesDatamodel :(UiViewSizesDatamodel*) uiViewSizesDatamodel;
 
 @end
 
