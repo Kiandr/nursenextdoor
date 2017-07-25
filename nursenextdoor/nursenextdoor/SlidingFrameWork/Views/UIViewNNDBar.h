@@ -22,11 +22,11 @@
 #import <UIKit/UIKit.h>
 #import "UIButtonDataModel.h"
 
-//@protocol UIViewNNDBarControllerDelegate <NSObject>
-//
-//-(void) callBackFunctionUIButtonDataModelControllerDelegate;
-//
-//@end
+@protocol UIViewNNDBarControllerDelegate <NSObject>
+
+-(void) testUIViewNNDBarControllerDelegate;
+
+@end
 
 @class UIViewNNDBar;
 @interface UIViewNNDBar : NSObject<UIButtonDataModelControllerDelegate>
@@ -48,7 +48,6 @@
 @property (strong,nonatomic) UIButtonDataModel *uiButtonHelp;
 
 @property (strong,nonatomic) UIView *uiviewTesterToReplacePermeneantConnectionToSlidingView;
-
 @property (strong,nonatomic) UIView *uiviewPermenantConnectionToSlidingUIViewModel;
 
 

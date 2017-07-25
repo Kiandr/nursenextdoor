@@ -114,11 +114,9 @@
         1- July 25th 2017: load the Home "UIView", keep reffernce to the componetns.
      */
 
-
-
-
     [self updateUiViewAnimcation:nil finished:nil context:nil  ];
     NSLog(@"delgate method at -(void) callBackFunctionUIButtonDataModelControllerDelegate; worked @%@", sender.titleLabel);
+    
 }
 
 - (void)updateUiViewAnimcation:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
@@ -133,10 +131,6 @@
      UIView animation to buring that UIView into the template holder.
      ToDO:
      */
-
-
-
-
 
         [UIView animateWithDuration:0.25
                               delay:0.0
