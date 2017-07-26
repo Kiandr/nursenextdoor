@@ -26,7 +26,7 @@
     }
     return self;
 }
-- (instancetype)initWithSlidingUIViewDataModel:(UiViewSizesDatamodel*) uiViewSizesDatamodel{
+- (instancetype)initWithSlidingUIViewDataModel:(UiViewSizesDatamodel*) uncomingUiViewSizesDatamodel{
     /*
 
      Author: Kian D.Rad
@@ -46,20 +46,22 @@
              README: This function sets all coordinates for the UIView funamendal layers.
              Note: I could have used the application size, but I rather use a strongly bounded data model.
              */
-            _templateOfMasterUIView = [[UIView alloc]initWithFrame:CGRectMake(uiViewSizesDatamodel.templateOfMasterUIViewFrameOriginex,
-                                                                              uiViewSizesDatamodel.templateOfMasterUIViewlFrameOriginey,
-                                                                              uiViewSizesDatamodel.templateOfMasterUIViewlFrameSizeWidth,
-                                                                              uiViewSizesDatamodel.templateOfMasterUIViewFrameSizeHeight )];
+
+            _uiViewSizesDatamodel = uncomingUiViewSizesDatamodel;
+            _templateOfMasterUIView = [[UIView alloc]initWithFrame:CGRectMake(_uiViewSizesDatamodel.templateOfMasterUIViewFrameOriginex,
+                                                                              _uiViewSizesDatamodel.templateOfMasterUIViewlFrameOriginey,
+                                                                              _uiViewSizesDatamodel.templateOfMasterUIViewlFrameSizeWidth,
+                                                                              _uiViewSizesDatamodel.templateOfMasterUIViewFrameSizeHeight )];
 
 
             // Color is also stronly bonded, pre-built in a defined location. You can view on one eye all the colour sections in that class
 
-            [_templateOfMasterUIView setBackgroundColor: uiViewSizesDatamodel.templateOfMasterUIViewBackGroundColor];
+            [_templateOfMasterUIView setBackgroundColor: _uiViewSizesDatamodel.templateOfMasterUIViewBackGroundColor];
 
 
 
             // Sets the pointer, else pointer witll die and will be null, thus stackoverflow
-            _uiViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uiViewNNDBar AndSizesDataModel:uiViewSizesDatamodel];
+            _uiViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uiViewNNDBar AndSizesDataModel:_uiViewSizesDatamodel];
             _templateOfMasterUIView = _uiViewNNDBar.uiviewPermenantConnectionToSlidingUIViewModel;
 
 
@@ -129,7 +131,12 @@
                          [UIView setAnimationDelegate:self];
                          // Completion selector. Multiple ways of doing the same thing.
                          // [UIView setAnimationDidStopSelector:@selector(moveToLeft:finished:context:)];
-                         _templateOfMasterUIView.frame = [UIApplication sharedApplication].delegate.window.frame;
+                         // This line also calls an other function upon completion too.
+                         //[UIView setAnimationDidStopSelector:@selector(goDown:finished:context:)];
+                         _templateOfMasterUIView.frame = CGRectMake(_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex,
+                                                                    _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey,
+                                                                    _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeWidth,
+                                                                    _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeHeight );
 
 
                      }completion:^(BOOL finished){
@@ -151,7 +158,10 @@
 
                          // This line also calls an other function upon completion too.
                          //[UIView setAnimationDidStopSelector:@selector(goDown:finished:context:)];
-                         _templateOfMasterUIView.frame = CGRectMake(0, -100, _slidingUIViewDataModel.templateOfMasterUIView.frame.size.width,_slidingUIViewDataModel.templateOfMasterUIView.frame.size.height);
+                         _templateOfMasterUIView.frame = CGRectMake(_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameOriginex,
+                                                                    _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameOriginey,
+                                                                    _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeWidth,
+                                                                    _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeHeight );
 
                      }completion:^(BOOL finished){
                          NSLog(@"Face Up done");

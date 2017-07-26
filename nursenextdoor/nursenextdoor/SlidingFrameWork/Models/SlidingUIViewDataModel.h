@@ -64,6 +64,7 @@ typedef struct masterUIViewDataStructure{
 @property(nonatomic, strong) UIView* uiViewGeoHelpView;
 @property(nonatomic, strong) UIViewNNDBar* uiViewNNDBar;
 @property(nonatomic, strong) SlidingUIViewDataModel* slidingUIViewDataModel;
+@property(nonatomic, strong) UiViewSizesDatamodel* uiViewSizesDatamodel;
 
 
 /*

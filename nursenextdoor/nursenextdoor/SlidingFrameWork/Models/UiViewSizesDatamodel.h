@@ -71,6 +71,14 @@
 @property (nonatomic,strong)  UIColor * uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor;
 
 
+// _uiviewPermenantConnectionToSlidingUIViewModel SlideUpLocation
+@property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameOriginex;
+@property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameOriginey;
+@property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeHeight;
+@property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeWidth;
+@property (nonatomic, strong) UIColor * uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationBackGroundColor;
+
+
 @property (nonatomic, strong) UiViewSizesDatamodel * returnUIViewFrameWorkModel;
 
 
