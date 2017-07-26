@@ -167,7 +167,10 @@
                      }completion:^(BOOL finished){
                          NSLog(@"UIView went Up.");
                          /*
-                          
+                          Author: Kian D.Rad 
+                          Date: July 25th 2017 
+                          ReadMe; This is the controller, interactions on the UIView comes back here. this makes sense. In C#.MVC was the same. Now you need to hand over the flow to a service layer. 
+                          You need to execute here, becuase of the life cycle of this object. Rest of the modules are initated here, and will reside here too.
                           */
                          
                      }];
