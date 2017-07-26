@@ -41,7 +41,7 @@
 
 
 - (instancetype) init;
-- (instancetype) buildMasterUiViewEntryPointToTheClass;
+
 - (UIView*) getterMasterUIView; 
 - (instancetype) initWithSlidingUIViewDataModel ;
 @end
