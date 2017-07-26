@@ -51,6 +51,7 @@
 @property (strong,nonatomic) UIView *uiviewTesterToReplacePermeneantConnectionToSlidingView;
 @property (strong,nonatomic) UIView *uiviewPermenantConnectionToSlidingUIViewModel;
 
+@property(strong, nonatomic) UiViewSizesDatamodel *uiViewSizesDatamodel;
 
 
 - (instancetype)init;

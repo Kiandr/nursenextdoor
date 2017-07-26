@@ -22,7 +22,7 @@
     return self;
 }
 
-- (instancetype)initWithDataModel: (UIViewNNDBar*) uiViewNNDBarIncoming AndSizesDataModel:(UiViewSizesDatamodel*) uiViewSizesDatamodel{
+- (instancetype)initWithDataModel: (UIViewNNDBar*) uiViewNNDBarIncoming AndSizesDataModel:(UiViewSizesDatamodel*) incominguiViewSizesDatamodel{
     /*
      Author: Kian D.Rad
      Date:   July 14th 2017
@@ -35,6 +35,7 @@
 
     self = [super init];
     if (self) {
+            _uiViewSizesDatamodel = incominguiViewSizesDatamodel;
 
             _uiVIewNNDBarView = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
             _uiVIewNNDBarView.backgroundColor = [UIColor darkGrayColor];
@@ -86,11 +87,11 @@
 
 
 
-        _uiviewPermenantConnectionToSlidingUIViewModel = [[UIView alloc]initWithFrame:CGRectMake(uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex,
-                                                                                                 uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey,
-                                                                                                 uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth,
-                                                                                                 uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight)];
-        [_uiviewPermenantConnectionToSlidingUIViewModel setBackgroundColor:uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor];
+        _uiviewPermenantConnectionToSlidingUIViewModel = [[UIView alloc]initWithFrame:CGRectMake(_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex,
+                                                                                                 _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey,
+                                                                                                 _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth,
+                                                                                                 _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight)];
+        [_uiviewPermenantConnectionToSlidingUIViewModel setBackgroundColor:_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor];
 //
 //
 //
@@ -155,7 +156,12 @@
 
                              // This line also calls an other function upon completion too.
                              //[UIView setAnimationDidStopSelector:@selector(goDown:finished:context:)];
-                             [_uiviewPermenantConnectionToSlidingUIViewModel setFrame:[UIApplication sharedApplication].delegate.window.frame];
+                             [_uiviewPermenantConnectionToSlidingUIViewModel setFrame:CGRectMake(_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex,
+                                                                                                 _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey,
+                                                                                                 _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth,
+                                                                                                 _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight)];
+
+                             [_uiviewPermenantConnectionToSlidingUIViewModel setBackgroundColor:[UIColor greenColor]];
                          }completion:^(BOOL finished){
                              NSLog(@"Face Up done");
                              

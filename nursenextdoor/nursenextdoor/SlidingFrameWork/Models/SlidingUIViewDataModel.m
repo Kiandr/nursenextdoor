@@ -162,7 +162,7 @@
                                                                     _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameOriginey,
                                                                     _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeWidth,
                                                                     _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeHeight );
-
+                         [_templateOfMasterUIView setBackgroundColor:_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor];
                      }completion:^(BOOL finished){
                          NSLog(@"Face Up done");
                          
