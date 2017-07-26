@@ -30,6 +30,7 @@
 @property (nonatomic,assign)  CGFloat logoUiButtonFrameOriginey;
 @property (nonatomic,assign)  CGFloat logoUiButtonFrameSizeHeight;
 @property (nonatomic,assign)  CGFloat logoUiButtonFrameSizeWidth;
+@property (nonatomic,strong) UIColor *logoUiButtonColor;
 
 
 // UIVIew TemplateHolder

@@ -34,15 +34,14 @@
                                                                                   uiViewSizesDatamodel.logoUiButtonFrameSizeWidth,
                                                                                   uiViewSizesDatamodel.logoUiButtonFrameSizeHeight)];
 
-        //_uiViewButtonHolderFrame = [[UIView alloc]initWithFrame:_bringOnSlidingMenueUIButton.frame];
 
 
         [_bringOnSlidingMenueUIButton addTarget:slidingUIViewDataModelIncomingModel action:@selector(callBackFunctionButton:) forControlEvents:UIControlEventTouchDown];
         [_bringOnSlidingMenueUIButton setTitle:@"SlideUp" forState:UIControlStateNormal];
         [_bringOnSlidingMenueUIButton  setExclusiveTouch:YES];
-        [_bringOnSlidingMenueUIButton  backgroundImageForState:UIControlStateNormal];
-        [_bringOnSlidingMenueUIButton setBackgroundColor:[UIColor redColor]];
-        //[_uiViewButtonHolderFrame addSubview:_bringOnSlidingMenueUIButton];
+        [_bringOnSlidingMenueUIButton setBackgroundColor:uiViewSizesDatamodel.logoUiButtonColor];
+
+
 
         
     }

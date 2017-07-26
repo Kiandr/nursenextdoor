@@ -38,13 +38,9 @@ typedef struct MasterUIViewDataStructure{
 @property (nonatomic, strong) UIView    *mainPewviewScreenUIView;
 @property (nonatomic, assign) CGRect     mainPewviewScreenUIViewFrame;
 @property (nonatomic, assign) UIColor   *mainPewviewScreenUIViewBackGroundColor;
-
-@property (nonatomic,strong) MasterUIViewCLass* masterUIViewCLass;
-
+@property (nonatomic, strong) MasterUIViewCLass* masterUIViewCLass;
 
 
-// struct mainPreviewScreenUIViewInteractionEntity
-// Master Initalizer:
 - (instancetype) init;
 
 - (instancetype) initWithUIViewSizesDatamodel :(UiViewSizesDatamodel*) uiViewSizesDatamodel;

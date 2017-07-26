@@ -37,30 +37,22 @@ bool animationIsInProgress;
  ReadMe: This function will initalize three UIVIews, master, left and right. 
         The master contains a function to toggle, and the two will transtiion.
  */
-
-
     self = [super init];
     if (self) {
         // this model had right number to play with
         _uiViewSizesDatamodel  = [[UiViewSizesDatamodel alloc] initDefaultModel];
-
         _slidingUIViewDataModel = [[SlidingUIViewDataModel alloc]initWithSlidingUIViewDataModel:_uiViewSizesDatamodel];
+        _mainPreviewScreenUIViewInteractionEntity = [[MainPreviewScreenUIViewInteractionEntity alloc]initWithMainPreviewScreenUIViewInteractionEntityWithModel:
+                                                     _mainPreviewScreenUIViewInteractionEntity AndWithSlidingUIViewDataModel:
+                                                     _slidingUIViewDataModel AndSizesDataModel:_uiViewSizesDatamodel];
+        _masterUIViewCLass = [[MasterUIViewCLass alloc] initWithUIViewSizesDatamodel:_uiViewSizesDatamodel];
 
-        _mainPreviewScreenUIViewInteractionEntity = [[MainPreviewScreenUIViewInteractionEntity alloc]initWithMainPreviewScreenUIViewInteractionEntityWithModel:_mainPreviewScreenUIViewInteractionEntity AndWithSlidingUIViewDataModel:_slidingUIViewDataModel AndSizesDataModel:_uiViewSizesDatamodel];
 
         [_slidingUIViewDataModel.templateOfMasterUIView addSubview:_mainPreviewScreenUIViewInteractionEntity.bringOnSlidingMenueUIButton];
-
-
-        //_uIViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uIViewNNDBar AndSizesDataModel:_uiViewSizesDatamodel];
-        _masterUIViewCLass = [[MasterUIViewCLass alloc] initWithUIViewSizesDatamodel:_uiViewSizesDatamodel];
         [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.templateOfMasterUIView atIndex:1];
         [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.uiViewNNDBar.uiVIewNNDBarView atIndex:0];
-
-
     }
     return self;
-
-
 }
 
 /*

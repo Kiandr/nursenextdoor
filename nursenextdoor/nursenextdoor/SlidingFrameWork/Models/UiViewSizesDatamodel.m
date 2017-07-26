@@ -41,8 +41,8 @@
 
                 // UIVIew TemplateHolder
                 _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginex   = windowView.frame.origin.x;
-                _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginey   = windowView.frame.origin.y +([[UIApplication sharedApplication] statusBarFrame].size.height);
-                _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeHeight = windowView.frame.size.height -([[UIApplication sharedApplication] statusBarFrame].size.height);
+                _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginey   = windowView.frame.origin.y +    ([[UIApplication sharedApplication] statusBarFrame].size.height);
+                _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeHeight = windowView.frame.size.height - ([[UIApplication sharedApplication] statusBarFrame].size.height);
                 _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeWidth  = windowView.frame.size.width;
 
 
@@ -51,6 +51,7 @@
                 _logoUiButtonFrameOriginey   = windowView.frame.size.height-(windowView.frame.size.height/20); //([[UIApplication sharedApplication] statusBarFrame].size.height);
                 _logoUiButtonFrameSizeHeight = windowView.frame.size.height/20;
                 _logoUiButtonFrameSizeWidth  = _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeWidth;
+                _logoUiButtonColor = [UIColor redColor];
 
 
                 // UIVIew to PermenantConnectionToSlidingUIViewModel
@@ -82,27 +83,15 @@
                 _mainPewviewScreenUIViewBackGroundColor = [UIColor whiteColor];
 
 
-            // _uiviewPermenantConnectionToSlidingUIViewModel this is the connection between multipel UIVIews
-            /*
-             
-             @property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex;
-             @property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey;
-             @property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight;
-             @property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth;
-             @property (nonatomic,strong)  UIColor * uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor;
-             
-             
-             SlideUpLocation
-
-             */
-            _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameOriginex = windowView.frame.origin.x;
-            _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameOriginey = windowView.frame.origin.y-50;
-            _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeHeight = windowView.frame.size.height - _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey;
-            _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeWidth =  windowView.frame.size.width;
-            _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationBackGroundColor = [UIColor clearColor];
+                // SlideUpLocation
+                _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameOriginex = windowView.frame.origin.x;
+                _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameOriginey = windowView.frame.origin.y-50;
+                _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeHeight = windowView.frame.size.height - _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey;
+                _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeWidth =  windowView.frame.size.width;
+                _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationBackGroundColor = [UIColor clearColor];
 
 
-            _returnUIViewFrameWorkModel = self;
+                _returnUIViewFrameWorkModel = self;
         }
         
         
