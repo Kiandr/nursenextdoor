@@ -62,6 +62,15 @@
 @property (nonatomic,strong)  UIColor * mainPewviewScreenUIViewBackGroundColor;
 
 
+
+// _uiviewPermenantConnectionToSlidingUIViewModel
+@property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex;
+@property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey;
+@property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight;
+@property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth;
+@property (nonatomic,strong)  UIColor * uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor;
+
+
 @property (nonatomic, strong) UiViewSizesDatamodel * returnUIViewFrameWorkModel;
 
 

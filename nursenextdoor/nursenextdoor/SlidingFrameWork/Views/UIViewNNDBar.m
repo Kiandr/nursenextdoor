@@ -59,6 +59,7 @@
 
 
         [_uIViewNNDBar.uiVIewNNDBarView addSubview:_uiButtonHome.uiButtonReturnObject];
+
         //[_uIViewNNDBar.uiVIewNNDBarView insertSubview:_uiButtonHome.uiButtonReturnObject atIndex:0 ];
 
         /*
@@ -73,16 +74,29 @@
             I wanna test the uiview, thus, I will make it here manually, fill it and ask the upper layer to load this. 
          then I try to change it dynamically and see if that animcation takes place on the upper layer.
 
+         _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex = windowView.frame.origin.x;
+         _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey = ([[UIApplication sharedApplication] statusBarFrame].size.height);
+         _uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight = windowView.frame.size.height - ([[UIApplication sharedApplication] statusBarFrame].size.height);
+         _uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth =  windowView.frame.size.width;
+         _uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor = [UIColor blackColor];
+
         */
 
-        _uiviewPermenantConnectionToSlidingUIViewModel = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
-        [_uiviewPermenantConnectionToSlidingUIViewModel setBackgroundColor:[UIColor blackColor]];
 
 
 
 
-        _uiviewTesterToReplacePermeneantConnectionToSlidingView = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
-        [_uiviewTesterToReplacePermeneantConnectionToSlidingView  setBackgroundColor:[UIColor blueColor]];
+        _uiviewPermenantConnectionToSlidingUIViewModel = [[UIView alloc]initWithFrame:CGRectMake(uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex,
+                                                                                                 uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey,
+                                                                                                 uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth,
+                                                                                                 uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight)];
+        [_uiviewPermenantConnectionToSlidingUIViewModel setBackgroundColor:uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor];
+//
+//
+//
+//
+//        _uiviewTesterToReplacePermeneantConnectionToSlidingView = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
+//        [_uiviewTesterToReplacePermeneantConnectionToSlidingView  setBackgroundColor:[UIColor blueColor]];
 
 
     }

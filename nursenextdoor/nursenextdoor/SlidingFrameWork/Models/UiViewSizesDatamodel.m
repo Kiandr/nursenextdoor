@@ -48,14 +48,21 @@
 
                 // UIButton Logo
                 _logoUiButtonFrameOriginex   = _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginex;
-            _logoUiButtonFrameOriginey   = windowView.frame.size.height-(windowView.frame.size.height/20); //([[UIApplication sharedApplication] statusBarFrame].size.height);
+                _logoUiButtonFrameOriginey   = windowView.frame.size.height-(windowView.frame.size.height/20); //([[UIApplication sharedApplication] statusBarFrame].size.height);
                 _logoUiButtonFrameSizeHeight = windowView.frame.size.height/20;
                 _logoUiButtonFrameSizeWidth  = _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeWidth;
 
 
+                // UIVIew to PermenantConnectionToSlidingUIViewModel
+                _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex = windowView.frame.origin.x;
+                _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey = windowView.frame.origin.y;
+                _uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight = windowView.frame.size.height - _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey;
+                _uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth =  windowView.frame.size.width;
+                _uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor = [UIColor whiteColor];
+
                 // UIView inside NND menu bar
                 _uIViewButtonDataModelFrameOriginex   = _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginex;
-                _uIViewButtonDataModelFrameOriginey   = _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginey +( [[UIApplication sharedApplication] statusBarFrame].size.height + _logoUiButtonFrameSizeHeight);
+                _uIViewButtonDataModelFrameOriginey   = _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginey;
                 _uIViewButtonDataModelFrameSizeHeight =  windowView.frame.size.height - ( [[UIApplication sharedApplication] statusBarFrame].size.height + _logoUiButtonFrameSizeHeight);
                 _uIViewButtonDataModelFrameSizeWidth  = _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeWidth;
 
@@ -73,6 +80,19 @@
                 _mainPewviewScreenUIViewFrameSizeHeight = windowView.frame.size.height;
                 _mainPewviewScreenUIViewFrameSizeWidth =  windowView.frame.size.width;
                 _mainPewviewScreenUIViewBackGroundColor = [UIColor whiteColor];
+
+
+            // _uiviewPermenantConnectionToSlidingUIViewModel this is the connection between multipel UIVIews
+            /*
+             
+             @property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex;
+             @property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey;
+             @property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight;
+             @property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth;
+             @property (nonatomic,strong)  UIColor * uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor;
+
+             */
+
 
 
             _returnUIViewFrameWorkModel = self;
