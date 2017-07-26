@@ -48,14 +48,14 @@ bool animationIsInProgress;
 
         _mainPreviewScreenUIViewInteractionEntity = [[MainPreviewScreenUIViewInteractionEntity alloc]initWithMainPreviewScreenUIViewInteractionEntityWithModel:_mainPreviewScreenUIViewInteractionEntity AndWithSlidingUIViewDataModel:_slidingUIViewDataModel AndSizesDataModel:_uiViewSizesDatamodel];
 
-        //[_slidingUIViewDataModel.templateOfMasterUIView addSubview:_mainPreviewScreenUIViewInteractionEntity.uiViewButtonHolderFrame];
+        [_slidingUIViewDataModel.templateOfMasterUIView addSubview:_mainPreviewScreenUIViewInteractionEntity.bringOnSlidingMenueUIButton];
 
 
         //_uIViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uIViewNNDBar];
         _masterUIViewCLass = [[MasterUIViewCLass alloc] initWithUIViewSizesDatamodel:_uiViewSizesDatamodel];
-        //[_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.templateOfMasterUIView atIndex:1];
-        //[_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.uiViewNNDBar.uiVIewNNDBarView atIndex:0];
-         //[_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_mainPreviewScreenUIViewInteractionEntity.uiViewButtonHolderFrame atIndex:0];
+        [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.templateOfMasterUIView atIndex:1];
+        [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.uiViewNNDBar.uiVIewNNDBarView atIndex:0];
+
 
     }
     return self;

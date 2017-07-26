@@ -48,7 +48,7 @@
 
                 // UIButton Logo
                 _logoUiButtonFrameOriginex   = _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginex;
-                _logoUiButtonFrameOriginey   = windowView.frame.size.height -(windowView.frame.size.height/20);
+            _logoUiButtonFrameOriginey   = windowView.frame.size.height-(windowView.frame.size.height/20); //([[UIApplication sharedApplication] statusBarFrame].size.height);
                 _logoUiButtonFrameSizeHeight = windowView.frame.size.height/20;
                 _logoUiButtonFrameSizeWidth  = _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeWidth;
 

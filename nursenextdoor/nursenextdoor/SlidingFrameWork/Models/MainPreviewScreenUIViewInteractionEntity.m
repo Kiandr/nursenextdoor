@@ -34,7 +34,7 @@
                                                                                   uiViewSizesDatamodel.logoUiButtonFrameSizeWidth,
                                                                                   uiViewSizesDatamodel.logoUiButtonFrameSizeHeight)];
 
-        _uiViewButtonHolderFrame = [[UIView alloc]initWithFrame:_bringOnSlidingMenueUIButton.frame];
+        //_uiViewButtonHolderFrame = [[UIView alloc]initWithFrame:_bringOnSlidingMenueUIButton.frame];
 
 
         [_bringOnSlidingMenueUIButton addTarget:slidingUIViewDataModelIncomingModel action:@selector(callBackFunctionButton:) forControlEvents:UIControlEventTouchDown];
@@ -42,7 +42,7 @@
         [_bringOnSlidingMenueUIButton  setExclusiveTouch:YES];
         [_bringOnSlidingMenueUIButton  backgroundImageForState:UIControlStateNormal];
         [_bringOnSlidingMenueUIButton setBackgroundColor:[UIColor redColor]];
-        [_uiViewButtonHolderFrame addSubview:_bringOnSlidingMenueUIButton];
+        //[_uiViewButtonHolderFrame addSubview:_bringOnSlidingMenueUIButton];
 
         
     }
