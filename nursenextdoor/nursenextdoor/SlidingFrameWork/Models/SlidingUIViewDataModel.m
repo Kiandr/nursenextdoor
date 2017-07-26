@@ -53,14 +53,15 @@
 
 
             // Color is also stronly bonded, pre-built in a defined location. You can view on one eye all the colour sections in that class
+
             [_templateOfMasterUIView setBackgroundColor: uiViewSizesDatamodel.templateOfMasterUIViewBackGroundColor];
 
 
-            // Sets the pointer, else pointer witll die and will be null, thus stackoverflow
-            _uiViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uiViewNNDBar];
 
-            //
+            // Sets the pointer, else pointer witll die and will be null, thus stackoverflow
+            _uiViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uiViewNNDBar AndSizesDataModel:uiViewSizesDatamodel];
             _templateOfMasterUIView = _uiViewNNDBar.uiviewPermenantConnectionToSlidingUIViewModel;
+
 
             _slidingUIViewDataModel = self;
 

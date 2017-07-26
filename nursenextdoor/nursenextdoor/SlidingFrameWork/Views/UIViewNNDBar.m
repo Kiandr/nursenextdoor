@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "UIViewNNDBar.h"
+#import "UiViewSizesDatamodel.h"
 
 @implementation UIViewNNDBar
 
@@ -21,7 +22,7 @@
     return self;
 }
 
-- (instancetype)initWithDataModel: (UIViewNNDBar*) uiViewNNDBarIncoming {
+- (instancetype)initWithDataModel: (UIViewNNDBar*) uiViewNNDBarIncoming AndSizesDataModel:(UiViewSizesDatamodel*) uiViewSizesDatamodel{
     /*
      Author: Kian D.Rad
      Date:   July 14th 2017

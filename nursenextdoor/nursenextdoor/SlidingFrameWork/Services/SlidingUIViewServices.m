@@ -51,7 +51,7 @@ bool animationIsInProgress;
         [_slidingUIViewDataModel.templateOfMasterUIView addSubview:_mainPreviewScreenUIViewInteractionEntity.bringOnSlidingMenueUIButton];
 
 
-        //_uIViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uIViewNNDBar];
+        //_uIViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uIViewNNDBar AndSizesDataModel:_uiViewSizesDatamodel];
         _masterUIViewCLass = [[MasterUIViewCLass alloc] initWithUIViewSizesDatamodel:_uiViewSizesDatamodel];
         [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.templateOfMasterUIView atIndex:1];
         [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.uiViewNNDBar.uiVIewNNDBarView atIndex:0];

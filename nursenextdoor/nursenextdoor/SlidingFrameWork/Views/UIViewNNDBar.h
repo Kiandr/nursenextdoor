@@ -21,6 +21,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "UIButtonDataModel.h"
+#import "UiViewSizesDatamodel.h"
 
 @protocol UIViewNNDBarControllerDelegate <NSObject>
 
@@ -53,7 +54,7 @@
 
 
 - (instancetype)init;
-- (instancetype)initWithDataModel: (UIViewNNDBar*) uiViewNNDBarIncomingDataModel;
+- (instancetype)initWithDataModel: (UIViewNNDBar*) uiViewNNDBarIncoming AndSizesDataModel:(UiViewSizesDatamodel*) uiViewSizesDatamodel;
 
 
 /*
