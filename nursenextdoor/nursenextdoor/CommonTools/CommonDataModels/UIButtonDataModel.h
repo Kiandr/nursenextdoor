@@ -37,7 +37,7 @@ typedef struct {
 @property (strong, nonatomic) NSString * titleString;
 @property (strong, nonatomic) UIButton * uiButtonReturnObject;
 @property (retain, nonatomic) id reciverClass;
-/*
+
  /*
  Author: Kian D.Rad
  Date: July 24rd 2017

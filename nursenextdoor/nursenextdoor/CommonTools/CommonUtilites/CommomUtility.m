@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "CommomUtility.h"
 
-@implementation CommomUtility:NSObject
+@implementation CommomUtility
 
 -(UIButton*) buildUIButtonWith: (UIButton*) incominguiButton AndCallBackFunctionIs: (id) refferenceToCallBackFunction{
 
@@ -23,7 +24,7 @@
         NSLog(@"%@", exception.reason);
     }
     @finally {
-        NSLog(@"Char at index %d cannot be found");
+        NSLog(@"Char at index cannot be found");
 
        // set the title of button to error name;
         [newButton setTitle:@"ErrorInCommonUtility" forState:UIControlStateNormal];

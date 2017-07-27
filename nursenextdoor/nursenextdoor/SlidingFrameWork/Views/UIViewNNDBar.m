@@ -27,10 +27,7 @@
      Author: Kian D.Rad
      Date:   July 14th 2017
      README: This is the initalizer or constructor with the datamodel. 
-     ToDo: 
-        1- Inialize the UIViewModel
-        2- Inject UIButton representing the number of the UIView.
-     
+     ToDo:
      */
 
     self = [super init];
@@ -45,9 +42,6 @@
          Date:   July 14th 2017
          README: This class build button with an incomind datamodel
          ToDO:
-         1- keep reffernce to the interncal class;
-         2- Build all menue buttons and add to incoming class
-         3- incoming class and itnernal class reffer to the same pointer
          */
 
 
@@ -70,17 +64,6 @@
             Initalize the UIView the permenant connection to the slidingUIViewModel. 
             This UIView, should be animated, dynamically to bring it any existing uiview that reslides in this class. 
             Those uiviews are part of the Uibutton. 
-         
-         Test: 
-            I wanna test the uiview, thus, I will make it here manually, fill it and ask the upper layer to load this. 
-         then I try to change it dynamically and see if that animcation takes place on the upper layer.
-
-         _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex = windowView.frame.origin.x;
-         _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey = ([[UIApplication sharedApplication] statusBarFrame].size.height);
-         _uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight = windowView.frame.size.height - ([[UIApplication sharedApplication] statusBarFrame].size.height);
-         _uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth =  windowView.frame.size.width;
-         _uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor = [UIColor blackColor];
-
         */
 
 
@@ -92,12 +75,6 @@
                                                                                                  _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth,
                                                                                                  _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight)];
         [_uiviewPermenantConnectionToSlidingUIViewModel setBackgroundColor:_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor];
-//
-//
-//
-//
-//        _uiviewTesterToReplacePermeneantConnectionToSlidingView = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
-//        [_uiviewTesterToReplacePermeneantConnectionToSlidingView  setBackgroundColor:[UIColor blueColor]];
 
 
     }

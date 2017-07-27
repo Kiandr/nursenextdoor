@@ -25,11 +25,6 @@
 @class NurseDataModel;
 @interface NurseDataModel : NSObject
 
-//typedef struct {
-//    __unsafe_unretained UIButton  *bringOnSlidingMenueUIButtonStruct;
-//    __unsafe_unretained UIGestureRecognizer *tapGestureStruct;
-//
-//}NurseDataModelStruct;
 
 @property (nonatomic, strong) NSString * name;
 @property (nonatomic, strong) NSString * lastName;
