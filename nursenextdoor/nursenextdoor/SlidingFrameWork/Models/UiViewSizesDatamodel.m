@@ -39,64 +39,89 @@
 
             UIWindow* windowView = [UIApplication sharedApplication].delegate.window;
 
-                // UIVIew TemplateHolder
-                _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginex   = windowView.frame.origin.x;
-                _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginey   = windowView.frame.origin.y +    ([[UIApplication sharedApplication] statusBarFrame].size.height);
-                _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeHeight = windowView.frame.size.height - ([[UIApplication sharedApplication] statusBarFrame].size.height);
-                _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeWidth  = windowView.frame.size.width;
+            // UIVIew TemplateHolder
+            _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginex   = windowView.frame.origin.x;
+            _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginey   = windowView.frame.origin.y +    ([[UIApplication sharedApplication] statusBarFrame].size.height);
+            _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeHeight = windowView.frame.size.height - ([[UIApplication sharedApplication] statusBarFrame].size.height);
+            _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeWidth  = windowView.frame.size.width;
 
 
-                // UIButton Logo
-                _logoUiButtonFrameOriginex   = _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginex;
-                _logoUiButtonFrameOriginey   = windowView.frame.size.height-(windowView.frame.size.height/20); //([[UIApplication sharedApplication] statusBarFrame].size.height);
-                _logoUiButtonFrameSizeHeight = windowView.frame.size.height/20;
-                _logoUiButtonFrameSizeWidth  = _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeWidth;
-                _logoUiButtonColor = [UIColor redColor];
+            // UIButton Logo
+            _logoUiButtonFrameOriginex   = _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginex;
+            _logoUiButtonFrameOriginey   = windowView.frame.size.height-(windowView.frame.size.height/20); //([[UIApplication sharedApplication] statusBarFrame].size.height);
+            _logoUiButtonFrameSizeHeight = windowView.frame.size.height/20;
+            _logoUiButtonFrameSizeWidth  = _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeWidth;
+            _logoUiButtonColor = [UIColor redColor];
 
 
-                // UIVIew to PermenantConnectionToSlidingUIViewModel
-                _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex = windowView.frame.origin.x;
-                _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey = windowView.frame.origin.y;
-                _uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight = windowView.frame.size.height - _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey;
-                _uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth =  windowView.frame.size.width;
-                _uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor = [UIColor whiteColor];
+            // UIVIew to PermenantConnectionToSlidingUIViewModel
+            _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex = windowView.frame.origin.x;
+            _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey = windowView.frame.origin.y;
+            _uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight = windowView.frame.size.height - _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey;
+            _uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth =  windowView.frame.size.width;
+            _uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor = [UIColor whiteColor];
 
-                // UIView inside NND menu bar
-                _uIViewButtonDataModelFrameOriginex   = _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginex;
-                _uIViewButtonDataModelFrameOriginey   = _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginey;
-                _uIViewButtonDataModelFrameSizeHeight =  windowView.frame.size.height - ( [[UIApplication sharedApplication] statusBarFrame].size.height + _logoUiButtonFrameSizeHeight);
-                _uIViewButtonDataModelFrameSizeWidth  = _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeWidth;
-
-
-                //_templateOfMasterUIView
-                _templateOfMasterUIViewFrameOriginex   = windowView.frame.origin.x;
-                _templateOfMasterUIViewlFrameOriginey  = windowView.frame.origin.y;
-                _templateOfMasterUIViewFrameSizeHeight = windowView.frame.size.height;
-                _templateOfMasterUIViewlFrameSizeWidth = windowView.frame.size.width;
-                _templateOfMasterUIViewBackGroundColor = [UIColor greenColor];
-
-                //_mainPewviewScreenUIView
-                _mainPewviewScreenUIViewFrameOriginex = windowView.frame.origin.x;
-                _mainPewviewScreenUIViewFrameOriginey = windowView.frame.origin.y;
-                _mainPewviewScreenUIViewFrameSizeHeight = windowView.frame.size.height;
-                _mainPewviewScreenUIViewFrameSizeWidth =  windowView.frame.size.width;
-                _mainPewviewScreenUIViewBackGroundColor = [UIColor whiteColor];
+            // UIView inside NND menu bar
+            _uIViewButtonDataModelFrameOriginex   = _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginex;
+            _uIViewButtonDataModelFrameOriginey   = _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginey;
+            _uIViewButtonDataModelFrameSizeHeight =  windowView.frame.size.height - ( [[UIApplication sharedApplication] statusBarFrame].size.height + _logoUiButtonFrameSizeHeight);
+            _uIViewButtonDataModelFrameSizeWidth  = _slidingUIViewDataModelTemplateOfMasterUIViewFrameSizeWidth;
 
 
-                // SlideUpLocation
-                _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameOriginex = windowView.frame.origin.x;
-                _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameOriginey = windowView.frame.origin.y-50;
-                _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeHeight = windowView.frame.size.height - _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey;
-                _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeWidth =  windowView.frame.size.width;
-                _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationBackGroundColor = [UIColor clearColor];
+            //_templateOfMasterUIView
+            _templateOfMasterUIViewFrameOriginex   = windowView.frame.origin.x;
+            _templateOfMasterUIViewlFrameOriginey  = windowView.frame.origin.y;
+            _templateOfMasterUIViewFrameSizeHeight = windowView.frame.size.height;
+            _templateOfMasterUIViewlFrameSizeWidth = windowView.frame.size.width;
+            _templateOfMasterUIViewBackGroundColor = [UIColor greenColor];
+
+            //_mainPewviewScreenUIView
+            _mainPewviewScreenUIViewFrameOriginex = windowView.frame.origin.x;
+            _mainPewviewScreenUIViewFrameOriginey = windowView.frame.origin.y;
+            _mainPewviewScreenUIViewFrameSizeHeight = windowView.frame.size.height;
+            _mainPewviewScreenUIViewFrameSizeWidth =  windowView.frame.size.width;
+            _mainPewviewScreenUIViewBackGroundColor = [UIColor whiteColor];
 
 
-                _returnUIViewFrameWorkModel = self;
+            // SlideUpLocation
+            _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameOriginex = windowView.frame.origin.x;
+            _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameOriginey = windowView.frame.origin.y-50;
+            _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeHeight = windowView.frame.size.height - _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey;
+            _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeWidth =  windowView.frame.size.width;
+            _uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationBackGroundColor = [UIColor clearColor];
+
+
+
+            // CheckInScreen UIVIew
+            _checkInUIViewModelFrameOriginex = _mainPewviewScreenUIViewFrameOriginex;
+            _checkInUIViewModelFrameOriginey = _mainPewviewScreenUIViewFrameOriginey;
+            _checkInUIViewModelFrameFrameSizeHeight = _mainPewviewScreenUIViewFrameSizeHeight;
+            _checkInUIViewModelFrameFrameSizeWidth = _mainPewviewScreenUIViewFrameSizeWidth;
+            _checkInUIViewModelFrameBackGroundColor = [UIColor clearColor];
+
+
+            // CheckIn UIButton
+            /*
+             _uiButtonReturnObject =[[UIButton alloc]initWithFrame:CGRectMake(0, 600 , 100, 100)];
+             */
+            _checkInButtonUIViewModelFrameOriginex = windowView.frame.origin.x;
+            _checkInButtonUIViewModelFrameOriginey = 0; //windowView.frame.size.height-100;
+            _checkInButtonUIViewModelFrameSizeHeight = 100;
+            _checkInButtonUIViewModelFrameSizeWidth = 100;
+            _checkInButtonUIViewModelBackGroundColor = [UIColor redColor];
+            _checkInButtonUIViewModelTitleString = @"Check-in";
+
+
+
+
+            
+            
+            _returnUIViewFrameWorkModel = self;
         }
         
         
         
-
+        
     }
     return self;
 }

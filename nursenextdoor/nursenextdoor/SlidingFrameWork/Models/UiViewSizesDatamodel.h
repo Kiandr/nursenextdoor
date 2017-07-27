@@ -23,6 +23,22 @@
 @interface UiViewSizesDatamodel : NSObject
 
 
+typedef enum {
+
+    uiViewStructTypeCheckIn = 0,
+    uiViewStructTypeHelp = 1,
+    uiViewStructTypeHome = 2
+
+}uiVIewTypesStruct;
+
+
+typedef enum {
+    Monday=1,
+
+} typesUiview;
+
+
+
 @property (strong, nonatomic) id<UiViewSizesDatamodelDelegate> delegate;
 
 // UIButton Logo
@@ -78,6 +94,36 @@
 @property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeHeight;
 @property (nonatomic,assign)  CGFloat uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationFrameSizeWidth;
 @property (nonatomic, strong) UIColor * uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationBackGroundColor;
+
+
+// UIVew checkIn
+@property (nonatomic,assign)  CGFloat  checkInUIViewModelFrameOriginex;
+@property (nonatomic,assign)  CGFloat  checkInUIViewModelFrameOriginey;
+@property (nonatomic,assign)  CGFloat  checkInUIViewModelFrameFrameSizeHeight;
+@property (nonatomic,assign)  CGFloat  checkInUIViewModelFrameFrameSizeWidth;
+@property (nonatomic,strong)  UIColor  *checkInUIViewModelFrameBackGroundColor;
+@property (nonatomic,strong)  NSString *checkInUIViewModelFrameTitleString;
+
+
+// Button CheckIn
+/*
+ _uiButtonReturnObject =[[UIButton alloc]initWithFrame:CGRectMake(size.checkInButtonUIViewModelFrameOriginex,
+ size.checkInButtonUIViewModelFrameOriginy ,
+ size.checkInButtonUIViewModelFrameFrameSizeWidth,
+ size.checkInButtonUIViewModelFrameFrameSizeHeight
+ )];
+
+ */
+
+@property (nonatomic,assign)  CGFloat  checkInButtonUIViewModelFrameOriginex;
+@property (nonatomic,assign)  CGFloat  checkInButtonUIViewModelFrameOriginey;
+@property (nonatomic,assign)  CGFloat  checkInButtonUIViewModelFrameSizeWidth;
+@property (nonatomic,assign)  CGFloat  checkInButtonUIViewModelFrameSizeHeight;
+@property (nonatomic,strong)  UIColor  *checkInButtonUIViewModelBackGroundColor;
+@property (nonatomic,strong)  NSString *checkInButtonUIViewModelTitleString;
+
+
+
 
 
 @property (nonatomic, strong) UiViewSizesDatamodel * returnUIViewFrameWorkModel;
