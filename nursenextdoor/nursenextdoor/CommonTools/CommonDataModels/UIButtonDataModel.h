@@ -12,6 +12,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "UiViewSizesDatamodel.h"
+
 @protocol UIButtonDataModelControllerDelegate <NSObject>
 
 -(void) callBackFunctionUIButtonDataModel:(id) sender;
@@ -23,11 +25,11 @@
 @interface UIButtonDataModel : NSObject//UIControl <UIButtonDataModelControllerDelegate>
 
 typedef struct {
-/*
- Author: Kian D.Rad 
- Date: July 23rd 2017
- README: Use this object to build the datamodel and pass values to instructor with datamodel.
- */
+    /*
+     Author: Kian D.Rad
+     Date: July 23rd 2017
+     README: Use this object to build the datamodel and pass values to instructor with datamodel.
+     */
 }UIButtonDataModelStruct;
 
 /*
@@ -37,8 +39,20 @@ typedef struct {
 @property (strong, nonatomic) NSString * titleString;
 @property (strong, nonatomic) UIButton * uiButtonReturnObject;
 @property (retain, nonatomic) id reciverClass;
+// This is the right size of the UIVIew that should be followed;
+// UIButton checkIn
+@property (nonatomic,assign)  CGFloat  modelFrameOriginex;
+@property (nonatomic,assign)  CGFloat  modelFrameOriginey;
+@property (nonatomic,assign)  CGFloat  modelFrameSizeHeight;
+@property (nonatomic,assign)  CGFloat  modelFrameSizeWidth;
+@property (nonatomic,strong)  UIColor  *modelFrameBackGroundColor;
+@property (nonatomic,strong)  NSString *modelTitleString;
 
- /*
+
+
+
+
+/*
  Author: Kian D.Rad
  Date: July 24rd 2017
  README: When the button is initated, the UIBotton also correlated to an UIView.
@@ -51,6 +65,10 @@ typedef struct {
  */
 
 -(instancetype) initWithDataModel: (UIButtonDataModel*) model;
+
+
+
+-(instancetype) initWithType:(uiVIewTypesStruct) type AndCallbackClassIs:(id) modelClassCallBack AlsoSelectorMethodIs :(id) callBackFunctionUIButtonDataModel;
 
 
 @end

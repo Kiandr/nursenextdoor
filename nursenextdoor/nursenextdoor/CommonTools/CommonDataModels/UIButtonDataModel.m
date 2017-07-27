@@ -41,7 +41,7 @@
     if (self) {
 
         _uiButtonReturnObject =[[UIButton alloc]initWithFrame:CGRectMake(0, 600 , 100, 100)];
-        [_uiButtonReturnObject setTitle:@"TestButton" forState:UIControlStateNormal];
+        [_uiButtonReturnObject setTitle:@"checkIn" forState:UIControlStateNormal];
         [_uiButtonReturnObject setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
         [_uiButtonReturnObject addTarget:model.reciverClass action:@selector(callBackFunctionUIButtonDataModel:) forControlEvents:UIControlEventTouchUpInside];
         [_uiButtonReturnObject setBackgroundColor:[UIColor blueColor]];
