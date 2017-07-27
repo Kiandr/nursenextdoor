@@ -26,9 +26,6 @@ bool animationIsInProgress;
     }
     return self;
 }
-
-
-
 - (instancetype) initWithSlidingUIViewDataModel {
 
 /*
@@ -54,12 +51,6 @@ bool animationIsInProgress;
     }
     return self;
 }
-
-/*
- Author: Kian D.Rad
- Date: July 13th 2017
- README: Getters and Setter;
- */
 - (UIView*) getterMasterUIView{
     /*
      Author: Kian D.Rad
