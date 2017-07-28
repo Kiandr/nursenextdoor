@@ -1,4 +1,4 @@
-//
+ //
 //  UIButtonDataModel.m
 //  nursenextdoor
 //
@@ -43,7 +43,7 @@
         _uiButtonReturnObject =[[UIButton alloc]initWithFrame:CGRectMake(0, 600 , 100, 100)];
         [_uiButtonReturnObject setTitle:@"checkIn" forState:UIControlStateNormal];
         [_uiButtonReturnObject setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
-        [_uiButtonReturnObject addTarget:model.reciverClass action:@selector(callBackFunctionUIButtonDataModel:) forControlEvents:UIControlEventTouchUpInside];
+    //    [_uiButtonReturnObject addTarget:model.reciverClass action:@selector(callBackFunctionUIButtonDataModel:) forControlEvents:UIControlEventTouchUpInside];
         [_uiButtonReturnObject setBackgroundColor:[UIColor blueColor]];
 
         /*
@@ -61,8 +61,63 @@
 };
 
 
--(void) callBackFunctionUIButtonDataModel{
-    NSLog(@"test");
+- (instancetype)initWithXModel:(id) model AndType: (uiVIewTypesStruct) type{
+    self = [super init];
+    if (self) {
+
+
+        // Eveything every size is here, all static, and centrlized, consume it on your demand
+
+        _uiViewButtonDataModel= [[UIView alloc]init];
+
+        _uiButtonReturnObject = [[UIButton alloc]init];
+
+        _sizes = [[UiViewSizesDatamodel alloc]initDefaultModel];
+
+        _backClass = model;
+
+        switch (type) {
+            case  uiViewStructTypeCheckIn:
+                {
+                    [_uiButtonReturnObject setTitle:_sizes.checkInButtonUIViewModelTitleString forState:UIControlStateNormal];
+                    [_uiButtonReturnObject setBackgroundColor:_sizes.checkInButtonUIViewModelBackGroundColor];
+                    [_uiButtonReturnObject setFrame:CGRectMake(_sizes.checkInButtonUIViewModelFrameOriginex,
+                                                                         _sizes.checkInButtonUIViewModelFrameOriginey,
+                                                                         _sizes.checkInButtonUIViewModelFrameSizeWidth,
+                                                                         _sizes.checkInButtonUIViewModelFrameSizeHeight)];
+
+                    [_uiButtonReturnObject addTarget:model action:@selector(callBackFunctionUIButtonDataModel:) forControlEvents:UIControlEventTouchUpInside];
+                }
+
+                break;
+
+            case  uiViewStructTypeHelp:
+                {
+
+                    // TODO: Not set yet do the samehere
+                }
+                break;
+
+            case  uiViewStructTypeHome:
+                {
+
+
+
+
+                }
+                break;
+
+            default:
+                break;
+        }
+
+
+
+
+    }
+    return self;
 }
+
+
 
 @end

@@ -59,7 +59,7 @@
             _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey = windowView.frame.origin.y;
             _uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight = windowView.frame.size.height - _uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey;
             _uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth =  windowView.frame.size.width;
-            _uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor = [UIColor whiteColor];
+            _uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor = [UIColor whiteColor]; // findme
 
             // UIView inside NND menu bar
             _uIViewButtonDataModelFrameOriginex   = _slidingUIViewDataModelTemplateOfMasterUIViewFrameOriginex;
@@ -104,12 +104,32 @@
             /*
              _uiButtonReturnObject =[[UIButton alloc]initWithFrame:CGRectMake(0, 600 , 100, 100)];
              */
-            _checkInButtonUIViewModelFrameOriginex = windowView.frame.origin.x;
-            _checkInButtonUIViewModelFrameOriginey = 0; //windowView.frame.size.height-100;
-            _checkInButtonUIViewModelFrameSizeHeight = 100;
+            _checkInButtonUIViewModelFrameOriginex = 0;
+            _checkInButtonUIViewModelFrameOriginey = windowView.frame.size.height-50; // findme
+            _checkInButtonUIViewModelFrameSizeHeight = 50; // findme
             _checkInButtonUIViewModelFrameSizeWidth = 100;
             _checkInButtonUIViewModelBackGroundColor = [UIColor redColor];
             _checkInButtonUIViewModelTitleString = @"Check-in";
+
+
+
+            _homeButtonUIViewModelFrameOriginex = _checkInButtonUIViewModelFrameSizeHeight;
+            _homeButtonUIViewModelFrameOriginey = 0;
+            _homeButtonUIViewModelFrameSizeHeight = 100;
+            _homeButtonUIViewModelFrameSizeWidth = 100;
+            _homeButtonUIViewModelBackGroundColor = [UIColor yellowColor];
+            _homeButtonUIViewModelTitleString = @"Home";
+
+
+
+            // Home UIButton
+            
+
+            // Home UIButton location of button on the screen
+
+            // Help UIBotton location of button on the screen
+
+
 
 
 

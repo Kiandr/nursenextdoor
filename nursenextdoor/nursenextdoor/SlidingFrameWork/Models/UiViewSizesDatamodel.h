@@ -32,10 +32,6 @@ typedef enum {
 }uiVIewTypesStruct;
 
 
-typedef enum {
-    Monday=1,
-
-} typesUiview;
 
 
 
@@ -102,7 +98,7 @@ typedef enum {
 @property (nonatomic,assign)  CGFloat  checkInUIViewModelFrameFrameSizeHeight;
 @property (nonatomic,assign)  CGFloat  checkInUIViewModelFrameFrameSizeWidth;
 @property (nonatomic,strong)  UIColor  *checkInUIViewModelFrameBackGroundColor;
-@property (nonatomic,strong)  NSString *checkInUIViewModelFrameTitleString;
+@property (nonatomic,strong)  NSString *checkInUIButtonTitleString;
 
 
 // Button CheckIn
@@ -115,12 +111,29 @@ typedef enum {
 
  */
 
+
+// CheckIntUiButton
 @property (nonatomic,assign)  CGFloat  checkInButtonUIViewModelFrameOriginex;
 @property (nonatomic,assign)  CGFloat  checkInButtonUIViewModelFrameOriginey;
 @property (nonatomic,assign)  CGFloat  checkInButtonUIViewModelFrameSizeWidth;
 @property (nonatomic,assign)  CGFloat  checkInButtonUIViewModelFrameSizeHeight;
 @property (nonatomic,strong)  UIColor  *checkInButtonUIViewModelBackGroundColor;
 @property (nonatomic,strong)  NSString *checkInButtonUIViewModelTitleString;
+
+
+
+// Home UIButton
+@property (nonatomic,assign)  CGFloat  homeButtonUIViewModelFrameOriginex;
+@property (nonatomic,assign)  CGFloat  homeButtonUIViewModelFrameOriginey;
+@property (nonatomic,assign)  CGFloat  homeButtonUIViewModelFrameSizeWidth;
+@property (nonatomic,assign)  CGFloat  homeButtonUIViewModelFrameSizeHeight;
+@property (nonatomic,strong)  UIColor  *homeButtonUIViewModelBackGroundColor;
+@property (nonatomic,strong)  NSString *homeButtonUIViewModelTitleString;
+
+// ListOfVisists UIButton
+
+
+
 
 
 

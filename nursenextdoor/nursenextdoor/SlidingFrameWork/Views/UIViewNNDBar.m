@@ -46,14 +46,76 @@
 
 
         UIButtonDataModel *builder = [[UIButtonDataModel alloc]init];
-        builder.reciverClass = self;
+     //   builder.reciverClass = self;
+    //    builder.modelUIButtonTitle =@"Home";
 
         _uiButtonHome = [[UIButtonDataModel alloc]initWithDataModel:builder];
         // Set a pointer to the self class.
         _uIViewNNDBar = self;
 
 
-        [_uIViewNNDBar.uiVIewNNDBarView addSubview:_uiButtonHome.uiButtonReturnObject];
+        // test1
+        // built uiview for the button.
+        _uiButtonHome.uiViewButtonDataModel = [[UIView alloc]initWithFrame:CGRectMake(_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex,
+                                                                              _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey,
+                                                                              _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth,
+                                                                              (_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight - _uiViewSizesDatamodel.logoUiButtonFrameSizeHeight))];
+        // build a lable
+        UILabel *welcome = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, 400, 400)];
+        [welcome setText:@"This is the home page"];
+        [_uiButtonHome.uiViewButtonDataModel setBackgroundColor:[UIColor clearColor]];
+
+
+        [_uiButtonHome.uiViewButtonDataModel insertSubview:welcome atIndex:0];
+
+
+
+
+        // Repeat the same process for checkInScreen
+
+
+
+
+        UIButtonDataModel *builder2 = [[UIButtonDataModel alloc]init];
+     //   builder2.reciverClass = self;
+    //    builder2.modelUIButtonTitle =@"Visit";
+        _uiButtonScheduledVisits = [[UIButtonDataModel alloc]initWithDataModel:builder2];
+        [_uiButtonScheduledVisits.uiButtonReturnObject setFrame:CGRectMake(100, 600 , 100, 100)];
+        // Set a pointer to the self class.
+        _uIViewNNDBar = self;
+
+
+        // test1
+        // built uiview for the button.
+        _uiButtonScheduledVisits.uiViewButtonDataModel = [[UIView alloc]initWithFrame:CGRectMake(_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex,
+                                                                              _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey,
+                                                                              _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth,
+                                                                              (_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight - _uiViewSizesDatamodel.logoUiButtonFrameSizeHeight))];
+        // build a lable
+        UILabel *nextVisist= [[UILabel alloc] initWithFrame:CGRectMake(0,0, 500, 500)];
+        [nextVisist setText:@"This is the visit page "];
+        [_uiButtonScheduledVisits.uiViewButtonDataModel setBackgroundColor:[UIColor grayColor]];
+
+
+        [_uiButtonScheduledVisits.uiViewButtonDataModel insertSubview:nextVisist atIndex:0];
+
+        //[_uIViewNNDBar.uiVIewNNDBarView addSubview:_uiButtonScheduledVisits.uiButtonReturnObject];
+
+        //[_uIViewNNDBar.uiVIewNNDBarView addSubview:_uiButtonHome.uiButtonReturnObject];
+
+        // End of the test#2
+
+        //UIButtonDataModel *builder3 = [[UIButtonDataModel alloc]initWithXModel:self AndType:uiViewStructTypeCheckIn];
+
+//- (instancetype)initWithXModel:(UIButtonDataModel*) model AndType: (uiVIewTypesStruct) type{
+
+
+
+        [_uIViewNNDBar.uiVIewNNDBarView addSubview: [[UIButtonDataModel alloc]initWithXModel:self AndType:uiViewStructTypeCheckIn].uiButtonReturnObject];
+
+
+
+
 
         //[_uIViewNNDBar.uiVIewNNDBarView insertSubview:_uiButtonHome.uiButtonReturnObject atIndex:0 ];
 
@@ -108,6 +170,11 @@
     
 }
 
+
+
+
+
+
 - (void)updateUiViewAnimcation:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
 
 
@@ -135,6 +202,9 @@
                                                                                                  _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight)];
 
                              [_uiviewPermenantConnectionToSlidingUIViewModel setBackgroundColor:[UIColor greenColor]];
+                             //[_uiviewPermenantConnectionToSlidingUIViewModel addSubview:_uiButtonHome.uiViewButtonDataModel];
+                             [_uiviewPermenantConnectionToSlidingUIViewModel addSubview:_uiButtonScheduledVisits.uiViewButtonDataModel];
+
                          }completion:^(BOOL finished){
                              NSLog(@"Face Up done");
                              
