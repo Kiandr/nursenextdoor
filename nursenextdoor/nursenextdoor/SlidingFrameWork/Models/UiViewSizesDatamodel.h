@@ -92,24 +92,7 @@ typedef enum {
 @property (nonatomic, strong) UIColor * uiviewPermenantConnectionToSlidingUIViewModelSlideUpLocationBackGroundColor;
 
 
-// UIVew checkIn
-@property (nonatomic,assign)  CGFloat  checkInUIViewModelFrameOriginex;
-@property (nonatomic,assign)  CGFloat  checkInUIViewModelFrameOriginey;
-@property (nonatomic,assign)  CGFloat  checkInUIViewModelFrameFrameSizeHeight;
-@property (nonatomic,assign)  CGFloat  checkInUIViewModelFrameFrameSizeWidth;
-@property (nonatomic,strong)  UIColor  *checkInUIViewModelFrameBackGroundColor;
-@property (nonatomic,strong)  NSString *checkInUIButtonTitleString;
 
-
-// Button CheckIn
-/*
- _uiButtonReturnObject =[[UIButton alloc]initWithFrame:CGRectMake(size.checkInButtonUIViewModelFrameOriginex,
- size.checkInButtonUIViewModelFrameOriginy ,
- size.checkInButtonUIViewModelFrameFrameSizeWidth,
- size.checkInButtonUIViewModelFrameFrameSizeHeight
- )];
-
- */
 
 
 // CheckIntUiButton
@@ -119,6 +102,16 @@ typedef enum {
 @property (nonatomic,assign)  CGFloat  checkInButtonUIViewModelFrameSizeHeight;
 @property (nonatomic,strong)  UIColor  *checkInButtonUIViewModelBackGroundColor;
 @property (nonatomic,strong)  NSString *checkInButtonUIViewModelTitleString;
+
+
+// CheckIntUIVIew
+@property (nonatomic,assign)  CGFloat  checkInUIViewModelFrameOriginex;
+@property (nonatomic,assign)  CGFloat  checkInUIViewModelFrameOriginey;
+@property (nonatomic,assign)  CGFloat  checkInUIViewModelFrameSizeWidth;
+@property (nonatomic,assign)  CGFloat  checkInUIViewModelFrameSizeHeight;
+@property (nonatomic,strong)  UIColor  *checkIUIViewModelBackGroundColor;
+@property (nonatomic,strong)  NSString *checkIUIViewModelTitleString;
+
 
 
 

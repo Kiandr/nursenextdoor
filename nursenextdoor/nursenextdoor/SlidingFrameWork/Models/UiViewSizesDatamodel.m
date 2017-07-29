@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "UiViewSizesDatamodel.h"
 
+
 @implementation UiViewSizesDatamodel
 
 - (instancetype)init {
@@ -92,33 +93,39 @@
 
 
 
+
+
+
+
             // CheckInScreen UIVIew
             _checkInUIViewModelFrameOriginex = _mainPewviewScreenUIViewFrameOriginex;
             _checkInUIViewModelFrameOriginey = _mainPewviewScreenUIViewFrameOriginey;
-            _checkInUIViewModelFrameFrameSizeHeight = _mainPewviewScreenUIViewFrameSizeHeight;
-            _checkInUIViewModelFrameFrameSizeWidth = _mainPewviewScreenUIViewFrameSizeWidth;
-            _checkInUIViewModelFrameBackGroundColor = [UIColor clearColor];
+            _checkInUIViewModelFrameSizeHeight = _mainPewviewScreenUIViewFrameSizeHeight;
+            _checkInUIViewModelFrameSizeWidth = _mainPewviewScreenUIViewFrameSizeWidth;
+            _checkIUIViewModelBackGroundColor = [UIColor clearColor];
 
 
             // CheckIn UIButton
             /*
-             _uiButtonReturnObject =[[UIButton alloc]initWithFrame:CGRectMake(0, 600 , 100, 100)];
+             _Localize.String
+             https://stackoverflow.com/questions/35056397/ios-applications-localization-strings-file-name-change
              */
             _checkInButtonUIViewModelFrameOriginex = 0;
             _checkInButtonUIViewModelFrameOriginey = windowView.frame.size.height-50; // findme
             _checkInButtonUIViewModelFrameSizeHeight = 50; // findme
             _checkInButtonUIViewModelFrameSizeWidth = 100;
-            _checkInButtonUIViewModelBackGroundColor = [UIColor redColor];
-            _checkInButtonUIViewModelTitleString = @"Check-in";
+            _checkInButtonUIViewModelBackGroundColor = [UIColor greenColor];
+            _checkInButtonUIViewModelTitleString = NSLocalizedString(@"checkInButtonUIViewModelTitleString", nil);
 
 
 
-            _homeButtonUIViewModelFrameOriginex = _checkInButtonUIViewModelFrameSizeHeight;
-            _homeButtonUIViewModelFrameOriginey = 0;
-            _homeButtonUIViewModelFrameSizeHeight = 100;
+
+            _homeButtonUIViewModelFrameOriginex = _checkInButtonUIViewModelFrameSizeWidth;
+            _homeButtonUIViewModelFrameOriginey = _checkInButtonUIViewModelFrameOriginey;
+            _homeButtonUIViewModelFrameSizeHeight = _checkInButtonUIViewModelFrameSizeHeight;
             _homeButtonUIViewModelFrameSizeWidth = 100;
-            _homeButtonUIViewModelBackGroundColor = [UIColor yellowColor];
-            _homeButtonUIViewModelTitleString = @"Home";
+            _homeButtonUIViewModelBackGroundColor = [UIColor blueColor];
+            _homeButtonUIViewModelTitleString = NSLocalizedString(@"homeButtonUIViewModelTitleString", nil);
 
 
 

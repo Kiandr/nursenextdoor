@@ -24,6 +24,7 @@
 		2E8685291F0FFBC50050F0BE /* MainPreviewScreenUIViewInteractionEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8685281F0FFBC50050F0BE /* MainPreviewScreenUIViewInteractionEntity.m */; };
 		2E9380BE1EF342BB0093D296 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */; };
 		2E9883F41F043E7300943962 /* MasterUIViewDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9883F31F043E7300943962 /* MasterUIViewDataModel.m */; };
+		2EAA28391F2BED5E007DA1C4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EAA283B1F2BED5E007DA1C4 /* Localizable.strings */; };
 		2EAFD3B61F27EEA10010B399 /* UiViewSizesDatamodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAFD3B51F27EEA10010B399 /* UiViewSizesDatamodel.m */; };
 		2EC2B7D51EF3402F0021CE60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7D41EF3402F0021CE60 /* main.m */; };
 		2EC2B7D81EF3402F0021CE60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7D71EF3402F0021CE60 /* AppDelegate.m */; };
@@ -102,6 +103,7 @@
 		2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Google/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2E9883F21F043C8500943962 /* MasterUIViewDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterUIViewDataModel.h; sourceTree = "<group>"; };
 		2E9883F31F043E7300943962 /* MasterUIViewDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterUIViewDataModel.m; sourceTree = "<group>"; };
+		2EAA283D1F2BED96007DA1C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2EAFD3B41F27EEA10010B399 /* UiViewSizesDatamodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UiViewSizesDatamodel.h; path = SlidingFrameWork/Models/UiViewSizesDatamodel.h; sourceTree = "<group>"; };
 		2EAFD3B51F27EEA10010B399 /* UiViewSizesDatamodel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UiViewSizesDatamodel.m; path = SlidingFrameWork/Models/UiViewSizesDatamodel.m; sourceTree = "<group>"; };
 		2EC2B7D01EF3402F0021CE60 /* nursenextdoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nursenextdoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -386,6 +388,22 @@
 			name = UND;
 			sourceTree = "<group>";
 		};
+		2EAA28351F2BEC65007DA1C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2EAA28361F2BEC76007DA1C4 /* UIViewFramework */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2EAA28361F2BEC76007DA1C4 /* UIViewFramework */ = {
+			isa = PBXGroup;
+			children = (
+				2EAA283B1F2BED5E007DA1C4 /* Localizable.strings */,
+			);
+			name = UIViewFramework;
+			sourceTree = "<group>";
+		};
 		2EC2B7C71EF3402F0021CE60 = {
 			isa = PBXGroup;
 			children = (
@@ -411,6 +429,7 @@
 		2EC2B7D21EF3402F0021CE60 /* nursenextdoor */ = {
 			isa = PBXGroup;
 			children = (
+				2EAA28351F2BEC65007DA1C4 /* Resources */,
 				2E253ED41F1D575D003B616D /* CommonTools */,
 				2E5E2DB81F056BCD00EAD603 /* SlidingFrameWork */,
 				2E330C1C1EFC88320056FC3F /* UIViewFramework */,
@@ -593,6 +612,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EC2B7E61EF3402F0021CE60 /* LaunchScreen.storyboard in Resources */,
+				2EAA28391F2BED5E007DA1C4 /* Localizable.strings in Resources */,
 				2E9380BE1EF342BB0093D296 /* GoogleService-Info.plist in Resources */,
 				2E330C0E1EFC87970056FC3F /* GoogleService-Info.plist in Resources */,
 				2EC2B7E31EF3402F0021CE60 /* Assets.xcassets in Resources */,
@@ -817,6 +837,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2EAA283B1F2BED5E007DA1C4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EAA283D1F2BED96007DA1C4 /* en */,
+			);
+			name = Localizable.strings;
+			path = Resources/UIViewFramework;
+			sourceTree = "<group>";
+		};
 		2EC2B7DC1EF3402F0021CE60 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

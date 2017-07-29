@@ -45,28 +45,35 @@
          */
 
 
-        UIButtonDataModel *builder = [[UIButtonDataModel alloc]init];
-     //   builder.reciverClass = self;
-    //    builder.modelUIButtonTitle =@"Home";
 
-        _uiButtonHome = [[UIButtonDataModel alloc]initWithDataModel:builder];
-        // Set a pointer to the self class.
-        _uIViewNNDBar = self;
+        _uiButtonHome = [[UIButtonDataModel alloc]initWithXModel:self AndType:uiViewStructTypeCheckIn];
+        _uiButtonScheduledVisits = [[UIButtonDataModel alloc]initWithXModel:self AndType:uiViewStructTypeHome];
 
 
-        // test1
-        // built uiview for the button.
-        _uiButtonHome.uiViewButtonDataModel = [[UIView alloc]initWithFrame:CGRectMake(_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex,
-                                                                              _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey,
-                                                                              _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth,
-                                                                              (_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight - _uiViewSizesDatamodel.logoUiButtonFrameSizeHeight))];
-        // build a lable
-        UILabel *welcome = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, 400, 400)];
-        [welcome setText:@"This is the home page"];
-        [_uiButtonHome.uiViewButtonDataModel setBackgroundColor:[UIColor clearColor]];
 
-
-        [_uiButtonHome.uiViewButtonDataModel insertSubview:welcome atIndex:0];
+//
+//        UIButtonDataModel *builder = [[UIButtonDataModel alloc]init];
+//     //   builder.reciverClass = self;
+//    //    builder.modelUIButtonTitle =@"Home";
+//
+//        _uiButtonHome = [[UIButtonDataModel alloc]initWithDataModel:builder];
+//        // Set a pointer to the self class.
+//        _uIViewNNDBar = self;
+//
+//
+//        // test1
+//        // built uiview for the button.
+//        _uiButtonHome.uiViewButtonDataModel = [[UIView alloc]initWithFrame:CGRectMake(_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex,
+//                                                                              _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey,
+//                                                                              _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth,
+//                                                                              (_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight - _uiViewSizesDatamodel.logoUiButtonFrameSizeHeight))];
+////        // build a lable
+//        UILabel *welcome = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, 400, 400)];
+//        [welcome setText:@"This is the home page"];
+//        [_uiButtonHome.uiViewButtonDataModel setBackgroundColor:[UIColor yellowColor]];
+//
+//
+//        [_uiButtonHome.uiViewButtonDataModel insertSubview:welcome atIndex:0];
 
 
 
@@ -75,43 +82,34 @@
 
 
 
-
-        UIButtonDataModel *builder2 = [[UIButtonDataModel alloc]init];
-     //   builder2.reciverClass = self;
-    //    builder2.modelUIButtonTitle =@"Visit";
-        _uiButtonScheduledVisits = [[UIButtonDataModel alloc]initWithDataModel:builder2];
-        [_uiButtonScheduledVisits.uiButtonReturnObject setFrame:CGRectMake(100, 600 , 100, 100)];
+//
+//        UIButtonDataModel *builder2 = [[UIButtonDataModel alloc]init];
+//     //   builder2.reciverClass = self;
+//    //    builder2.modelUIButtonTitle =@"Visit";
+//        _uiButtonScheduledVisits = [[UIButtonDataModel alloc]initWithDataModel:builder2];
+//        [_uiButtonScheduledVisits.uiButtonReturnObject setFrame:CGRectMake(100, 600 , 100, 100)];
         // Set a pointer to the self class.
         _uIViewNNDBar = self;
 
 
         // test1
         // built uiview for the button.
-        _uiButtonScheduledVisits.uiViewButtonDataModel = [[UIView alloc]initWithFrame:CGRectMake(_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex,
-                                                                              _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey,
-                                                                              _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth,
-                                                                              (_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight - _uiViewSizesDatamodel.logoUiButtonFrameSizeHeight))];
-        // build a lable
-        UILabel *nextVisist= [[UILabel alloc] initWithFrame:CGRectMake(0,0, 500, 500)];
-        [nextVisist setText:@"This is the visit page "];
-        [_uiButtonScheduledVisits.uiViewButtonDataModel setBackgroundColor:[UIColor grayColor]];
+//        _uiButtonScheduledVisits.uiViewButtonDataModel = [[UIView alloc]initWithFrame:CGRectMake(_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex,
+//                                                                              _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey,
+//                                                                              _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth,
+//                                                                              (_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight - _uiViewSizesDatamodel.logoUiButtonFrameSizeHeight))];
+//        // build a lable
+//        UILabel *nextVisist= [[UILabel alloc] initWithFrame:CGRectMake(0,0, 500, 500)];
+//        [nextVisist setText:@"This is the visit page "];
+//        [_uiButtonScheduledVisits.uiViewButtonDataModel setBackgroundColor:[UIColor grayColor]];
+//
+//
+//        [_uiButtonScheduledVisits.uiViewButtonDataModel insertSubview:nextVisist atIndex:0];
+//
 
-
-        [_uiButtonScheduledVisits.uiViewButtonDataModel insertSubview:nextVisist atIndex:0];
-
-        //[_uIViewNNDBar.uiVIewNNDBarView addSubview:_uiButtonScheduledVisits.uiButtonReturnObject];
-
-        //[_uIViewNNDBar.uiVIewNNDBarView addSubview:_uiButtonHome.uiButtonReturnObject];
-
-        // End of the test#2
-
-        //UIButtonDataModel *builder3 = [[UIButtonDataModel alloc]initWithXModel:self AndType:uiViewStructTypeCheckIn];
-
-//- (instancetype)initWithXModel:(UIButtonDataModel*) model AndType: (uiVIewTypesStruct) type{
-
-
-
-        [_uIViewNNDBar.uiVIewNNDBarView addSubview: [[UIButtonDataModel alloc]initWithXModel:self AndType:uiViewStructTypeCheckIn].uiButtonReturnObject];
+        // Tested Great working Good
+        [_uIViewNNDBar.uiVIewNNDBarView addSubview: _uiButtonHome.uiButtonReturnObject];
+        [_uIViewNNDBar.uiVIewNNDBarView addSubview: _uiButtonScheduledVisits.uiButtonReturnObject];
 
 
 
@@ -163,9 +161,26 @@
         UIView animation to buring that UIView into the template holder.
      ToDO:
         1- July 25th 2017: load the Home "UIView", keep reffernce to the componetns.
+        2- July 28th 2017: Based on the title of the button, we perfrom spesific animation for each screen.
      */
 
-    [self updateUiViewAnimcation:nil finished:nil context:nil  ];
+
+    if ([sender.currentTitle  isEqual: NSLocalizedString(@"checkInButtonUIViewModelTitleString", nil)])
+    {
+
+        // retur back the PermenantConnection back down and put that uIView on top of others.
+        NSLog(@"%@",sender.currentTitle);
+        [self CheckInScreenupdateAnimation];
+    }
+
+    else if ([sender.currentTitle  isEqual: NSLocalizedString(@"homeButtonUIViewModelTitleString", nil)])
+    {
+        NSLog(@"%@",sender.currentTitle);
+         [self HomeScreenupdateAnimation];
+    }
+
+
+ //   [self updateUiViewAnimcation:nil finished:nil context:nil  ];
     NSLog(@"delgate method at -(void) callBackFunctionUIButtonDataModelControllerDelegate; worked @%@", sender.titleLabel);
     
 }
@@ -211,6 +226,84 @@
                          }];
         
 
+}
+
+
+
+- (void)CheckInScreenupdateAnimation{
+
+
+    /*
+     Author: Kian D.Rad
+     Date:   July 28th 2017
+     README: Load CheckIn UIVIew on top and bring back the permenant Screen down
+     ToDO:
+     */
+
+    [UIView animateWithDuration:0.25
+                          delay:0.0
+                        options:(UIViewAnimationCurveEaseInOut|UIViewAnimationOptionAllowUserInteraction)
+                     animations:^{
+                         [UIView setAnimationDelegate:self];
+
+                         // This line also calls an other function upon completion too.
+                         //[UIView setAnimationDidStopSelector:@selector(goDown:finished:context:)];
+                         [_uiviewPermenantConnectionToSlidingUIViewModel setFrame:CGRectMake(_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex,
+                                                                                             _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey,
+                                                                                             _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth,
+                                                                                             _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight)];
+
+                      //   [_uiviewPermenantConnectionToSlidingUIViewModel setBackgroundColor:[UIColor blackColor]];
+
+// findme
+
+                     //    [_uiviewPermenantConnectionToSlidingUIViewModel willRemoveSubview:_uiButtonHome.uiViewButtonDataModel];
+                         [_uiviewPermenantConnectionToSlidingUIViewModel insertSubview:_uiButtonScheduledVisits.uiViewButtonDataModel atIndex:0];
+                      //   [_uiviewPermenantConnectionToSlidingUIViewModel insertSubview:_uiButtonHome.uiViewButtonDataModel atIndex:1];
+
+                     }completion:^(BOOL finished){
+                         NSLog(@"Face Up done");
+
+                     }];
+    
+    
+}
+
+- (void)HomeScreenupdateAnimation{
+
+
+    /*
+     Author: Kian D.Rad
+     Date:   July 28th 2017
+     README: Load CheckIn UIVIew on top and bring back the permenant Screen down
+     ToDO:
+     */
+
+    [UIView animateWithDuration:0.25
+                          delay:0.0
+                        options:(UIViewAnimationCurveEaseInOut|UIViewAnimationOptionAllowUserInteraction)
+                     animations:^{
+                         [UIView setAnimationDelegate:self];
+
+                         // This line also calls an other function upon completion too.
+                         //[UIView setAnimationDidStopSelector:@selector(goDown:finished:context:)];
+                         [_uiviewPermenantConnectionToSlidingUIViewModel setFrame:CGRectMake(_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex,
+                                                                                             _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey,
+                                                                                             _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth,
+                                                                                             _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight)];
+
+                    //     [_uiviewPermenantConnectionToSlidingUIViewModel setBackgroundColor:[UIColor greenColor]];
+
+                    //     [_uiviewPermenantConnectionToSlidingUIViewModel insertSubview:_uiButtonScheduledVisits.uiViewButtonDataModel atIndex:1];
+                         [_uiviewPermenantConnectionToSlidingUIViewModel insertSubview:_uiButtonHome.uiViewButtonDataModel atIndex:0];
+                      //   [_uiviewPermenantConnectionToSlidingUIViewModel willRemoveSubview:_uiButtonScheduledVisits.uiViewButtonDataModel];
+
+                     }completion:^(BOOL finished){
+                         NSLog(@"Face Up done");
+                         
+                     }];
+    
+    
 }
 
 @end

@@ -88,9 +88,9 @@
  ToDo:
 
  */
-- (id)callBackFunctionButton:(id)sender{
+- (id)callBackFunctionButton:(UIButton*)sender{
 
-
+    
     [self goUp:nil finished:nil context:nil];
 
 

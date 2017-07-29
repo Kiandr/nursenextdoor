@@ -74,6 +74,12 @@
 
         _sizes = [[UiViewSizesDatamodel alloc]initDefaultModel];
 
+
+        // build a lable TEST FINDME
+        UILabel *nextVisist= [[UILabel alloc] initWithFrame:CGRectMake(0,0, 500, 500)];
+        [_uiViewButtonDataModel addSubview:nextVisist];
+
+
         _backClass = model;
 
         switch (type) {
@@ -87,6 +93,19 @@
                                                                          _sizes.checkInButtonUIViewModelFrameSizeHeight)];
 
                     [_uiButtonReturnObject addTarget:model action:@selector(callBackFunctionUIButtonDataModel:) forControlEvents:UIControlEventTouchUpInside];
+
+                    // I built the UIButton but not the uiview LOL
+                    [_uiViewButtonDataModel setFrame:CGRectMake(_sizes.checkInUIViewModelFrameOriginex,
+                                                                _sizes.checkInUIViewModelFrameOriginey,
+                                                                _sizes.checkInUIViewModelFrameSizeWidth,
+                                                                _sizes.checkInUIViewModelFrameSizeHeight)];
+
+                    [_uiViewButtonDataModel setBackgroundColor:[UIColor whiteColor]];
+
+                    // FINDME
+                    // TEST
+
+                    [nextVisist setText:@"This is CHECKINT page "];
                 }
 
                 break;
@@ -98,11 +117,26 @@
                 }
                 break;
 
+
             case  uiViewStructTypeHome:
                 {
 
+                    [_uiButtonReturnObject setTitle:_sizes.homeButtonUIViewModelTitleString forState:UIControlStateNormal];
+                    [_uiButtonReturnObject setBackgroundColor:_sizes.homeButtonUIViewModelBackGroundColor];
+                    [_uiButtonReturnObject setFrame:CGRectMake(_sizes.homeButtonUIViewModelFrameOriginex,
+                                                               _sizes.homeButtonUIViewModelFrameOriginey,
+                                                               _sizes.homeButtonUIViewModelFrameSizeWidth,
+                                                               _sizes.homeButtonUIViewModelFrameSizeHeight)];
 
+                    [_uiButtonReturnObject addTarget:model action:@selector(callBackFunctionUIButtonDataModel:) forControlEvents:UIControlEventTouchUpInside];
 
+                    [nextVisist setText:@"This is HOME page "];
+                    [_uiViewButtonDataModel setBackgroundColor:[UIColor whiteColor]];
+                    // I built the UIButton but not the uiview LOL
+                    [_uiViewButtonDataModel setFrame:CGRectMake(_sizes.checkInUIViewModelFrameOriginex,
+                                                                _sizes.checkInUIViewModelFrameOriginey,
+                                                                _sizes.checkInUIViewModelFrameSizeWidth,
+                                                                _sizes.checkInUIViewModelFrameSizeHeight)];
 
                 }
                 break;

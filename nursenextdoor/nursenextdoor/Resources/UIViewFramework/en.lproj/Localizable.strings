@@ -1,0 +1,11 @@
+/* 
+  NNDBar.strings
+  nursenextdoor
+
+  Created by Kian Davoudi-Rad on 2017-07-28.
+  Copyright © 2017 Kian Davoudi-Rad. All rights reserved.
+*/
+"SlideUpButtonString" = "Slide Up";
+"checkInButtonUIViewModelTitleString" = "Check-In";
+"homeButtonUIViewModelTitleString" = "Home";
+
