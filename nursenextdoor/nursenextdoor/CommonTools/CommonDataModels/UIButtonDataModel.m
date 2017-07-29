@@ -100,7 +100,7 @@
                                                                 _sizes.checkInUIViewModelFrameSizeWidth,
                                                                 _sizes.checkInUIViewModelFrameSizeHeight)];
 
-                    [_uiViewButtonDataModel setBackgroundColor:[UIColor whiteColor]];
+                    [_uiViewButtonDataModel setBackgroundColor:[UIColor darkGrayColor]];
 
                     // FINDME
                     // TEST
@@ -131,7 +131,7 @@
                     [_uiButtonReturnObject addTarget:model action:@selector(callBackFunctionUIButtonDataModel:) forControlEvents:UIControlEventTouchUpInside];
 
                     [nextVisist setText:@"This is HOME page "];
-                    [_uiViewButtonDataModel setBackgroundColor:[UIColor whiteColor]];
+                    [_uiViewButtonDataModel setBackgroundColor:[UIColor lightGrayColor]];
                     // I built the UIButton but not the uiview LOL
                     [_uiViewButtonDataModel setFrame:CGRectMake(_sizes.checkInUIViewModelFrameOriginex,
                                                                 _sizes.checkInUIViewModelFrameOriginey,
