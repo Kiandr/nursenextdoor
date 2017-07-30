@@ -32,6 +32,9 @@
 
 @property (strong, nonatomic) UIButton *uiButtonReturnObject;
 
+
+
+
 @property (assign, nonatomic) uiVIewTypesStruct* typeOfButtonIs;
 
 @property (strong, nonatomic) UiViewSizesDatamodel *sizes;

@@ -44,7 +44,7 @@
 
 // Each button represents a UIVIew, should follow the same as SlidingUIViewDataModel
 @property (strong,nonatomic) UIButtonDataModel *uiButtonHome;
-@property (strong,nonatomic) UIButtonDataModel *uiButtonScheduledVisits;
+@property (strong,nonatomic) UIButtonDataModel *uiButtonChckIn;
 @property (strong,nonatomic) UIButtonDataModel *uiButtonMap;
 @property (strong,nonatomic) UIButtonDataModel *uiButtonHelp;
 
