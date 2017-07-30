@@ -185,11 +185,6 @@
     
 }
 
-
-
-
-
-
 - (void)updateUiViewAnimcation:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
 
 
@@ -227,8 +222,6 @@
         
 
 }
-
-
 
 - (void)CheckInScreenupdateAnimation{
 
