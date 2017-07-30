@@ -12,6 +12,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "UiViewSizesDatamodel.h"
+
 @protocol UIButtonDataModelControllerDelegate <NSObject>
 
 -(void) callBackFunctionUIButtonDataModel:(id) sender;
@@ -20,38 +22,28 @@
 
 
 @class UIButtonDataModel;
-@interface UIButtonDataModel : NSObject//UIControl <UIButtonDataModelControllerDelegate>
+@interface UIButtonDataModel : NSObject
 
-typedef struct {
-/*
- Author: Kian D.Rad 
- Date: July 23rd 2017
- README: Use this object to build the datamodel and pass values to instructor with datamodel.
- */
-}UIButtonDataModelStruct;
-
-/*
- Public properties
- */
 @property (retain, nonatomic) id<UIButtonDataModelControllerDelegate> delegate;
-@property (strong, nonatomic) NSString * titleString;
-@property (strong, nonatomic) UIButton * uiButtonReturnObject;
-@property (retain, nonatomic) id reciverClass;
-/*
- /*
- Author: Kian D.Rad
- Date: July 24rd 2017
- README: When the button is initated, the UIBotton also correlated to an UIView.
- */
-@property (strong, nonatomic) UIView *uiViewUiButto;
+
+@property (strong, nonatomic) id backClass;
+
+@property (strong, nonatomic) UIView   *uiViewButtonDataModel;
+
+@property (strong, nonatomic) UIButton *uiButtonReturnObject;
 
 
-/*
- Inits with Datamodel
- */
+
+
+@property (assign, nonatomic) uiVIewTypesStruct* typeOfButtonIs;
+
+@property (strong, nonatomic) UiViewSizesDatamodel *sizes;
 
 -(instancetype) initWithDataModel: (UIButtonDataModel*) model;
 
+-(instancetype) initWithType:(uiVIewTypesStruct) type AndCallbackClassIs:(id) modelClassCallBack AlsoSelectorMethodIs :(id) callBackFunctionUIButtonDataModel;
+
+- (instancetype)initWithXModel:(id) model AndType: (uiVIewTypesStruct) type;
 
 @end
 

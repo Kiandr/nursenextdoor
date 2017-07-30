@@ -21,12 +21,13 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "UIButtonDataModel.h"
+#import "UiViewSizesDatamodel.h"
 
-//@protocol UIViewNNDBarControllerDelegate <NSObject>
-//
-//-(void) callBackFunctionUIButtonDataModelControllerDelegate;
-//
-//@end
+@protocol UIViewNNDBarControllerDelegate <NSObject>
+
+-(void) testUIViewNNDBarControllerDelegate;
+
+@end
 
 @class UIViewNNDBar;
 @interface UIViewNNDBar : NSObject<UIButtonDataModelControllerDelegate>
@@ -43,18 +44,18 @@
 
 // Each button represents a UIVIew, should follow the same as SlidingUIViewDataModel
 @property (strong,nonatomic) UIButtonDataModel *uiButtonHome;
-@property (strong,nonatomic) UIButtonDataModel *uiButtonScheduledVisits;
+@property (strong,nonatomic) UIButtonDataModel *uiButtonChckIn;
 @property (strong,nonatomic) UIButtonDataModel *uiButtonMap;
 @property (strong,nonatomic) UIButtonDataModel *uiButtonHelp;
 
 @property (strong,nonatomic) UIView *uiviewTesterToReplacePermeneantConnectionToSlidingView;
-
 @property (strong,nonatomic) UIView *uiviewPermenantConnectionToSlidingUIViewModel;
 
+@property(strong, nonatomic) UiViewSizesDatamodel *uiViewSizesDatamodel;
 
 
 - (instancetype)init;
-- (instancetype)initWithDataModel: (UIViewNNDBar*) uiViewNNDBarIncomingDataModel;
+- (instancetype)initWithDataModel: (UIViewNNDBar*) uiViewNNDBarIncoming AndSizesDataModel:(UiViewSizesDatamodel*) uiViewSizesDatamodel;
 
 
 /*

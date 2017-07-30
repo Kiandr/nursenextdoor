@@ -22,20 +22,10 @@ bool animationIsInProgress;
     self = [super init];
     if (self) {
 
-        // init SlidingUIViewDataModel it contains all UIVIews
-        _slidingUIViewDataModel = [[SlidingUIViewDataModel alloc]initWithSlidingUIViewDataModel:_slidingUIViewDataModel];
-
-        // this is the class for interaction components: it contains button and gesture
-         _mainPreviewScreenUIViewInteractionEntity = [[MainPreviewScreenUIViewInteractionEntity alloc]initWithMainPreviewScreenUIViewInteractionEntityWithModel:_mainPreviewScreenUIViewInteractionEntity AndWithSlidingUIViewDataModel:_slidingUIViewDataModel];
-
-
 
     }
     return self;
 }
-
-
-
 - (instancetype) initWithSlidingUIViewDataModel {
 
 /*
@@ -44,30 +34,23 @@ bool animationIsInProgress;
  ReadMe: This function will initalize three UIVIews, master, left and right. 
         The master contains a function to toggle, and the two will transtiion.
  */
-
-
     self = [super init];
     if (self) {
+        // this model had right number to play with
+        _uiViewSizesDatamodel  = [[UiViewSizesDatamodel alloc] initDefaultModel];
+        _slidingUIViewDataModel = [[SlidingUIViewDataModel alloc]initWithSlidingUIViewDataModel:_uiViewSizesDatamodel];
+        _mainPreviewScreenUIViewInteractionEntity = [[MainPreviewScreenUIViewInteractionEntity alloc]initWithMainPreviewScreenUIViewInteractionEntityWithModel:
+                                                     _mainPreviewScreenUIViewInteractionEntity AndWithSlidingUIViewDataModel:
+                                                     _slidingUIViewDataModel AndSizesDataModel:_uiViewSizesDatamodel];
+        _masterUIViewCLass = [[MasterUIViewCLass alloc] initWithUIViewSizesDatamodel:_uiViewSizesDatamodel];
 
-        _slidingUIViewDataModel = [[SlidingUIViewDataModel alloc]initWithSlidingUIViewDataModel:_slidingUIViewDataModel];
-        _mainPreviewScreenUIViewInteractionEntity = [[MainPreviewScreenUIViewInteractionEntity alloc]initWithMainPreviewScreenUIViewInteractionEntityWithModel:_mainPreviewScreenUIViewInteractionEntity AndWithSlidingUIViewDataModel:_slidingUIViewDataModel];
-        [_slidingUIViewDataModel.templateOfMasterUIView addSubview:_mainPreviewScreenUIViewInteractionEntity.uiViewButtonHolderFrame];
-        //_uIViewNNDBar = [[UIViewNNDBar alloc] initWithDataModel:_uIViewNNDBar];
-        _masterUIViewCLass = [[MasterUIViewCLass alloc] initWithMasterUIViewDataStructureApplicationUIView];
+
+        [_slidingUIViewDataModel.templateOfMasterUIView addSubview:_mainPreviewScreenUIViewInteractionEntity.bringOnSlidingMenueUIButton];
         [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.templateOfMasterUIView atIndex:1];
         [_masterUIViewCLass.mainPewviewScreenUIView insertSubview:_slidingUIViewDataModel.uiViewNNDBar.uiVIewNNDBarView atIndex:0];
-
     }
     return self;
-
-
 }
-
-/*
- Author: Kian D.Rad
- Date: July 13th 2017
- README: Getters and Setter;
- */
 - (UIView*) getterMasterUIView{
     /*
      Author: Kian D.Rad

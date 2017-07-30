@@ -12,10 +12,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@class;
+@class CommomUtility;
 @interface CommomUtility : NSObject
 
--(UIButton*) buildUIButtonWith: (UIButton*) incominguiButton AndCallBackFunctionIs (id) refferenceToCallBackFunction;
 
 @end
 

@@ -10,7 +10,7 @@
 #define MasterUIViewDataStructure_h
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import "UiViewSizesDatamodel.h"
 
 @class MasterUIViewCLass;
 
@@ -38,15 +38,12 @@ typedef struct MasterUIViewDataStructure{
 @property (nonatomic, strong) UIView    *mainPewviewScreenUIView;
 @property (nonatomic, assign) CGRect     mainPewviewScreenUIViewFrame;
 @property (nonatomic, assign) UIColor   *mainPewviewScreenUIViewBackGroundColor;
-
-@property (nonatomic,strong) MasterUIViewCLass* masterUIViewCLass;
-
+@property (nonatomic, strong) MasterUIViewCLass* masterUIViewCLass;
 
 
-// struct mainPreviewScreenUIViewInteractionEntity
-// Master Initalizer:
 - (instancetype) init;
-- (instancetype) initWithMasterUIViewDataStructureApplicationUIView;
+
+- (instancetype) initWithUIViewSizesDatamodel :(UiViewSizesDatamodel*) uiViewSizesDatamodel;
 
 @end
 

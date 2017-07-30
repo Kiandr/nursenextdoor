@@ -8,7 +8,7 @@
 
 #ifndef MainPreviewScreenUIViewInteractionEntity_h
 #define MainPreviewScreenUIViewInteractionEntity_h
-
+#import "UiViewSizesDatamodel.h"
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "SlidingUIViewDataModel.h"
@@ -43,22 +43,12 @@ typedef struct {
 @property (strong, nonatomic) UIButton* CheckInUIButton;
 @property (strong, nonatomic)  UIView *uiViewButtonHolderFrame;
 
-//@property (strong, nonatomic) MainPreviewScreenUIViewInteractionEntity *mainPreviewScreenUIViewInteractionEntity;
-//@property (strong, nonatomic) SlidingUIViewDataModel *slidingUIViewDataModel;
-
-
 - (instancetype)init ;
 
-//- (instancetype) initWithMainPreviewScreenUIViewInteractionEntityWithModel:(MainPreviewScreenUIViewInteractionEntity*)model;
 
-- (instancetype) initWithMainPreviewScreenUIViewInteractionEntityWithModel:(MainPreviewScreenUIViewInteractionEntity*)model AndWithSlidingUIViewDataModel: (SlidingUIViewDataModel*)slidingUIViewDataModel;
-
-
-//The event handling method
-- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer;
+- (instancetype) initWithMainPreviewScreenUIViewInteractionEntityWithModel:(MainPreviewScreenUIViewInteractionEntity*)model AndWithSlidingUIViewDataModel: (SlidingUIViewDataModel*)slidingUIViewDataModel AndSizesDataModel: (UiViewSizesDatamodel*) uiViewSizesDatamodel;
 
 
--(void) buttonClicked:(UIButton*)sender;
 
 @end
 

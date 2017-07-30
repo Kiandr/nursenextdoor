@@ -24,6 +24,8 @@
 		2E8685291F0FFBC50050F0BE /* MainPreviewScreenUIViewInteractionEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8685281F0FFBC50050F0BE /* MainPreviewScreenUIViewInteractionEntity.m */; };
 		2E9380BE1EF342BB0093D296 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */; };
 		2E9883F41F043E7300943962 /* MasterUIViewDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9883F31F043E7300943962 /* MasterUIViewDataModel.m */; };
+		2EAA28391F2BED5E007DA1C4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EAA283B1F2BED5E007DA1C4 /* Localizable.strings */; };
+		2EAFD3B61F27EEA10010B399 /* UiViewSizesDatamodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAFD3B51F27EEA10010B399 /* UiViewSizesDatamodel.m */; };
 		2EC2B7D51EF3402F0021CE60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7D41EF3402F0021CE60 /* main.m */; };
 		2EC2B7D81EF3402F0021CE60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7D71EF3402F0021CE60 /* AppDelegate.m */; };
 		2EC2B7DB1EF3402F0021CE60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7DA1EF3402F0021CE60 /* ViewController.m */; };
@@ -33,7 +35,7 @@
 		2EC2B7E61EF3402F0021CE60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2B7E41EF3402F0021CE60 /* LaunchScreen.storyboard */; };
 		2EC2B7F11EF3402F0021CE60 /* nursenextdoorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7F01EF3402F0021CE60 /* nursenextdoorTests.m */; };
 		2EC2B7FC1EF3402F0021CE60 /* nursenextdoorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7FB1EF3402F0021CE60 /* nursenextdoorUITests.m */; };
-		2ED1C38C1F22C0C200A66787 /* UIViewNNDBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED1C38B1F22C0C200A66787 /* UIViewNNDBarController.m */; };
+		2ED1C38C1F22C0C200A66787 /* UIViewNNDBarControllerServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED1C38B1F22C0C200A66787 /* UIViewNNDBarControllerServices.m */; };
 		2EE09D181F1FF20400F26B72 /* CommomUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE09D171F1FF20400F26B72 /* CommomUtility.m */; };
 		2EE09D1C1F1FF3E200F26B72 /* UIButtonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE09D1B1F1FF3E200F26B72 /* UIButtonDataModel.m */; };
 		9138E15E99FFBFC6D9AC467C /* libPods-nursenextdoor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 446EC59F7C06B34E0DF1C868 /* libPods-nursenextdoor.a */; };
@@ -101,6 +103,9 @@
 		2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Google/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2E9883F21F043C8500943962 /* MasterUIViewDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterUIViewDataModel.h; sourceTree = "<group>"; };
 		2E9883F31F043E7300943962 /* MasterUIViewDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterUIViewDataModel.m; sourceTree = "<group>"; };
+		2EAA283D1F2BED96007DA1C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2EAFD3B41F27EEA10010B399 /* UiViewSizesDatamodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UiViewSizesDatamodel.h; path = SlidingFrameWork/Models/UiViewSizesDatamodel.h; sourceTree = "<group>"; };
+		2EAFD3B51F27EEA10010B399 /* UiViewSizesDatamodel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UiViewSizesDatamodel.m; path = SlidingFrameWork/Models/UiViewSizesDatamodel.m; sourceTree = "<group>"; };
 		2EC2B7D01EF3402F0021CE60 /* nursenextdoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nursenextdoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC2B7D41EF3402F0021CE60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2EC2B7D61EF3402F0021CE60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,12 +123,12 @@
 		2EC2B7F71EF3402F0021CE60 /* nursenextdoorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nursenextdoorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC2B7FB1EF3402F0021CE60 /* nursenextdoorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nursenextdoorUITests.m; sourceTree = "<group>"; };
 		2EC2B7FD1EF3402F0021CE60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2ED1C38B1F22C0C200A66787 /* UIViewNNDBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewNNDBarController.m; path = SlidingFrameWork/Controllers/NND/UIViewNNDBarController.m; sourceTree = "<group>"; };
+		2ED1C38B1F22C0C200A66787 /* UIViewNNDBarControllerServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewNNDBarControllerServices.m; path = SlidingFrameWork/Controllers/NND/UIViewNNDBarControllerServices.m; sourceTree = "<group>"; };
 		2EE09D161F1FF1F100F26B72 /* CommomUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CommomUtility.h; path = CommonTools/CommonUtilites/CommomUtility.h; sourceTree = "<group>"; };
 		2EE09D171F1FF20400F26B72 /* CommomUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommomUtility.m; path = CommonTools/CommonUtilites/CommomUtility.m; sourceTree = "<group>"; };
 		2EE09D191F1FF3C300F26B72 /* UIButtonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIButtonDataModel.h; path = CommonTools/CommonDataModels/UIButtonDataModel.h; sourceTree = "<group>"; };
 		2EE09D1B1F1FF3E200F26B72 /* UIButtonDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIButtonDataModel.m; path = CommonTools/CommonDataModels/UIButtonDataModel.m; sourceTree = "<group>"; };
-		2EECABE91F22B96200638B59 /* UIViewNNDBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIViewNNDBarController.h; path = SlidingFrameWork/Controllers/NND/UIViewNNDBarController.h; sourceTree = "<group>"; };
+		2EECABE91F22B96200638B59 /* UIViewNNDBarControllerServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIViewNNDBarControllerServices.h; path = SlidingFrameWork/Controllers/NND/UIViewNNDBarControllerServices.h; sourceTree = "<group>"; };
 		446EC59F7C06B34E0DF1C868 /* libPods-nursenextdoor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nursenextdoor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		521A51182D3698D3E0759524 /* libPods-nursenextdoorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nursenextdoorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E8B849002B11E5373D8C87 /* Pods-nursenextdoor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nursenextdoor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nursenextdoor/Pods-nursenextdoor.debug.xcconfig"; sourceTree = "<group>"; };
@@ -338,6 +343,8 @@
 		2E5E2DBA1F056BEB00EAD603 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2EAFD3B41F27EEA10010B399 /* UiViewSizesDatamodel.h */,
+				2EAFD3B51F27EEA10010B399 /* UiViewSizesDatamodel.m */,
 				2E5E2DC01F0573AB00EAD603 /* SlidingUIViewDataModel.h */,
 				2E5E2DC11F05755B00EAD603 /* SlidingUIViewDataModel.m */,
 				2E3C62C11F06D7DC0008A3FF /* MasterUIViewCLass.h */,
@@ -381,6 +388,22 @@
 			name = UND;
 			sourceTree = "<group>";
 		};
+		2EAA28351F2BEC65007DA1C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2EAA28361F2BEC76007DA1C4 /* UIViewFramework */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2EAA28361F2BEC76007DA1C4 /* UIViewFramework */ = {
+			isa = PBXGroup;
+			children = (
+				2EAA283B1F2BED5E007DA1C4 /* Localizable.strings */,
+			);
+			name = UIViewFramework;
+			sourceTree = "<group>";
+		};
 		2EC2B7C71EF3402F0021CE60 = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +429,7 @@
 		2EC2B7D21EF3402F0021CE60 /* nursenextdoor */ = {
 			isa = PBXGroup;
 			children = (
+				2EAA28351F2BEC65007DA1C4 /* Resources */,
 				2E253ED41F1D575D003B616D /* CommonTools */,
 				2E5E2DB81F056BCD00EAD603 /* SlidingFrameWork */,
 				2E330C1C1EFC88320056FC3F /* UIViewFramework */,
@@ -463,8 +487,8 @@
 		2EECABE81F22B92000638B59 /* NND */ = {
 			isa = PBXGroup;
 			children = (
-				2EECABE91F22B96200638B59 /* UIViewNNDBarController.h */,
-				2ED1C38B1F22C0C200A66787 /* UIViewNNDBarController.m */,
+				2EECABE91F22B96200638B59 /* UIViewNNDBarControllerServices.h */,
+				2ED1C38B1F22C0C200A66787 /* UIViewNNDBarControllerServices.m */,
 			);
 			name = NND;
 			sourceTree = "<group>";
@@ -588,6 +612,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EC2B7E61EF3402F0021CE60 /* LaunchScreen.storyboard in Resources */,
+				2EAA28391F2BED5E007DA1C4 /* Localizable.strings in Resources */,
 				2E9380BE1EF342BB0093D296 /* GoogleService-Info.plist in Resources */,
 				2E330C0E1EFC87970056FC3F /* GoogleService-Info.plist in Resources */,
 				2EC2B7E31EF3402F0021CE60 /* Assets.xcassets in Resources */,
@@ -759,7 +784,7 @@
 				2EE09D181F1FF20400F26B72 /* CommomUtility.m in Sources */,
 				2E330C261EFC88320056FC3F /* UIViewFrameWorkModel.m in Sources */,
 				2E330C291EFC88A90056FC3F /* SlideViewModel.m in Sources */,
-				2ED1C38C1F22C0C200A66787 /* UIViewNNDBarController.m in Sources */,
+				2ED1C38C1F22C0C200A66787 /* UIViewNNDBarControllerServices.m in Sources */,
 				2E330C0D1EFC87970056FC3F /* GoogleController.m in Sources */,
 				2E81A1091F19AC7D00D03A36 /* UIViewNNDBar.m in Sources */,
 				2EC2B7D81EF3402F0021CE60 /* AppDelegate.m in Sources */,
@@ -772,6 +797,7 @@
 				2EE09D1C1F1FF3E200F26B72 /* UIButtonDataModel.m in Sources */,
 				2E5E2E061F05A7BA00EAD603 /* SlidingUIViewServices.m in Sources */,
 				2EC2B7E11EF3402F0021CE60 /* nursenextdoor.xcdatamodeld in Sources */,
+				2EAFD3B61F27EEA10010B399 /* UiViewSizesDatamodel.m in Sources */,
 				2E330C0F1EFC87970056FC3F /* GoogleViewManager.m in Sources */,
 				2E5E2DC21F05755B00EAD603 /* SlidingUIViewDataModel.m in Sources */,
 				2E330C2C1EFC8A390056FC3F /* MainUIViewController.m in Sources */,
@@ -811,6 +837,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2EAA283B1F2BED5E007DA1C4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EAA283D1F2BED96007DA1C4 /* en */,
+			);
+			name = Localizable.strings;
+			path = Resources/UIViewFramework;
+			sourceTree = "<group>";
+		};
 		2EC2B7DC1EF3402F0021CE60 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

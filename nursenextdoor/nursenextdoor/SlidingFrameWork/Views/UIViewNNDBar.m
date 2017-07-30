@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "UIViewNNDBar.h"
+#import "UiViewSizesDatamodel.h"
 
 @implementation UIViewNNDBar
 
@@ -21,19 +22,17 @@
     return self;
 }
 
-- (instancetype)initWithDataModel: (UIViewNNDBar*) uiViewNNDBarIncoming {
+- (instancetype)initWithDataModel: (UIViewNNDBar*) uiViewNNDBarIncoming AndSizesDataModel:(UiViewSizesDatamodel*) incominguiViewSizesDatamodel{
     /*
      Author: Kian D.Rad
      Date:   July 14th 2017
      README: This is the initalizer or constructor with the datamodel. 
-     ToDo: 
-        1- Inialize the UIViewModel
-        2- Inject UIButton representing the number of the UIView.
-     
+     ToDo:
      */
 
     self = [super init];
     if (self) {
+            _uiViewSizesDatamodel = incominguiViewSizesDatamodel;
 
             _uiVIewNNDBarView = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
             _uiVIewNNDBarView.backgroundColor = [UIColor darkGrayColor];
@@ -43,22 +42,20 @@
          Date:   July 14th 2017
          README: This class build button with an incomind datamodel
          ToDO:
-         1- keep reffernce to the interncal class;
-         2- Build all menue buttons and add to incoming class
-         3- incoming class and itnernal class reffer to the same pointer
          */
 
 
-        UIButtonDataModel *builder = [[UIButtonDataModel alloc]init];
-        builder.reciverClass = self;
 
-        _uiButtonHome = [[UIButtonDataModel alloc]initWithDataModel:builder];
-        // Set a pointer to the self class.
+        _uiButtonHome = [[UIButtonDataModel alloc]initWithXModel:self AndType:uiViewStructTypeCheckIn];
+        _uiButtonChckIn = [[UIButtonDataModel alloc]initWithXModel:self AndType:uiViewStructTypeHome];
+
         _uIViewNNDBar = self;
 
 
-        [_uIViewNNDBar.uiVIewNNDBarView addSubview:_uiButtonHome.uiButtonReturnObject];
-        //[_uIViewNNDBar.uiVIewNNDBarView insertSubview:_uiButtonHome.uiButtonReturnObject atIndex:0 ];
+
+        [_uIViewNNDBar.uiVIewNNDBarView addSubview: _uiButtonHome.uiButtonReturnObject];
+        [_uIViewNNDBar.uiVIewNNDBarView addSubview: _uiButtonChckIn.uiButtonReturnObject];
+
 
         /*
          Author: Kian D.Rad
@@ -67,21 +64,13 @@
             Initalize the UIView the permenant connection to the slidingUIViewModel. 
             This UIView, should be animated, dynamically to bring it any existing uiview that reslides in this class. 
             Those uiviews are part of the Uibutton. 
-         
-         Test: 
-            I wanna test the uiview, thus, I will make it here manually, fill it and ask the upper layer to load this. 
-         then I try to change it dynamically and see if that animcation takes place on the upper layer.
-
         */
 
-        _uiviewPermenantConnectionToSlidingUIViewModel = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
-        [_uiviewPermenantConnectionToSlidingUIViewModel setBackgroundColor:[UIColor blackColor]];
-
-
-
-
-        _uiviewTesterToReplacePermeneantConnectionToSlidingView = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
-        [_uiviewTesterToReplacePermeneantConnectionToSlidingView  setBackgroundColor:[UIColor blueColor]];
+        _uiviewPermenantConnectionToSlidingUIViewModel = [[UIView alloc]initWithFrame:CGRectMake(_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex,
+                                                                                                 _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey,
+                                                                                                 _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth,
+                                                                                                 _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight)];
+        [_uiviewPermenantConnectionToSlidingUIViewModel setBackgroundColor:_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelBackGroundColor];
 
 
     }
@@ -102,7 +91,6 @@
 
 }
 
-
 -(void) callBackFunctionUIButtonDataModel:(UIButton*) sender{
     /*
      Author: Kian D.Rad
@@ -112,52 +100,101 @@
         which behaves as a pointer. The UIView should have been already initated. And then you ask 
         UIView animation to buring that UIView into the template holder.
      ToDO:
+        1- July 25th 2017: load the Home "UIView", keep reffernce to the componetns.
+        2- July 28th 2017: Based on the title of the button, we perfrom spesific animation for each screen.
      */
 
 
-// replace xx with xx
-//    [_uiviewPermenantConnectionToSlidingUIViewModel addSubview:_uiviewTesterToReplacePermeneantConnectionToSlidingView ];
-  //  [_uiviewPermenantConnectionToSlidingUIViewModel setFrame:[UIApplication sharedApplication].delegate.window.frame];
+    if ([sender.currentTitle  isEqual: NSLocalizedString(@"checkInButtonUIViewModelTitleString", nil)])
+    {
 
-    [self updateUiViewAnimcation:nil finished:nil context:nil  ];
-    NSLog(@"delgate method at -(void) callBackFunctionUIButtonDataModelControllerDelegate; worked @%@", sender.titleLabel);
+        // retur back the PermenantConnection back down and put that uIView on top of others.
+        NSLog(@"%@",sender.currentTitle);
+        [self CheckInScreenupdateAnimation];
+    }
+
+    else if ([sender.currentTitle  isEqual: NSLocalizedString(@"homeButtonUIViewModelTitleString", nil)])
+    {
+        NSLog(@"%@",sender.currentTitle);
+         [self HomeScreenupdateAnimation];
+    }
+
 }
 
-
-
-
-- (void)updateUiViewAnimcation:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
+- (void)CheckInScreenupdateAnimation{
 
 
     /*
      Author: Kian D.Rad
-     Date:   July 23th 2017
-     README:    In this function I know which button was selected by user on the UIViewNNDBar.
-     Now, I have to load the appropriate UIView into _currentButtonSelector or a common UIView,
-     which behaves as a pointer. The UIView should have been already initated. And then you ask
-     UIView animation to buring that UIView into the template holder.
+     Date:   July 28th 2017
+     README: Load CheckIn UIVIew on top and bring back the permenant Screen down
      ToDO:
      */
 
+    [UIView animateWithDuration:0.25
+                          delay:0.0
+                        options:(UIViewAnimationCurveEaseInOut|UIViewAnimationOptionAllowUserInteraction)
+                     animations:^{
+                         [UIView setAnimationDelegate:self];
+
+                         // This line also calls an other function upon completion too.
+                         //[UIView setAnimationDidStopSelector:@selector(goDown:finished:context:)];
+                         [_uiviewPermenantConnectionToSlidingUIViewModel setFrame:CGRectMake(_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex,
+                                                                                             _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey,
+                                                                                             _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth,
+                                                                                             _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight)];
+
+                      //   [_uiviewPermenantConnectionToSlidingUIViewModel setBackgroundColor:[UIColor blackColor]];
+
+// findme
+
+                     //    [_uiviewPermenantConnectionToSlidingUIViewModel willRemoveSubview:_uiButtonHome.uiViewButtonDataModel];
+                         [_uiviewPermenantConnectionToSlidingUIViewModel insertSubview:_uiButtonChckIn.uiViewButtonDataModel atIndex:0];
+                      //   [_uiviewPermenantConnectionToSlidingUIViewModel insertSubview:_uiButtonHome.uiViewButtonDataModel atIndex:1];
+
+                     }completion:^(BOOL finished){
+                         NSLog(@"Face Up done");
+
+                     }];
+    
+    
+}
+
+- (void)HomeScreenupdateAnimation{
 
 
+    /*
+     Author: Kian D.Rad
+     Date:   July 28th 2017
+     README: Load CheckIn UIVIew on top and bring back the permenant Screen down
+     ToDO:
+     */
 
+    [UIView animateWithDuration:0.25
+                          delay:0.0
+                        options:(UIViewAnimationCurveEaseInOut|UIViewAnimationOptionAllowUserInteraction)
+                     animations:^{
+                         [UIView setAnimationDelegate:self];
 
-        [UIView animateWithDuration:0.25
-                              delay:0.0
-                            options:(UIViewAnimationCurveEaseInOut|UIViewAnimationOptionAllowUserInteraction)
-                         animations:^{
-                             [UIView setAnimationDelegate:self];
+                         // This line also calls an other function upon completion too.
+                         //[UIView setAnimationDidStopSelector:@selector(goDown:finished:context:)];
+                         [_uiviewPermenantConnectionToSlidingUIViewModel setFrame:CGRectMake(_uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginex,
+                                                                                             _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameOriginey,
+                                                                                             _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeWidth,
+                                                                                             _uiViewSizesDatamodel.uiviewPermenantConnectionToSlidingUIViewModelFrameSizeHeight)];
 
-                             // This line also calls an other function upon completion too.
-                             //[UIView setAnimationDidStopSelector:@selector(goDown:finished:context:)];
-                             [_uiviewPermenantConnectionToSlidingUIViewModel setFrame:[UIApplication sharedApplication].delegate.window.frame];
-                         }completion:^(BOOL finished){
-                             NSLog(@"Face Up done");
-                             
-                         }];
-        
+                    //     [_uiviewPermenantConnectionToSlidingUIViewModel setBackgroundColor:[UIColor greenColor]];
 
+                    //     [_uiviewPermenantConnectionToSlidingUIViewModel insertSubview:uiButtonChckIn.uiViewButtonDataModel atIndex:1];
+                         [_uiviewPermenantConnectionToSlidingUIViewModel insertSubview:_uiButtonHome.uiViewButtonDataModel atIndex:0];
+                      //   [_uiviewPermenantConnectionToSlidingUIViewModel willRemoveSubview:uiButtonChckIn.uiViewButtonDataModel];
+
+                     }completion:^(BOOL finished){
+                         NSLog(@"Face Up done");
+                         
+                     }];
+    
+    
 }
 
 @end
