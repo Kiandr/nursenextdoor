@@ -20,6 +20,8 @@
 		2E5E2DC21F05755B00EAD603 /* SlidingUIViewDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E2DC11F05755B00EAD603 /* SlidingUIViewDataModel.m */; };
 		2E5E2E061F05A7BA00EAD603 /* SlidingUIViewServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E2E051F05A7BA00EAD603 /* SlidingUIViewServices.m */; };
 		2E790C601F04C74500758794 /* UIViewServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E790C5F1F04C74500758794 /* UIViewServices.m */; };
+		2E7E2C921F33CCCB00972FA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7E2C911F33CCCB00972FA7 /* Foundation.framework */; };
+		2E7E2C941F33CCD200972FA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7E2C931F33CCD200972FA7 /* UIKit.framework */; };
 		2E81A1091F19AC7D00D03A36 /* UIViewNNDBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E81A1081F19AC7D00D03A36 /* UIViewNNDBar.m */; };
 		2E8685291F0FFBC50050F0BE /* MainPreviewScreenUIViewInteractionEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8685281F0FFBC50050F0BE /* MainPreviewScreenUIViewInteractionEntity.m */; };
 		2E9380BE1EF342BB0093D296 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E9380BD1EF342BB0093D296 /* GoogleService-Info.plist */; };
@@ -112,6 +114,8 @@
 		2E790C5E1F04C73500758794 /* UIViewServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewServices.h; sourceTree = "<group>"; };
 		2E790C5F1F04C74500758794 /* UIViewServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewServices.m; sourceTree = "<group>"; };
 		2E7E2C721F33AD5400972FA7 /* NNDCheckIn.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NNDCheckIn.xcodeproj; path = ../../NNDCheckIn/NNDCheckIn/NNDCheckIn.xcodeproj; sourceTree = "<group>"; };
+		2E7E2C911F33CCCB00972FA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2E7E2C931F33CCD200972FA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2E81A1051F19AC4E00D03A36 /* UIViewNNDBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIViewNNDBar.h; path = SlidingFrameWork/Views/UIViewNNDBar.h; sourceTree = "<group>"; };
 		2E81A1081F19AC7D00D03A36 /* UIViewNNDBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewNNDBar.m; path = SlidingFrameWork/Views/UIViewNNDBar.m; sourceTree = "<group>"; };
 		2E8685271F0FFBAD0050F0BE /* MainPreviewScreenUIViewInteractionEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainPreviewScreenUIViewInteractionEntity.h; path = SlidingFrameWork/Models/MainPreviewScreenUIViewInteractionEntity.h; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7E2C941F33CCD200972FA7 /* UIKit.framework in Frameworks */,
+				2E7E2C921F33CCCB00972FA7 /* Foundation.framework in Frameworks */,
 				2ED146351F3398DF00C7DEFB /* NNDCheckIn.framework in Frameworks */,
 				9138E15E99FFBFC6D9AC467C /* libPods-nursenextdoor.a in Frameworks */,
 			);
@@ -186,6 +192,8 @@
 		1F7EC221F3772C2120ED0C74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E7E2C931F33CCD200972FA7 /* UIKit.framework */,
+				2E7E2C911F33CCCB00972FA7 /* Foundation.framework */,
 				2ED146341F3398DF00C7DEFB /* NNDCheckIn.framework */,
 				446EC59F7C06B34E0DF1C868 /* libPods-nursenextdoor.a */,
 				037CFB994FD4B0961460765B /* libPods-nursenextdoorTests.a */,
