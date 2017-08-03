@@ -1,0 +1,27 @@
+$(inherited) 
+${PODS_ROOT}/Firebase/Core/Sources 
+$(inherited) "${PODS_ROOT}/Headers/Public" 
+"${PODS_ROOT}/Headers/Public/Firebase" 
+"${PODS_ROOT}/Headers/Public/FirebaseAnalytics" 
+"${PODS_ROOT}/Headers/Public/FirebaseAppIndexing" 
+"${PODS_ROOT}/Headers/Public/FirebaseAuth" 
+"${PODS_ROOT}/Headers/Public/FirebaseCore" 
+"${PODS_ROOT}/Headers/Public/FirebaseCrash" 
+"${PODS_ROOT}/Headers/Public/FirebaseDatabase" 
+"${PODS_ROOT}/Headers/Public/FirebaseDynamicLinks" 
+"${PODS_ROOT}/Headers/Public/FirebaseInstanceID" 
+"${PODS_ROOT}/Headers/Public/FirebaseInvites" 
+"${PODS_ROOT}/Headers/Public/FirebaseMessaging" 
+"${PODS_ROOT}/Headers/Public/FirebaseRemoteConfig" 
+"${PODS_ROOT}/Headers/Public/FirebaseStorage" 
+"${PODS_ROOT}/Headers/Public/GTMOAuth2" 
+"${PODS_ROOT}/Headers/Public/GTMSessionFetcher" 
+"${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK" 
+"${PODS_ROOT}/Headers/Public/GoogleAPIClientForREST" 
+"${PODS_ROOT}/Headers/Public/GoogleSignIn" 
+"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac" 
+"${PODS_ROOT}/Headers/Public/Protobuf"
+"~/Documents/git/NNDCheckIn"
+
+~/Documents/git/NNDCheckIn"
+/Users/kdr/Documents/git/nursenextdoor

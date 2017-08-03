@@ -1,0 +1,6 @@
+if [ ! -d ~/Documents/git/nursenextdoor/nursenextdoor/SubProjects/NNDCheckIn ];
+then
+    mkdir -p ~/Documents/git/nursenextdoor/nursenextdoor/SubProjects/NNDCheckIn/
+fi
+cp -R    ~/Documents/git/NNDCheckIn/NNDCheckIn/NNDCheckIn/SourceFiles/     ~/Documents/git/nursenextdoor/nursenextdoor/SubProjects/NNDCheckIn/
+
