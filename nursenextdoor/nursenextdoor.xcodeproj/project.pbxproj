@@ -45,6 +45,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2E7E2C771F33AD5500972FA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E7E2C721F33AD5400972FA7 /* NNDCheckIn.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E7E2C581F33AD5400972FA7;
+			remoteInfo = NNDCheckIn;
+		};
+		2E7E2C791F33AD5500972FA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E7E2C721F33AD5400972FA7 /* NNDCheckIn.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E7E2C611F33AD5400972FA7;
+			remoteInfo = NNDCheckInTests;
+		};
 		2EC2B7ED1EF3402F0021CE60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2EC2B7C81EF3402F0021CE60 /* Project object */;
@@ -97,6 +111,7 @@
 		2E5E2E051F05A7BA00EAD603 /* SlidingUIViewServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SlidingUIViewServices.m; path = SlidingFrameWork/Services/SlidingUIViewServices.m; sourceTree = "<group>"; };
 		2E790C5E1F04C73500758794 /* UIViewServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewServices.h; sourceTree = "<group>"; };
 		2E790C5F1F04C74500758794 /* UIViewServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewServices.m; sourceTree = "<group>"; };
+		2E7E2C721F33AD5400972FA7 /* NNDCheckIn.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NNDCheckIn.xcodeproj; path = ../../NNDCheckIn/NNDCheckIn/NNDCheckIn.xcodeproj; sourceTree = "<group>"; };
 		2E81A1051F19AC4E00D03A36 /* UIViewNNDBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIViewNNDBar.h; path = SlidingFrameWork/Views/UIViewNNDBar.h; sourceTree = "<group>"; };
 		2E81A1081F19AC7D00D03A36 /* UIViewNNDBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewNNDBar.m; path = SlidingFrameWork/Views/UIViewNNDBar.m; sourceTree = "<group>"; };
 		2E8685271F0FFBAD0050F0BE /* MainPreviewScreenUIViewInteractionEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainPreviewScreenUIViewInteractionEntity.h; path = SlidingFrameWork/Models/MainPreviewScreenUIViewInteractionEntity.h; sourceTree = "<group>"; };
@@ -376,6 +391,15 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		2E7E2C731F33AD5400972FA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E2C781F33AD5500972FA7 /* NNDCheckIn.framework */,
+				2E7E2C7A1F33AD5500972FA7 /* NNDCheckInTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2E81A1061F19AC5300D03A36 /* NND */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,6 +435,7 @@
 		2EC2B7C71EF3402F0021CE60 = {
 			isa = PBXGroup;
 			children = (
+				2E7E2C721F33AD5400972FA7 /* NNDCheckIn.xcodeproj */,
 				2EC2B7D21EF3402F0021CE60 /* nursenextdoor */,
 				2EC2B7EF1EF3402F0021CE60 /* nursenextdoorTests */,
 				2EC2B7FA1EF3402F0021CE60 /* nursenextdoorUITests */,
@@ -601,6 +626,12 @@
 			mainGroup = 2EC2B7C71EF3402F0021CE60;
 			productRefGroup = 2EC2B7D11EF3402F0021CE60 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2E7E2C731F33AD5400972FA7 /* Products */;
+					ProjectRef = 2E7E2C721F33AD5400972FA7 /* NNDCheckIn.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2EC2B7CF1EF3402F0021CE60 /* nursenextdoor */,
@@ -609,6 +640,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2E7E2C781F33AD5500972FA7 /* NNDCheckIn.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NNDCheckIn.framework;
+			remoteRef = 2E7E2C771F33AD5500972FA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2E7E2C7A1F33AD5500972FA7 /* NNDCheckInTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NNDCheckInTests.xctest;
+			remoteRef = 2E7E2C791F33AD5500972FA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2EC2B7CE1EF3402F0021CE60 /* Resources */ = {
@@ -992,7 +1040,7 @@
 					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
 					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
 					"\"${PODS_ROOT}/Headers/Public/Protobuf\"",
-					"\"~/Documents/git/NNDCheckIn\"/**",
+					"\"~/Documents/git/NNDCheckIn/NNDCheckIn\"/**",
 				);
 				INFOPLIST_FILE = nursenextdoor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1032,7 +1080,7 @@
 					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
 					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
 					"\"${PODS_ROOT}/Headers/Public/Protobuf\"",
-					"\"~/Documents/git/NNDCheckIn\"/**",
+					"\"~/Documents/git/NNDCheckIn/NNDCheckIn\"/**",
 				);
 				INFOPLIST_FILE = nursenextdoor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
