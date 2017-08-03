@@ -22,6 +22,8 @@
 #import "UIViewFrameWorkModel.h"
 #import "SlideViewModel.h"
 #import "SlidingUIViewDataModel.h"
+#import "NNDCheckInController.h"
+
 @import Firebase;
 @import GoogleSignIn;
 

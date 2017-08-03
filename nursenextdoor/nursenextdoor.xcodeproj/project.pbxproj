@@ -35,6 +35,7 @@
 		2EC2B7E61EF3402F0021CE60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2B7E41EF3402F0021CE60 /* LaunchScreen.storyboard */; };
 		2EC2B7F11EF3402F0021CE60 /* nursenextdoorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7F01EF3402F0021CE60 /* nursenextdoorTests.m */; };
 		2EC2B7FC1EF3402F0021CE60 /* nursenextdoorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7FB1EF3402F0021CE60 /* nursenextdoorUITests.m */; };
+		2ED146351F3398DF00C7DEFB /* NNDCheckIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED146341F3398DF00C7DEFB /* NNDCheckIn.framework */; };
 		2ED1C38C1F22C0C200A66787 /* UIViewNNDBarControllerServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED1C38B1F22C0C200A66787 /* UIViewNNDBarControllerServices.m */; };
 		2EE09D181F1FF20400F26B72 /* CommomUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE09D171F1FF20400F26B72 /* CommomUtility.m */; };
 		2EE09D1C1F1FF3E200F26B72 /* UIButtonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE09D1B1F1FF3E200F26B72 /* UIButtonDataModel.m */; };
@@ -123,6 +124,7 @@
 		2EC2B7F71EF3402F0021CE60 /* nursenextdoorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nursenextdoorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC2B7FB1EF3402F0021CE60 /* nursenextdoorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nursenextdoorUITests.m; sourceTree = "<group>"; };
 		2EC2B7FD1EF3402F0021CE60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ED146341F3398DF00C7DEFB /* NNDCheckIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NNDCheckIn.framework; path = "../../../../Library/Developer/Xcode/DerivedData/nursenextdoor-dizvvwoqcatogrbnsfpukgecohvf/Build/Products/Debug-iphoneos/NNDCheckIn.framework"; sourceTree = "<group>"; };
 		2ED1C38B1F22C0C200A66787 /* UIViewNNDBarControllerServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewNNDBarControllerServices.m; path = SlidingFrameWork/Controllers/NND/UIViewNNDBarControllerServices.m; sourceTree = "<group>"; };
 		2EE09D161F1FF1F100F26B72 /* CommomUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CommomUtility.h; path = CommonTools/CommonUtilites/CommomUtility.h; sourceTree = "<group>"; };
 		2EE09D171F1FF20400F26B72 /* CommomUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommomUtility.m; path = CommonTools/CommonUtilites/CommomUtility.m; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ED146351F3398DF00C7DEFB /* NNDCheckIn.framework in Frameworks */,
 				9138E15E99FFBFC6D9AC467C /* libPods-nursenextdoor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +171,7 @@
 		1F7EC221F3772C2120ED0C74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2ED146341F3398DF00C7DEFB /* NNDCheckIn.framework */,
 				446EC59F7C06B34E0DF1C868 /* libPods-nursenextdoor.a */,
 				037CFB994FD4B0961460765B /* libPods-nursenextdoorTests.a */,
 				521A51182D3698D3E0759524 /* libPods-nursenextdoorUITests.a */,
@@ -963,6 +967,33 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7Z59E8EDBY;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Core/Sources",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAppIndexing\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCrash\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDynamicLinks\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInvites\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseMessaging\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseRemoteConfig\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseStorage\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMOAuth2\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMSessionFetcher\"",
+					"\"${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAPIClientForREST\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
+					"\"${PODS_ROOT}/Headers/Public/Protobuf\"",
+					"\"~/Documents/git/NNDCheckIn\"/**",
+				);
 				INFOPLIST_FILE = nursenextdoor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kdr.nursenextdoor;
@@ -976,6 +1007,33 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7Z59E8EDBY;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Core/Sources",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAppIndexing\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCrash\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDynamicLinks\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInvites\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseMessaging\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseRemoteConfig\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseStorage\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMOAuth2\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMSessionFetcher\"",
+					"\"${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAPIClientForREST\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
+					"\"${PODS_ROOT}/Headers/Public/Protobuf\"",
+					"\"~/Documents/git/NNDCheckIn\"/**",
+				);
 				INFOPLIST_FILE = nursenextdoor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kdr.nursenextdoor;
