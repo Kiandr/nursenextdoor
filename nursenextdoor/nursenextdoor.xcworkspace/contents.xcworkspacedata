@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../NNDMap/NNDMap/NNDMap.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../NNDWebAPI/NNDWebAPI/NNDWebAPI.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:../../NNDDataBase/NNDDataBase/NNDDataBase.xcodeproj">
    </FileRef>
    <FileRef

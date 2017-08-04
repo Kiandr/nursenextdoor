@@ -1054,6 +1054,8 @@
 					"\"${PODS_ROOT}/Headers/Public/Protobuf\"",
 					"\"~/Documents/git/NNDCheckIn/NNDCheckIn\"/**",
 					"\"~/Documents/git/NNDDataBase/NNDDataBase\"/**",
+					"\"~/Documents/git/NNDWebAPI/NNDWebAPI\"/**",
+					"\"~/Documents/git/NNDMap/NNDMap\"/**",
 				);
 				INFOPLIST_FILE = nursenextdoor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1095,6 +1097,8 @@
 					"\"${PODS_ROOT}/Headers/Public/Protobuf\"",
 					"\"~/Documents/git/NNDCheckIn/NNDCheckIn\"/**",
 					"\"~/Documents/git/NNDDataBase/NNDDataBase\"/**",
+					"\"~/Documents/git/NNDWebAPI/NNDWebAPI\"/**",
+					"\"~/Documents/git/NNDMap/NNDMap\"/**",
 				);
 				INFOPLIST_FILE = nursenextdoor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
