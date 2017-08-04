@@ -1053,7 +1053,7 @@
 					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
 					"\"${PODS_ROOT}/Headers/Public/Protobuf\"",
 					"\"~/Documents/git/NNDCheckIn/NNDCheckIn\"/**",
-					"\"~/Documents/git/NNDDataModelNNDDataModel\"/**",
+					"\"~/Documents/git/NNDDataBase/NNDDataBase\"/**",
 				);
 				INFOPLIST_FILE = nursenextdoor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1094,7 +1094,7 @@
 					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
 					"\"${PODS_ROOT}/Headers/Public/Protobuf\"",
 					"\"~/Documents/git/NNDCheckIn/NNDCheckIn\"/**",
-					"\"~/Documents/git/NNDDataModelNNDDataModel\"/**",
+					"\"~/Documents/git/NNDDataBase/NNDDataBase\"/**",
 				);
 				INFOPLIST_FILE = nursenextdoor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
