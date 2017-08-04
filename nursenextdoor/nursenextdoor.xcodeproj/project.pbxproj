@@ -28,6 +28,7 @@
 		2E9883F41F043E7300943962 /* MasterUIViewDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9883F31F043E7300943962 /* MasterUIViewDataModel.m */; };
 		2EAA28391F2BED5E007DA1C4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EAA283B1F2BED5E007DA1C4 /* Localizable.strings */; };
 		2EAFD3B61F27EEA10010B399 /* UiViewSizesDatamodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAFD3B51F27EEA10010B399 /* UiViewSizesDatamodel.m */; };
+		2EB1ACB71F3527960075D09D /* NNDDataBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB1ACB61F3527960075D09D /* NNDDataBase.framework */; };
 		2EC2B7D51EF3402F0021CE60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7D41EF3402F0021CE60 /* main.m */; };
 		2EC2B7D81EF3402F0021CE60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7D71EF3402F0021CE60 /* AppDelegate.m */; };
 		2EC2B7DB1EF3402F0021CE60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2B7DA1EF3402F0021CE60 /* ViewController.m */; };
@@ -126,6 +127,7 @@
 		2EAA283D1F2BED96007DA1C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2EAFD3B41F27EEA10010B399 /* UiViewSizesDatamodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UiViewSizesDatamodel.h; path = SlidingFrameWork/Models/UiViewSizesDatamodel.h; sourceTree = "<group>"; };
 		2EAFD3B51F27EEA10010B399 /* UiViewSizesDatamodel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UiViewSizesDatamodel.m; path = SlidingFrameWork/Models/UiViewSizesDatamodel.m; sourceTree = "<group>"; };
+		2EB1ACB61F3527960075D09D /* NNDDataBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NNDDataBase.framework; path = "../../NNDDataBase/NNDDataBase/build/Debug-iphoneos/NNDDataBase.framework"; sourceTree = "<group>"; };
 		2EC2B7D01EF3402F0021CE60 /* nursenextdoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nursenextdoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC2B7D41EF3402F0021CE60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2EC2B7D61EF3402F0021CE60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB1ACB71F3527960075D09D /* NNDDataBase.framework in Frameworks */,
 				2E7E2C941F33CCD200972FA7 /* UIKit.framework in Frameworks */,
 				2E7E2C921F33CCCB00972FA7 /* Foundation.framework in Frameworks */,
 				2ED146351F3398DF00C7DEFB /* NNDCheckIn.framework in Frameworks */,
@@ -192,6 +195,7 @@
 		1F7EC221F3772C2120ED0C74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2EB1ACB61F3527960075D09D /* NNDDataBase.framework */,
 				2E7E2C931F33CCD200972FA7 /* UIKit.framework */,
 				2E7E2C911F33CCCB00972FA7 /* Foundation.framework */,
 				2ED146341F3398DF00C7DEFB /* NNDCheckIn.framework */,
@@ -1049,6 +1053,7 @@
 					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
 					"\"${PODS_ROOT}/Headers/Public/Protobuf\"",
 					"\"~/Documents/git/NNDCheckIn/NNDCheckIn\"/**",
+					"\"~/Documents/git/NNDDataModelNNDDataModel\"/**",
 				);
 				INFOPLIST_FILE = nursenextdoor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1089,6 +1094,7 @@
 					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
 					"\"${PODS_ROOT}/Headers/Public/Protobuf\"",
 					"\"~/Documents/git/NNDCheckIn/NNDCheckIn\"/**",
+					"\"~/Documents/git/NNDDataModelNNDDataModel\"/**",
 				);
 				INFOPLIST_FILE = nursenextdoor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
