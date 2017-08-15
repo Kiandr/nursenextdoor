@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Firebase.h"
-
+#import "NNDCheckInController.h"
 @import Firebase;
 @import GoogleSignIn;
 
@@ -28,6 +28,9 @@
     // Google Single Sing In
     [GIDSignIn sharedInstance].clientID = [FIRApp defaultApp].options.clientID;
     [GIDSignIn sharedInstance].delegate = self;
+
+    // test CheckIn
+    NNDCheckInController * t = [[NNDCheckInController alloc] initWithDataModel];
     return YES;
 }
 

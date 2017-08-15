@@ -17,6 +17,7 @@
 		2E330C2C1EFC8A390056FC3F /* MainUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C2B1EFC8A390056FC3F /* MainUIViewController.m */; };
 		2E330C2F1EFC908F0056FC3F /* MainLandingUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C2E1EFC908F0056FC3F /* MainLandingUIView.m */; };
 		2E3C62C31F06D7FA0008A3FF /* MasterUIViewCLass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3C62C21F06D7FA0008A3FF /* MasterUIViewCLass.m */; };
+		2E5A54361F43AB3A000D8C8A /* NNDCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5A54351F43AB3A000D8C8A /* NNDCommon.framework */; };
 		2E5E2DC21F05755B00EAD603 /* SlidingUIViewDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E2DC11F05755B00EAD603 /* SlidingUIViewDataModel.m */; };
 		2E5E2E061F05A7BA00EAD603 /* SlidingUIViewServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E2E051F05A7BA00EAD603 /* SlidingUIViewServices.m */; };
 		2E790C601F04C74500758794 /* UIViewServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E790C5F1F04C74500758794 /* UIViewServices.m */; };
@@ -110,6 +111,7 @@
 		2E330C2E1EFC908F0056FC3F /* MainLandingUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainLandingUIView.m; sourceTree = "<group>"; };
 		2E3C62C11F06D7DC0008A3FF /* MasterUIViewCLass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MasterUIViewCLass.h; path = SlidingFrameWork/Models/MasterUIViewCLass.h; sourceTree = "<group>"; };
 		2E3C62C21F06D7FA0008A3FF /* MasterUIViewCLass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterUIViewCLass.m; path = SlidingFrameWork/Models/MasterUIViewCLass.m; sourceTree = "<group>"; };
+		2E5A54351F43AB3A000D8C8A /* NNDCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NNDCommon.framework; path = "../../NNDCommon/NNDCommon/build/Debug-iphoneos/NNDCommon.framework"; sourceTree = "<group>"; };
 		2E5E2DBD1F056D0200EAD603 /* SlidingUIViewServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlidingUIViewServices.h; path = SlidingFrameWork/Services/SlidingUIViewServices.h; sourceTree = "<group>"; };
 		2E5E2DC01F0573AB00EAD603 /* SlidingUIViewDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlidingUIViewDataModel.h; path = SlidingFrameWork/Models/SlidingUIViewDataModel.h; sourceTree = "<group>"; };
 		2E5E2DC11F05755B00EAD603 /* SlidingUIViewDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SlidingUIViewDataModel.m; path = SlidingFrameWork/Models/SlidingUIViewDataModel.m; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E5A54361F43AB3A000D8C8A /* NNDCommon.framework in Frameworks */,
 				2EB1AD1B1F353EE50075D09D /* NNDWebAPI.framework in Frameworks */,
 				2EB1AD191F353EDD0075D09D /* NNDMap.framework in Frameworks */,
 				2EB1ACB71F3527960075D09D /* NNDDataBase.framework in Frameworks */,
@@ -201,6 +204,7 @@
 		1F7EC221F3772C2120ED0C74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E5A54351F43AB3A000D8C8A /* NNDCommon.framework */,
 				2EB1AD1A1F353EE50075D09D /* NNDWebAPI.framework */,
 				2EB1AD181F353EDD0075D09D /* NNDMap.framework */,
 				2EB1ACB61F3527960075D09D /* NNDDataBase.framework */,
@@ -1064,6 +1068,7 @@
 					"\"~/Documents/git/NNDDataBase/NNDDataBase\"/**",
 					"\"~/Documents/git/NNDWebAPI/NNDWebAPI\"/**",
 					"\"~/Documents/git/NNDMap/NNDMap\"/**",
+					"\"~/Documents/git/NNDCommon/NNDCommon\"/**",
 				);
 				INFOPLIST_FILE = nursenextdoor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1107,6 +1112,7 @@
 					"\"~/Documents/git/NNDDataBase/NNDDataBase\"/**",
 					"\"~/Documents/git/NNDWebAPI/NNDWebAPI\"/**",
 					"\"~/Documents/git/NNDMap/NNDMap\"/**",
+					"\"~/Documents/git/NNDCommon/NNDCommon\"/**",
 				);
 				INFOPLIST_FILE = nursenextdoor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
