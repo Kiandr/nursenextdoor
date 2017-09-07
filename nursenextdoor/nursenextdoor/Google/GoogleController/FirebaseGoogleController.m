@@ -9,18 +9,29 @@
 #import <Foundation/Foundation.h>
 #import "FirebaseGoogleController.h"
 #import "Firebase.h"
-#import "GoogleViewManager.h"
+#include "NNDFirebaseGoogleDataModel.h"
 
 
 @interface FirebaseGoogleController ()
+
 @property(strong, nonatomic) FIRAuthStateDidChangeListenerHandle handle;
-//@property(strong, nonatomic) GoogleViewManager* googleViewManager;
 
 @end
 
 @implementation FirebaseGoogleController
 
-- (void)viewDidLoad {
+- (instancetype)initFirebaseGoogle:(NNDFirebaseGoogleDataModel*) firebaseGoogle {
+    self = [super init];
+    if (self) {
+
+        _handle = [firebaseGoogle handle];
+    }
+    return self;
+}
+
+
+
+- (void)FirebaseGoogleViewDidLoad {
     //[super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
@@ -39,14 +50,14 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
+- (void)FirebaseGoogleDidReceiveMemoryWarning {
     ///[super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
 // Notifies the view controller that its view is about to be added to a view hierarchy.
-- (void)viewWillAppear:(BOOL)animated {
+- (void)FirebaseGoogleViewWillAppear:(BOOL)animated {
     //[super viewWillAppear:animated];
     // [START auth_listener]
     self.handle = [[FIRAuth auth]
@@ -58,7 +69,7 @@
     // [END auth_listener]
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
+- (void)FirebaseGoogleViewWillDisappear:(BOOL)animated {
     //[super viewWillDisappear:animated];
     // [START remove_auth_listener]
     [[FIRAuth auth] removeAuthStateDidChangeListener:_handle];
@@ -66,21 +77,21 @@
 }
 
 // Notifies the view controller that its view is about to be added to a view hierarchy.
-- (void)viewDidDisappear:(BOOL)animated{
+- (void)FirebaseGoogleViewDidDisappear:(BOOL)animated{
 }
 
 // Notifies the view controller that its view was added to a view hierarchy.
-- (void)viewDidAppear:(BOOL)animated{
+- (void)FirebaseGoogleViewDidAppear:(BOOL)animated{
 }
 
-#pragma Authentication with Google Sing Sing in
-- (void)change:(id)something{
+//#pragma Authentication with Google Sing Sing in
+//- (void)change:(id)something{
+//
+//
+//}
+//- (IBAction)action:(id)sender {
+//    //[_mainViewController loadUserProfileView];
+//
+//}
 
-
-}
-- (IBAction)action:(id)sender {
-    //[_mainViewController loadUserProfileView];
-
-}
-    
 @end
