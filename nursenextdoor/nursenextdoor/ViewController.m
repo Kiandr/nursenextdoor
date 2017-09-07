@@ -5,7 +5,7 @@
 //  Created by Kian Davoudi-Rad on 2017-06-15.
 //  Copyright © 2017 Kian Davoudi-Rad. All rights reserved.
 //
-
+/*
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -41,3 +41,4 @@
 - (void)viewDidAppear:(BOOL)animated{
 }
 @end
+*/

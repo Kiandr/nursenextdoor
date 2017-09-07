@@ -1,10 +1,6 @@
-//
-//  UIViewManager.m
-//  callMe
-//
 //  Created by Kian Davoudi-Rad on 2017-03-14.
 //  Copyright © 2017 Kian Davoudi-Rad. All rights reserved.
-//
+
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -36,9 +32,6 @@
     // Construct services
     _service = [[UIViewServices alloc]initWithSlidingUIViewDataModel:_slidingUIViewDataModel];
 
-//    // GetMaster UIVIew Model
-//     UIView *testTheViewBuilder = [_service GetterSlidingUIViewDataModel];
-
     // Do any additional setup after loading the view, typically from a nib.
     [self.view addSubview:[_service GetterSlidingUIViewDataModel]];
 }
@@ -49,21 +42,16 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated{
+  [super viewWillAppear:animated];
 
-    [super viewWillAppear:animated];
+}
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidDisappear:animated];
-}
-
-- (void) buttonClicked:(UIButton*)sender{
-    NSLog(@"you clicked on button %ld", (long)sender.tag);
 }
 
 @end

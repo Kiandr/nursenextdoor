@@ -10,11 +10,8 @@
 #define Auth_h
 
 #import <UIKit/UIKit.h>
-
 #import "Auth.h"
 #import "Firebase.h"
-
-
 @import GoogleSignIn;
 
 

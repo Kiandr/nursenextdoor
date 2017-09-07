@@ -68,8 +68,6 @@
     }
     return self;
 }
-
-
 - (instancetype)initWithSlidingUIViewDataModel:(SlidingUIViewDataModel*)incomingSlidingUIViewDataModel{
     self = [super init];
     if (self) {
@@ -79,9 +77,6 @@
     }
     return self;
 }
-
-
-
 - (UIView*)GetterSlidingUIViewDataModel{
 /*
  Auhto: Kian D.Rad
@@ -106,12 +101,11 @@
 
 
 }
-
--(UIView*) mainViewInitMultiScreen{
+- (UIView*) mainViewInitMultiScreen{
     return _masterView;
 
 }
--(UIView*)  mainViewInit:           (UIViewFrameWorkModel*)     localUIViewFrameWorkModel setBrandColour:(UIColor*) locBrandColour{
+- (UIView*)  mainViewInit:           (UIViewFrameWorkModel*)     localUIViewFrameWorkModel setBrandColour:(UIColor*) locBrandColour{
     UIView *tempView = [[UIView alloc] init];
     tempView.backgroundColor = locBrandColour;
     tempView.frame = CGRectMake(localUIViewFrameWorkModel.uiMainViewFrameOriginex,localUIViewFrameWorkModel.uiMainViewFrameOriginey, localUIViewFrameWorkModel.uiMainViewFrameSizeWidth,localUIViewFrameWorkModel.uiMainViewFrameSizeHeight);
@@ -128,7 +122,7 @@
 
     return tempView;
 }
--(UIView*)  mainViewInitForGoogle:  (UIViewFrameWorkModel*)     localUIViewFrameWorkModel setBrandColour:(UIColor*) locBrandColour{
+- (UIView*)  mainViewInitForGoogle:  (UIViewFrameWorkModel*)     localUIViewFrameWorkModel setBrandColour:(UIColor*) locBrandColour{
     UIView *tempView = [[UIView alloc] init];
     tempView.backgroundColor = locBrandColour;
     tempView.frame = CGRectMake(localUIViewFrameWorkModel.uiMainViewFrameOriginex,localUIViewFrameWorkModel.uiMainViewFrameOriginey, localUIViewFrameWorkModel.uiMainViewFrameSizeWidth,localUIViewFrameWorkModel.uiMainViewFrameSizeHeight);
@@ -142,7 +136,7 @@
 
     return tempView;
 }
--(UIView*)  mainViewUserProfile:  (UIViewFrameWorkModel*)     localUIViewFrameWorkModel setBrandColour:(UIColor*) locBrandColour{
+- (UIView*)  mainViewUserProfile:  (UIViewFrameWorkModel*)     localUIViewFrameWorkModel setBrandColour:(UIColor*) locBrandColour{
     UIView *tempView = [[UIView alloc] init];
     tempView.backgroundColor = locBrandColour;
     tempView.frame = CGRectMake(localUIViewFrameWorkModel.uiMainViewFrameOriginex,localUIViewFrameWorkModel.uiMainViewFrameOriginey, localUIViewFrameWorkModel.uiMainViewFrameSizeWidth,localUIViewFrameWorkModel.uiMainViewFrameSizeHeight);
@@ -156,7 +150,7 @@
 
     return tempView;
 }
--(UIView*)  addUITableView:         (UIViewFrameWorkModel*)     localUIViewFrameWorkModel {
+- (UIView*)  addUITableView:         (UIViewFrameWorkModel*)     localUIViewFrameWorkModel {
     UITableView *localUITableView = [[UITableView alloc]initWithFrame:CGRectMake(localUIViewFrameWorkModel.uiTableViewFrameOriginex , localUIViewFrameWorkModel.uiTableViewFrameOriginey , localUIViewFrameWorkModel.uiTableViewFrameSizeWidth, localUIViewFrameWorkModel.uiTableViewFrameSizeHeight ) style:UITableViewCellStyleSubtitle];
     localUITableView.backgroundColor = _nNDBrandColour;
     localUITableView.dataSource = self;
@@ -164,7 +158,7 @@
 
     return localUITableView;
 }
--(UIView*)  addBrandFooter:         (UIViewFrameWorkModel*)     localUIViewFrameWorkModel {
+- (UIView*)  addBrandFooter:         (UIViewFrameWorkModel*)     localUIViewFrameWorkModel {
 
     UIView * uiBrandFooterView = [[UIView alloc] initWithFrame:CGRectMake(localUIViewFrameWorkModel.uiFrameFooterFrameOriginex , localUIViewFrameWorkModel.uiFrameFooterFrameOriginey , localUIViewFrameWorkModel.uiFrameFooterFrameSizeWidth, localUIViewFrameWorkModel.uiFrameFooterFrameSizeHeight)];
     uiBrandFooterView.backgroundColor = [UIColor blueColor];
@@ -182,13 +176,13 @@
 
     return uiBrandFooterView;
 }
--(void)     upcomingVisistsButtonCallBackFunction:(id*)     sender                    {
+- (void)     upcomingVisistsButtonCallBackFunction:(id*)     sender                    {
 
     [_UIDatePickerGlobarlVar setDate:[NSDate date]];
     // Update and refresh content of tableView
 
 }
--(UIView*)  addDatePicker:          (UIViewFrameWorkModel*)     localUIViewFrameWorkModel {
+- (UIView*)  addDatePicker:          (UIViewFrameWorkModel*)     localUIViewFrameWorkModel {
     UIView* datePickerView = [[UIView alloc]initWithFrame:CGRectMake(localUIViewFrameWorkModel.uiDatePickerFrameOriginex, localUIViewFrameWorkModel.uiDatePickerFrameOriginey, localUIViewFrameWorkModel.uiDatePickerFrameSizeWidth,localUIViewFrameWorkModel.uiDatePickerFrameSizeHeight)];
 
     datePickerView.backgroundColor = [UIColor greenColor];
@@ -200,7 +194,7 @@
 
     return datePickerView;
 }
--(UIView*)  addBrandHeader:         (UIViewFrameWorkModel*)     localUIViewFrameWorkModel {
+- (UIView*)  addBrandHeader:         (UIViewFrameWorkModel*)     localUIViewFrameWorkModel {
 
     UIView* brandHeaderView = [[UIView alloc]initWithFrame:CGRectMake(localUIViewFrameWorkModel.uiBrandHeaderFrameOriginex, localUIViewFrameWorkModel.uiBrandHeaderFrameOriginey, localUIViewFrameWorkModel.uiBrandHeaderFrameSizeWidth,localUIViewFrameWorkModel.uiBrandHeaderFrameSizeHeight)];
 
@@ -214,7 +208,7 @@
     return brandHeaderView;
 
 }
--(UIColor*) setnNDBrandColour                                                         {
+- (UIColor*) setnNDBrandColour                                                         {
     UIColor *locBrandColor;
     @try
     {
@@ -229,7 +223,7 @@
     }
     return locBrandColor;
 }
--(UIViewFrameWorkModel*) setOriginesOfWindow                                          {
+- (UIViewFrameWorkModel*) setOriginesOfWindow                                          {
 
     UIViewFrameWorkModel * localUIViewFrameWorkModel = [[UIViewFrameWorkModel alloc]init];
 
@@ -317,7 +311,7 @@
 
     return localUIViewFrameWorkModel;
 }
--(UIView*)  addGSSIButton:     (UIViewFrameWorkModel*)     localUIViewFrameWorkModel {
+- (UIView*)  addGSSIButton:     (UIViewFrameWorkModel*)     localUIViewFrameWorkModel {
 
 
 
@@ -377,7 +371,7 @@
 
     return uiBrandFooterView;
 }
--(UIView*)  addUerProfile:     (UIViewFrameWorkModel*)     localUIViewFrameWorkModel {
+- (UIView*)  addUerProfile:     (UIViewFrameWorkModel*)     localUIViewFrameWorkModel {
 
 
 
@@ -390,6 +384,7 @@
 
     return uiBrandFooterView;
 }
+
 #pragma UITableViewDataSource
 -(NSInteger)        numberOfSectionsInTableView:    (UITableView *)             theTableView                                                    {
     float numberOfRows = 0;

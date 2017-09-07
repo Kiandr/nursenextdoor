@@ -19,21 +19,14 @@
 
 @implementation Auth : NSObject
 
-
-- (instancetype)init
-{
+- (instancetype)init{
     self = [super init];
     if (self) {
 
     }
     return self;
 }
-
-
-
-
-- (id)initWithFIRAuthStateDidChangeListenerHandle:(FIRAuthStateDidChangeListenerHandle*) handleIncome
-{
+- (id)initWithFIRAuthStateDidChangeListenerHandle:(FIRAuthStateDidChangeListenerHandle*) handleIncome{
     self = [super init];
     if (self)
     {
@@ -42,8 +35,5 @@
     }
     return self;
 }
-
-
-
 
 @end
