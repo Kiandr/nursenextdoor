@@ -16,19 +16,14 @@
 @import Firebase;
 @import GoogleSignIn;
 
-@class MainUIViewController;
+@class NNDMasterUIViewController;
 
-@interface MainUIViewController : UIViewController /*<UITableViewDelegate, UITableViewDataSource>*/
+@interface NNDMasterUIViewController : UIViewController
 
 @property(strong, nonatomic) UIViewServices *service;
 
 @property(strong, nonatomic) SlidingUIViewDataModel *slidingUIViewDataModel;
 
-
-
-
 - (id) init;
-
-
 
 @end

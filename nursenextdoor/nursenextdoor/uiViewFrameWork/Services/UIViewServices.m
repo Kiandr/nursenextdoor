@@ -16,7 +16,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "MainUIViewController.h"
+#include "SlidingUIViewServices.h"
 #import "UIViewFrameWorkModel.h"
 #import "SlideViewModel.h"
 #import "MasterUIViewDataModel.h"

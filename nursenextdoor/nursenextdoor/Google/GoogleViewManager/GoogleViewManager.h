@@ -6,20 +6,20 @@
 //  Copyright © 2017 Kian Davoudi-Rad. All rights reserved.
 //
 
-#ifndef GoogleViewManager_h
-#define GoogleViewManager_h
-
-#import <UIKit/UIKit.h>
-@import GoogleSignIn;
-
-@interface GoogleViewManager : NSObject
-
-- (GIDSignInButton*)    initializetWithGIDSignInButton;
-- (UIView*)             mainViewUserProfile;
-
-
-@end
-
-
-
-#endif /* GoogleViewManager_h */
+//#ifndef GoogleViewManager_h
+//#define GoogleViewManager_h
+//#include "NNDMasterUIViewController.h"
+//#import <UIKit/UIKit.h>
+//@import GoogleSignIn;
+//
+//@interface GoogleViewManager : NNDMasterUIViewController
+//
+//- (GIDSignInButton*)    initializetWithGIDSignInButton;
+//- (UIView*)             mainViewUserProfile;
+//
+//
+//@end
+//
+//
+//
+//#endif /* GoogleViewManager_h */

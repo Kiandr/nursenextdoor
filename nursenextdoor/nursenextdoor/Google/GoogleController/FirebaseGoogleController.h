@@ -12,11 +12,12 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import <UIKit/UIKit.h>
-#import "MainUIViewController.h"
+//#include"NNDMasterUIViewController.h"
+
 @import Firebase;
 @import GoogleSignIn;
 
-@interface FirebaseGoogleController : UIViewController<GIDSignInUIDelegate>
+@interface FirebaseGoogleController :NSObject<GIDSignInUIDelegate>
 @property(nonatomic, strong) UIViewController* mainViewController;
 
 @end

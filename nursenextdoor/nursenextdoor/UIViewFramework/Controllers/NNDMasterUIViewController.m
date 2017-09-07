@@ -4,7 +4,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "MainUIViewController.h"
+#include "NNDMasterUIViewController.h"
 #import "UIViewFrameWorkModel.h"
 #import "SlideViewModel.h"
 #import "MasterUIViewDataModel.h"
@@ -15,7 +15,7 @@
 @import FirebaseCore;
 @import GoogleSignIn;
 
-@implementation MainUIViewController
+@implementation NNDMasterUIViewController 
 
 - (instancetype)init {
     self = [super init];

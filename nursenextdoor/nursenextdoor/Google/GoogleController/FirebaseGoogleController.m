@@ -11,19 +11,20 @@
 #import "Firebase.h"
 #import "GoogleViewManager.h"
 
+
 @interface FirebaseGoogleController ()
 @property(strong, nonatomic) FIRAuthStateDidChangeListenerHandle handle;
-@property(strong, nonatomic) GoogleViewManager* googleViewManager;
+//@property(strong, nonatomic) GoogleViewManager* googleViewManager;
 
 @end
 
 @implementation FirebaseGoogleController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    //[super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    _mainViewController = [[MainUIViewController alloc]init];
+  //  _mainViewController = [[NNDMasterUIViewController alloc]init];
 
     //[self.view addSubview:_mainViewController.AddMainSubView];
 
@@ -39,14 +40,14 @@
 
 
 - (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+    ///[super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
 // Notifies the view controller that its view is about to be added to a view hierarchy.
 - (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+    //[super viewWillAppear:animated];
     // [START auth_listener]
     self.handle = [[FIRAuth auth]
                    addAuthStateDidChangeListener:^(FIRAuth *_Nonnull auth, FIRUser *_Nullable user) {
@@ -58,7 +59,7 @@
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
+    //[super viewWillDisappear:animated];
     // [START remove_auth_listener]
     [[FIRAuth auth] removeAuthStateDidChangeListener:_handle];
     // [END remove_auth_listener]
