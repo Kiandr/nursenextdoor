@@ -20,14 +20,14 @@
 
 @implementation FirebaseGoogleController
 
-- (instancetype)initFirebaseGoogle:(NNDFirebaseGoogleDataModel*) firebaseGoogle {
-    self = [super init];
-    if (self) {
-
-        _handle = [firebaseGoogle handle];
-    }
-    return self;
-}
+//- (instancetype)initFirebaseGoogle:(NNDFirebaseGoogleDataModel*) firebaseGoogle {
+//    self = [super init];
+//    if (self) {
+//
+//        _handle = [firebaseGoogle handle];
+//    }
+//    return self;
+//}
 
 
 

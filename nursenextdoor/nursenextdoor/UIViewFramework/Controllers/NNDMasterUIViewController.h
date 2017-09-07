@@ -12,7 +12,7 @@
 #import "SlideViewModel.h"
 #import "SlidingUIViewServices.h"
 #import "UIViewServices.h"
-#import "FirebaseGoogleController.h"
+
 @import Firebase;
 @import GoogleSignIn;
 
