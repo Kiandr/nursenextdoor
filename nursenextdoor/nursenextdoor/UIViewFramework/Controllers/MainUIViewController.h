@@ -12,6 +12,7 @@
 #import "SlideViewModel.h"
 #import "SlidingUIViewServices.h"
 #import "UIViewServices.h"
+#import "FirebaseGoogleController.h"
 @import Firebase;
 @import GoogleSignIn;
 
@@ -22,6 +23,7 @@
 @property(strong, nonatomic) UIViewServices *service;
 
 @property(strong, nonatomic) SlidingUIViewDataModel *slidingUIViewDataModel;
+
 
 
 

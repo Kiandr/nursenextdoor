@@ -24,7 +24,8 @@
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
-- (void)saveContext;
+// I am taking care of this in a seperate project: NNDDatabase controller.
+//- (void)saveContext;
 
 
 @end

@@ -16,8 +16,8 @@
 @import Firebase;
 @import GoogleSignIn;
 
-@interface GoogleController : UIViewController<GIDSignInUIDelegate>
-@property(nonatomic, strong) MainUIViewController* mainViewController;
+@interface FirebaseGoogleController : UIViewController<GIDSignInUIDelegate>
+@property(nonatomic, strong) UIViewController* mainViewController;
 
 @end
 

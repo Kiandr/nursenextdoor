@@ -60,7 +60,15 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
-    [self saveContext];
+
+    /*
+     Author: Kian D.Rad
+     Date: September 7th 2017
+     README: remove the save context from app delgate, and put it in the NNDDatabase project. 
+     I will take care of managing the cotext. 
+     */
+    //FINDME I user a NNDDatabase to controller the save context method
+    //  [self saveContext];
 }
 
 

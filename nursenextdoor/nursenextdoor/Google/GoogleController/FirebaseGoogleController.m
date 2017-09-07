@@ -7,17 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GoogleController.h"
+#import "FirebaseGoogleController.h"
 #import "Firebase.h"
 #import "GoogleViewManager.h"
 
-@interface GoogleController ()
+@interface FirebaseGoogleController ()
 @property(strong, nonatomic) FIRAuthStateDidChangeListenerHandle handle;
 @property(strong, nonatomic) GoogleViewManager* googleViewManager;
 
 @end
 
-@implementation GoogleController
+@implementation FirebaseGoogleController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,10 +37,12 @@
 
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 // Notifies the view controller that its view is about to be added to a view hierarchy.
 - (void)viewWillAppear:(BOOL)animated {
@@ -64,22 +66,18 @@
 
 // Notifies the view controller that its view is about to be added to a view hierarchy.
 - (void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
 }
 
 // Notifies the view controller that its view was added to a view hierarchy.
 - (void)viewDidAppear:(BOOL)animated{
-[super viewDidAppear:animated];
 }
 
 #pragma Authentication with Google Sing Sing in
-
 - (void)change:(id)something{
 
 
 }
-
-- (IBAction)action:(id)sender{
+- (IBAction)action:(id)sender {
     //[_mainViewController loadUserProfileView];
 
 }

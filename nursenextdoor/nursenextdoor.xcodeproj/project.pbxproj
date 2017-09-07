@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E253ED11F1D5403003B616D /* VisistDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E253ED01F1D5403003B616D /* VisistDataModel.m */; };
 		2E330C0C1EFC87970056FC3F /* Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C041EFC87970056FC3F /* Auth.m */; };
-		2E330C0D1EFC87970056FC3F /* GoogleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C071EFC87970056FC3F /* GoogleController.m */; };
+		2E330C0D1EFC87970056FC3F /* FirebaseGoogleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C071EFC87970056FC3F /* FirebaseGoogleController.m */; };
 		2E330C0E1EFC87970056FC3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E330C081EFC87970056FC3F /* GoogleService-Info.plist */; };
 		2E330C0F1EFC87970056FC3F /* GoogleViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C0B1EFC87970056FC3F /* GoogleViewManager.m */; };
 		2E330C261EFC88320056FC3F /* UIViewFrameWorkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E330C201EFC88320056FC3F /* UIViewFrameWorkModel.m */; };
@@ -80,8 +80,8 @@
 		2E253EDA1F1D5F01003B616D /* ProcuraDateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProcuraDateModel.h; path = CommonTools/CommonDataModels/ProcuraDateModel.h; sourceTree = "<group>"; };
 		2E330C031EFC87970056FC3F /* Auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Auth.h; sourceTree = "<group>"; };
 		2E330C041EFC87970056FC3F /* Auth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Auth.m; sourceTree = "<group>"; };
-		2E330C061EFC87970056FC3F /* GoogleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleController.h; sourceTree = "<group>"; };
-		2E330C071EFC87970056FC3F /* GoogleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleController.m; sourceTree = "<group>"; };
+		2E330C061EFC87970056FC3F /* FirebaseGoogleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirebaseGoogleController.h; sourceTree = "<group>"; };
+		2E330C071EFC87970056FC3F /* FirebaseGoogleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirebaseGoogleController.m; sourceTree = "<group>"; };
 		2E330C081EFC87970056FC3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2E330C0A1EFC87970056FC3F /* GoogleViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleViewManager.h; sourceTree = "<group>"; };
 		2E330C0B1EFC87970056FC3F /* GoogleViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleViewManager.m; sourceTree = "<group>"; };
@@ -267,8 +267,8 @@
 		2E330C051EFC87970056FC3F /* GoogleController */ = {
 			isa = PBXGroup;
 			children = (
-				2E330C061EFC87970056FC3F /* GoogleController.h */,
-				2E330C071EFC87970056FC3F /* GoogleController.m */,
+				2E330C061EFC87970056FC3F /* FirebaseGoogleController.h */,
+				2E330C071EFC87970056FC3F /* FirebaseGoogleController.m */,
 			);
 			path = GoogleController;
 			sourceTree = "<group>";
@@ -808,7 +808,7 @@
 				2E330C261EFC88320056FC3F /* UIViewFrameWorkModel.m in Sources */,
 				2E330C291EFC88A90056FC3F /* SlideViewModel.m in Sources */,
 				2ED1C38C1F22C0C200A66787 /* UIViewNNDBarControllerServices.m in Sources */,
-				2E330C0D1EFC87970056FC3F /* GoogleController.m in Sources */,
+				2E330C0D1EFC87970056FC3F /* FirebaseGoogleController.m in Sources */,
 				2E81A1091F19AC7D00D03A36 /* UIViewNNDBar.m in Sources */,
 				2EC2B7D81EF3402F0021CE60 /* AppDelegate.m in Sources */,
 				2E3C62C31F06D7FA0008A3FF /* MasterUIViewCLass.m in Sources */,
