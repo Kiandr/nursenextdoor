@@ -14,6 +14,7 @@
 #import "MasterUIViewDataModel.h"
 #import "SlidingUIViewServices.h"
 #import "UIViewServices.h"
+
 @import Firebase;
 @import FirebaseCore;
 @import GoogleSignIn;
@@ -35,8 +36,8 @@
     // Construct services
     _service = [[UIViewServices alloc]initWithSlidingUIViewDataModel:_slidingUIViewDataModel];
 
-    // GetMaster UIVIew Model
-     UIView *testTheViewBuilder = [_service GetterSlidingUIViewDataModel];
+//    // GetMaster UIVIew Model
+//     UIView *testTheViewBuilder = [_service GetterSlidingUIViewDataModel];
 
     // Do any additional setup after loading the view, typically from a nib.
     [self.view addSubview:[_service GetterSlidingUIViewDataModel]];
@@ -49,17 +50,19 @@
 
 - (void)viewWillAppear:(BOOL)animated{
 
+    [super viewWillAppear:animated];
 
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
+    [super viewDidDisappear:animated];
 }
 
--(void) buttonClicked:(UIButton*)sender
-{
+- (void) buttonClicked:(UIButton*)sender{
     NSLog(@"you clicked on button %ld", (long)sender.tag);
 }
 

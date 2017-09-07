@@ -17,7 +17,7 @@
 
 @class MainUIViewController;
 
-@interface MainUIViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface MainUIViewController : UIViewController /*<UITableViewDelegate, UITableViewDataSource>*/
 
 @property(strong, nonatomic) UIViewServices *service;
 
