@@ -1015,6 +1015,7 @@
 					"\"~/Documents/git/NNDWebAPI/NNDWebAPI\"/**",
 					"\"~/Documents/git/NNDMap/NNDMap\"/**",
 					"\"~/Documents/git/NNDCommon/NNDCommon\"/**",
+					"\"~/Documents/git/nursenextdoor\"/**",
 				);
 				INFOPLIST_FILE = nursenextdoor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1059,6 +1060,7 @@
 					"\"~/Documents/git/NNDWebAPI/NNDWebAPI\"/**",
 					"\"~/Documents/git/NNDMap/NNDMap\"/**",
 					"\"~/Documents/git/NNDCommon/NNDCommon\"/**",
+					"\"~/Documents/git/nursenextdoor\"/**",
 				);
 				INFOPLIST_FILE = nursenextdoor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

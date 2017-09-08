@@ -12,7 +12,7 @@
 #import "SlideViewModel.h"
 #import "SlidingUIViewServices.h"
 #import "UIViewServices.h"
-
+//#include "FirebaseGoogleController.h"
 @import Firebase;
 @import GoogleSignIn;
 
@@ -20,10 +20,12 @@
 
 @interface NNDMasterUIViewController : UIViewController
 
-@property(strong, nonatomic) UIViewServices *service;
+@property (strong, nonatomic) UIViewServices *service;
 
-@property(strong, nonatomic) SlidingUIViewDataModel *slidingUIViewDataModel;
+@property (strong, nonatomic) SlidingUIViewDataModel *slidingUIViewDataModel;
 
-- (id) init;
+//@property ( nonatomic, retain) FirebaseGoogleController *firebaseGoogleController;
+
+//- (id) init;
 
 @end

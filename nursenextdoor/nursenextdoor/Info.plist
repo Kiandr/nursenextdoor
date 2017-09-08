@@ -26,6 +26,14 @@
 				<string>com.googleusercontent.apps.142428877752-oq8p5p118nkson3d5dc7g0fg6lsesrdt</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>kdr.nursenextdoor</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
