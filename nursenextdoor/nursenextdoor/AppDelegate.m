@@ -148,7 +148,7 @@ didSignInForUser:(GIDGoogleUser *)user
                                       }
                                       // User successfully signed in. Get user data from the FIRUser object
                                       // ...
-                                      NSLog(@"User successfully signed in. Get user data from the FIRUser object %@",user);
+                                      NSLog(@"User successfully signed in. Get user data from the FIRUser object %@",[user email] );
                                   }];
 
 

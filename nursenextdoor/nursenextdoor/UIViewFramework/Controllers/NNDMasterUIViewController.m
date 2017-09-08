@@ -22,16 +22,7 @@
 
 @end
 
-@implementation NNDMasterUIViewController 
-
-//- (instancetype)init {
-//    self = [super init];
-//    if (self) {
-//
-//        NSLog(@"MainUIViewController class was inaiated successfully! KDR!");
-//    }
-//    return self;
-//}
+@implementation NNDMasterUIViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -69,7 +60,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-  [super viewWillAppear:animated];
+    [super viewWillAppear:animated];
     // [START auth_listener]
     self.handle = [[FIRAuth auth]
                    addAuthStateDidChangeListener:^(FIRAuth *_Nonnull auth, FIRUser *_Nullable user) {
@@ -82,6 +73,7 @@
 
 - (void)ViewWillDisappear:(BOOL)animated {
     //[super viewWillDisappear:animated];
+
     // [START remove_auth_listener]
     [[FIRAuth auth] removeAuthStateDidChangeListener:_handle];
     // [END remove_auth_listener]
